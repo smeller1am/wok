@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/icon.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title></title>
+</head>
+
+<body>
+    <div class="overlayBubble">
+        <img src="./assets/img/эффекты фон.png" alt="">
+    </div>
+    <div class="overlayStar">
+        <img src="./assets/img/эффекты фон звезды.png" alt="">
+    </div>
+    <header class="header">
+      <div class="header__top">
+        <a href="/index.html" class="header__top-logo">
+          <img src="./assets/img/MR.HAPPY.png" alt="">
+        </a>
+        <div class="header__top-socials">
+          <a href="tel:+79199653519" class="header__top-phone">+7 919 965 35 19</a>
+          <div class="header__icons">
+            <a target="_blank" href="https://instagram.com/mrhappy.event?igshid=NzZlODBkYWE4Ng==" class="header__icons-item">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="31" height="31" viewBox="0,0,256,256">
+                <g transform="translate(-28.16,-28.16) scale(1.22,1.22)">
+                  <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                    style="mix-blend-mode: normal">
+                    <g transform="scale(8,8)">
+                      <path
+                        d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z">
+                      </path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </a>
+            <a target="_blank" href="https://vk.com/mrhappy.event" class="header__icons-item">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0,0,256,256">
+                <g transform="translate(-19.2,-19.2) scale(1.15,1.15)">
+                  <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                    style="mix-blend-mode: normal">
+                    <g transform="scale(8,8)">
+                      <path
+                        d="M9.08203,5c-2.24219,0 -4.08203,1.83984 -4.08203,4.08203v13.83594c0,2.24219 1.83984,4.08203 4.08203,4.08203h13.83594c2.24219,0 4.08203,-1.83984 4.08203,-4.08203v-13.83594c0,-2.24219 -1.83984,-4.08203 -4.08203,-4.08203zM9.08203,7h13.83594c1.16016,0 2.08203,0.92188 2.08203,2.08203v13.83594c0,1.16016 -0.92187,2.08203 -2.08203,2.08203h-13.83594c-1.16016,0 -2.08203,-0.92187 -2.08203,-2.08203v-13.83594c0,-1.16016 0.92188,-2.08203 2.08203,-2.08203zM15.71875,12.23047c-0.73437,-0.00781 -1.35937,0 -1.71094,0.17188c-0.23437,0.11328 -0.41406,0.37109 -0.30469,0.38281c0.13672,0.01953 0.44531,0.08594 0.60938,0.30859c0.21094,0.28516 0.20313,0.92969 0.20313,0.92969c0,0 0.11719,1.77344 -0.28516,1.99609c-0.27734,0.15234 -0.65625,-0.15625 -1.47656,-1.56641c-0.41797,-0.72656 -0.73437,-1.52734 -0.73437,-1.52734c0,0 -0.05859,-0.14844 -0.16797,-0.22656c-0.13281,-0.09766 -0.31641,-0.12891 -0.31641,-0.12891l-1.95703,0.01172c0,0 -0.29297,0.01172 -0.39844,0.13672c-0.09766,0.11719 -0.00781,0.34766 -0.00781,0.34766c0,0 1.53125,3.58203 3.26563,5.38672c1.58984,1.65625 3.39453,1.54688 3.39453,1.54688h0.82031c0,0 0.24609,-0.02734 0.37109,-0.16016c0.11719,-0.125 0.11328,-0.35937 0.11328,-0.35937c0,0 -0.01562,-1.09766 0.49219,-1.26172c0.50391,-0.15625 1.14453,1.0625 1.82813,1.53125c0.51953,0.35547 0.91406,0.27734 0.91406,0.27734l1.82813,-0.02734c0,0 0.95313,-0.05859 0.5,-0.8125c-0.03516,-0.05859 -0.26172,-0.55469 -1.35547,-1.57031c-1.14844,-1.0625 -0.99609,-0.89062 0.38672,-2.73047c0.83984,-1.12109 1.17578,-1.80469 1.07031,-2.10156c-0.10156,-0.27734 -0.71875,-0.20312 -0.71875,-0.20312l-2.05859,0.01172c0,0 -0.15234,-0.01953 -0.26562,0.04688c-0.10937,0.06641 -0.17969,0.22266 -0.17969,0.22266c0,0 -0.32812,0.86719 -0.76172,1.60547c-0.91406,1.55469 -1.28516,1.64063 -1.43359,1.54297c-0.34766,-0.22656 -0.26172,-0.90625 -0.26172,-1.38672c0,-1.51172 0.23047,-2.13672 -0.44531,-2.30078c-0.22266,-0.05469 -0.38672,-0.08984 -0.95703,-0.09375z">
+                      </path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <nav class="header__nav">
+            <a href="/" class="header__nav-item">
+              Главная
+            </a>
+            <div class="header__nav-item">
+              Наши услуги
+              <div class="header__dropdown">
+                <a href="./quests.html" class="header__dropdown-item">Квесты</a>
+                <a href="./masterClasses.html" class="header__dropdown-item">Мастер-классы</a>
+                <a href="./party.html" class="header__dropdown-item">Вечеринки</a>
+                <a href="./candy.html" class="header__dropdown-item">Кенди-Бар</a>
+                <a href="./animators.html" class="header__dropdown-item">Аниматоры</a>
+                <a href="./additional.html" class="header__dropdown-item">Дополнительные услуги</a>
+              </div>
+            </div>
+            <a href="./about.html" class="header__nav-item">
+              О нас
+            </a>
+            <a href="./club.html" class="header__nav-item">
+              Детский клуб
+            </a>
+            <a href="./gallery.html" class="header__nav-item">
+              Галерея
+            </a>
+          </nav>
+        </div>
+      </div>
+      <div class="burger">
+        <div class="burger__line"></div>
+      </div>
+      <a href="#" class="header__side">
+        <img src="./assets/img/Логотип(Растр)без фона 1.png" alt="" >
+      </a>
+    </header>
+    <main>
+      <div class="menu">
+        <div class="menu__list">
+          <a href="/" class="menu__list-item">Главная</a>
+          <div class="menu__list-item menu__list-item--accordeon"> Наши услуги <img
+              src="./assets/svg/keyboard-right-arrow-button-1_icon-icons.com_72690.svg">
+            <div class="menu__dropdown">
+              <a href="./quests.html" class="menu__dropdown-item">Квесты</a>
+              <a href="./masterClasses.html" class="menu__dropdown-item">Мастер-классы</a>
+              <a href="./party.html" class="menu__dropdown-item">Вечеринки</a>
+              <a href="./candy.html" class="menu__dropdown-item">Кенди-Бар</a>
+              <a href="./animators.html" class="menu__dropdown-item">Аниматоры</a>
+              <a href="./additional.html" class="menu__dropdown-item">Дополнительные услуги</a>
+            </div>
+          </div>
+          <a href="./about.html" class="menu__list-item"> О нас</a>
+          <a href="./club.html" class="menu__list-item"> Детский клуб</a>
+          <a href="./gallery.html" class="menu__list-item">Галерея</a>
+        </div>
+        <div class="menu__icons">
+          <a href="#" class="menu__icons-item">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="31" height="31" viewBox="0,0,256,256">
+              <g transform="translate(-28.16,-28.16) scale(1.22,1.22)">
+                <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(8,8)">
+                    <path
+                      d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z">
+                    </path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+          <a href="#" class="menu__top-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0,0,256,256">
+              <g transform="translate(-19.2,-19.2) scale(1.15,1.15)">
+                <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(8,8)">
+                    <path
+                      d="M9.08203,5c-2.24219,0 -4.08203,1.83984 -4.08203,4.08203v13.83594c0,2.24219 1.83984,4.08203 4.08203,4.08203h13.83594c2.24219,0 4.08203,-1.83984 4.08203,-4.08203v-13.83594c0,-2.24219 -1.83984,-4.08203 -4.08203,-4.08203zM9.08203,7h13.83594c1.16016,0 2.08203,0.92188 2.08203,2.08203v13.83594c0,1.16016 -0.92187,2.08203 -2.08203,2.08203h-13.83594c-1.16016,0 -2.08203,-0.92187 -2.08203,-2.08203v-13.83594c0,-1.16016 0.92188,-2.08203 2.08203,-2.08203zM15.71875,12.23047c-0.73437,-0.00781 -1.35937,0 -1.71094,0.17188c-0.23437,0.11328 -0.41406,0.37109 -0.30469,0.38281c0.13672,0.01953 0.44531,0.08594 0.60938,0.30859c0.21094,0.28516 0.20313,0.92969 0.20313,0.92969c0,0 0.11719,1.77344 -0.28516,1.99609c-0.27734,0.15234 -0.65625,-0.15625 -1.47656,-1.56641c-0.41797,-0.72656 -0.73437,-1.52734 -0.73437,-1.52734c0,0 -0.05859,-0.14844 -0.16797,-0.22656c-0.13281,-0.09766 -0.31641,-0.12891 -0.31641,-0.12891l-1.95703,0.01172c0,0 -0.29297,0.01172 -0.39844,0.13672c-0.09766,0.11719 -0.00781,0.34766 -0.00781,0.34766c0,0 1.53125,3.58203 3.26563,5.38672c1.58984,1.65625 3.39453,1.54688 3.39453,1.54688h0.82031c0,0 0.24609,-0.02734 0.37109,-0.16016c0.11719,-0.125 0.11328,-0.35937 0.11328,-0.35937c0,0 -0.01562,-1.09766 0.49219,-1.26172c0.50391,-0.15625 1.14453,1.0625 1.82813,1.53125c0.51953,0.35547 0.91406,0.27734 0.91406,0.27734l1.82813,-0.02734c0,0 0.95313,-0.05859 0.5,-0.8125c-0.03516,-0.05859 -0.26172,-0.55469 -1.35547,-1.57031c-1.14844,-1.0625 -0.99609,-0.89062 0.38672,-2.73047c0.83984,-1.12109 1.17578,-1.80469 1.07031,-2.10156c-0.10156,-0.27734 -0.71875,-0.20312 -0.71875,-0.20312l-2.05859,0.01172c0,0 -0.15234,-0.01953 -0.26562,0.04688c-0.10937,0.06641 -0.17969,0.22266 -0.17969,0.22266c0,0 -0.32812,0.86719 -0.76172,1.60547c-0.91406,1.55469 -1.28516,1.64063 -1.43359,1.54297c-0.34766,-0.22656 -0.26172,-0.90625 -0.26172,-1.38672c0,-1.51172 0.23047,-2.13672 -0.44531,-2.30078c-0.22266,-0.05469 -0.38672,-0.08984 -0.95703,-0.09375z">
+                    </path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+        <div class="breadcrumbs">
+            <div class="container">
+                <a href="/index.html" class="breadcrumbs__link">Главная</a>
+                <a href="#" class="breadcrumbs__link">О нас</a>
+            </div>
+        </div>
+        <section class="about">
+            <div class="container">
+                <div class="about__box">
+                    <img src="./assets/img/1e41b1_467570f40e8e420b906b9109491c9fff-mv2 1.png" alt=""
+                        class="about__box-image">
+                    <div class="about__box-content">
+                        <p class="about__box-text">
+                            Мы организуем дни рождения, домашние вечеринки, новогодние утренники и елки,выпускные и
+                            другие торжественные мероприятия для детей возраста от 5 до 16 лет.Для праздника
+                            предлагаются увлекательные квесты на различные тематики с любимыми героями детских фильмов и
+                            книг, которые не оставят равнодушным ни одного ребенка.У вас есть своя задумка?Тогда мы
+                            предлагаем праздник по индивидуальной программе с подбором места проведения, сценария и
+                            ведущих мероприятия.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team">
+            <div class="container">
+                <h2 class="bubbleTitle bubbleTitle--mb24">
+                    Наша команда
+                </h2>
+                <div class="team__list">
+                    <div class="team__item">
+                        <h2 class="title title--plMid title--radius">Дарья Юрьева</h2>
+                        <div class="team__item-wrapper">
+                            <p class="team__item-name">Наш главный дизайнер, творческие мастер-классы, аниматор</p>
+                            <div class="team__item-content">
+                                <div class="team__item-left">
+                                    <img src="./assets/img/дарья юрьева 1.png" alt="" class="team__item-img">
+                                </div>
+                                <div class="team__item-right">
+                                    <p class="team__item-text">
+                                        Приветствую, дорогие друзья! Если вы решите заказать у нас что-нибудь, позвонив
+                                        по
+                                        одному из предложенных номеров и вам ответит девушка с милым голосом - знайте,
+                                        это я
+                                    </p>
+                                    <p class="team__item-text"> С детства я была очень активной девушкой: постоянно
+                                        участвовала в различных творческих мероприятиях, каждые каникулы уезжала в
+                                        различные
+                                        лагеря, где мне тоже не сиделось на месте! Можно было давать ход многим
+                                        фантазиям и
+                                        идеям, которые рисовало передо мной воображение. И это очень важно для ребёнка -
+                                        давать волю фантазии, раскрыть в себе творчество. </p>
+                                    <p class="team__item-text">
+                                        Именно поэтому я пошла учиться на дизайнера и параллельно начала работать в той
+                                        же
+                                        сфере, в какой крутилась всё своё детство - работа с детьми. Ведь, как говорил
+                                        художник П. Пикассо : "Каждый ребенок — художник. Трудность в том, чтобы
+                                        остаться
+                                        художником, выйдя из детского возраста". Ведь каждый ребенок - это отдельная
+                                        личность со своими особенностями, которые нужно уважать и понимать. Именно этому
+                                        принципу и следует наша дружная команда.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="team__item">
+                        <h2 class="title title--plMid title--radius">Лёша Дементьев</h2>
+                        <div class="team__item-wrapper">
+                            <p class="team__item-name">Организатор мероприятий, PR, аниматор</p>
+                            <div class="team__item-content">
+                                <div class="team__item-left">
+                                    <img src="./assets/img/алексей 1.png" alt="" class="team__item-img">
+                                </div>
+                                <div class="team__item-right">
+                                    <p class="team__item-text">
+                                        Всем привет! Расскажу небольшую предысторию о себе и о нашей деятельности.
+                                        Проработав в качестве аниматора около четырех лет, я понял, что все
+                                        развлекательные мероприятия, предлагаемые на тот момент, очень банальны и
+                                        изъезженны вдоль и поперек. И тогда наша команда решила создать абсолютно новые
+                                        детские программы, которые будут современны и действительно интересны всем без
+                                        исключения! Так появился бренд Mr.Happy. Если вы еще с нами не знакомы, то
+                                        скорее выбирайте программу, которая вам по душе и становитесь членом самой
+                                        крепкой и большой семьи, с которой вы не захотите расставаться!Кроме того, я
+                                        традиционно выполняю очень ответственную функцию, без которой ничего бы из этого
+                                        не вышло- забираю реквизит с почты .
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="team__item">
+                        <h2 class="title title--plMid title--radius">Коля Пономаренко</h2>
+                        <div class="team__item-wrapper">
+                            <p class="team__item-name">Помощник организатора</p>
+                            <div class="team__item-content">
+                                <div class="team__item-left">
+                                    <img src="./assets/img/коля понамаренко 1.png" alt="" class="team__item-img">
+                                </div>
+                                <div class="team__item-right">
+                                    <p class="team__item-text">Салют!
+                                    </p>
+                                    <p class="team__item-text">
+                                        Веб разработка/дизайн, фото/видеосъемка, помощь в организационных вопросах :
+                                        одним словом - всё на нем держится! ну почему бы так не написать про себя, когда
+                                        сайт в твоих руках? </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="team__item">
+                        <h2 class="title title--plMid title--radius">Юра Евсеев</h2>
+                        <div class="team__item-wrapper">
+                            <p class="team__item-name">Лучший КВН-щик, аниматор и Stand Up комик</p>
+                            <div class="team__item-content">
+                                <div class="team__item-left">
+                                    <img src="./assets/img/юра евсеев 2.png" alt="" class="team__item-img">
+                                </div>
+                                <div class="team__item-right">
+                                    <p class="team__item-text">
+                                        "Когда пишешь роман о взрослых, точно знаешь, где остановиться, — на свадьбе; но
+                                        когда пишешь о детях, приходится ставить последнюю точку там, где тебе удобнее."
+                                        - Марк Твен.
+                                    </p>
+                                    <p class="team__item-text"> А все почему? Потому что дети - непредсказуемые,
+                                        удивительные люди.Их мир еще молодой и в нем не все вещи поименованы и разложены
+                                        по полочкам...в нем есть, чему удивляться! И мне доставляет радость дарить детям
+                                        это чувство - чувство удивления новому, чувство восхищения от вновь открытой
+                                        частички вселенной. </p>
+                                    <p class="team__item-text">
+                                        Вот, пригодились лекции по философии и риторике
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="team__item">
+                        <h2 class="title title--plMid title--radius">Паша Беляков</h2>
+                        <div class="team__item-wrapper">
+                            <p class="team__item-name">Аниматор</p>
+                            <div class="team__item-content">
+                                <div class="team__item-left">
+                                    <img src="./assets/img/павел беляков 1.png" alt="" class="team__item-img">
+                                </div>
+                                <div class="team__item-right">
+                                    <p class="team__item-text">
+                                        Делай то, что любишь и люби то, что делаешь. Именно это высказывание полностью описывает меня и мою работу. Самое главное, что перед вами и мной стоит одна и та же задача — сделать детей счастливыми. И, поверьте, мы легко это осуществим!
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="team__item">
+                        <h2 class="title title--plMid title--radius">Ира Квасова</h2>
+                        <div class="team__item-wrapper">
+                            <p class="team__item-name">Аниматор</p>
+                            <div class="team__item-content">
+                                <div class="team__item-left">
+                                    <img src="./assets/img/ира квасова 1.png" alt="" class="team__item-img">
+                                </div>
+                                <div class="team__item-right">
+                                    <p class="team__item-text">
+                                        Привет всем! Меня зовут Ира и я с уверенностью могу сказать, что дети - моя жизнь! В своей трудовой книжке я успела собрать целый букет профессий с детьми: педагог, вожатый, аниматор и просто влюбленный в свою работу человек. С ребятами из команды Mr.Happy мы знакомы давно, мы вместе набирались опыта в детских лагерях, а теперь вместе набираем свою большую и дружную семью, чтобы делиться радостью, хорошим настроением и дарить улыбки вам и вашим деткам!
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="team__item">
+                        <h2 class="title title--plMid title--radius">Милена Палта</h2>
+                        <div class="team__item-wrapper">
+                            <p class="team__item-name">Хореограф</p>
+                            <div class="team__item-content">
+                                <div class="team__item-left">
+                                    <img src="./assets/img/xfzggjah4ra-u128523-fr 1.png" alt="" class="team__item-img">
+                                </div>
+                                <div class="team__item-right">
+                                    <p class="team__item-text">
+                                        Всем привет! Я участница команды "Freedommind Team". Выпускник академии педагогов "vol.3". Победитель в составе различных команд такого большого количества чемпионатов, что я их не помню. В прошлом участник локинг-команды "Soul Power" и шоу балета "Трэвел".
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+      <a href="/index.html" class="footer__logo">
+        <img src="./assets/img/Логотип(Растр)без фона 2.png" alt="" class="footer__logo-img">
+        <img src="./assets/img/MR.HAPPY.png" alt="" class="footer__logo-text">
+      </a>
+      <div class="container">
+        <div class="footer__top">
+          <nav class="footer__left">
+            <a href="./quests.html" class="footer__left-item">
+              Квесты
+            </a>
+            <a href="./masterClasses.html" class="footer__left-item">
+              Мастер-классы
+            </a>
+            <a href="./party.html" class="footer__left-item">
+              Вечеринки
+            </a>
+            <a href="./animators.html" class="footer__left-item">
+              Аниматоры
+            </a>
+            <a href="./candy.html" class="footer__left-item">
+              Кенди-Бар
+            </a>
+            <a href="./additional.html" class="footer__left-item">
+              Дополнительные услуги
+            </a>
+          </nav>
+          <div class="footer__right">
+            <a href="./about.html" class="footer__right-item">
+              О нас
+            </a>
+            <a href="./club.html" class="footer__right-item">
+              Детский клуб
+            </a>
+            <a href="./gallery.html" class="footer__right-item">
+              Галерея
+            </a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <a href="#" class="footer__policy">политика конфиденциальности</a>
+        </div>
+      </div>
+  
+      <div class="footer__socials">
+        <a href="mailto:mrhappy.event@gmail.com" class="footer__socials-mail">mrhappy.event@gmail.com</a>
+        <a href="tel:+79199653519" class="footer__socials-phone">+7 919 965 35 19</a>
+        <div class="footer__socials-icons">
+          <a target="_blank" href="https://instagram.com/mrhappy.event?igshid=NzZlODBkYWE4Ng==" class="footer__socials-iconsItem">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="31" height="31" viewBox="0,0,256,256">
+              <g transform="translate(-28.16,-28.16) scale(1.22,1.22)">
+                <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(8,8)">
+                    <path
+                      d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z">
+                    </path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+          <a target="_blank" href="https://vk.com/mrhappy.event" class="footer__socials-iconsItem">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0,0,256,256">
+              <g transform="translate(-19.2,-19.2) scale(1.15,1.15)">
+                <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(8,8)">
+                    <path
+                      d="M9.08203,5c-2.24219,0 -4.08203,1.83984 -4.08203,4.08203v13.83594c0,2.24219 1.83984,4.08203 4.08203,4.08203h13.83594c2.24219,0 4.08203,-1.83984 4.08203,-4.08203v-13.83594c0,-2.24219 -1.83984,-4.08203 -4.08203,-4.08203zM9.08203,7h13.83594c1.16016,0 2.08203,0.92188 2.08203,2.08203v13.83594c0,1.16016 -0.92187,2.08203 -2.08203,2.08203h-13.83594c-1.16016,0 -2.08203,-0.92187 -2.08203,-2.08203v-13.83594c0,-1.16016 0.92188,-2.08203 2.08203,-2.08203zM15.71875,12.23047c-0.73437,-0.00781 -1.35937,0 -1.71094,0.17188c-0.23437,0.11328 -0.41406,0.37109 -0.30469,0.38281c0.13672,0.01953 0.44531,0.08594 0.60938,0.30859c0.21094,0.28516 0.20313,0.92969 0.20313,0.92969c0,0 0.11719,1.77344 -0.28516,1.99609c-0.27734,0.15234 -0.65625,-0.15625 -1.47656,-1.56641c-0.41797,-0.72656 -0.73437,-1.52734 -0.73437,-1.52734c0,0 -0.05859,-0.14844 -0.16797,-0.22656c-0.13281,-0.09766 -0.31641,-0.12891 -0.31641,-0.12891l-1.95703,0.01172c0,0 -0.29297,0.01172 -0.39844,0.13672c-0.09766,0.11719 -0.00781,0.34766 -0.00781,0.34766c0,0 1.53125,3.58203 3.26563,5.38672c1.58984,1.65625 3.39453,1.54688 3.39453,1.54688h0.82031c0,0 0.24609,-0.02734 0.37109,-0.16016c0.11719,-0.125 0.11328,-0.35937 0.11328,-0.35937c0,0 -0.01562,-1.09766 0.49219,-1.26172c0.50391,-0.15625 1.14453,1.0625 1.82813,1.53125c0.51953,0.35547 0.91406,0.27734 0.91406,0.27734l1.82813,-0.02734c0,0 0.95313,-0.05859 0.5,-0.8125c-0.03516,-0.05859 -0.26172,-0.55469 -1.35547,-1.57031c-1.14844,-1.0625 -0.99609,-0.89062 0.38672,-2.73047c0.83984,-1.12109 1.17578,-1.80469 1.07031,-2.10156c-0.10156,-0.27734 -0.71875,-0.20312 -0.71875,-0.20312l-2.05859,0.01172c0,0 -0.15234,-0.01953 -0.26562,0.04688c-0.10937,0.06641 -0.17969,0.22266 -0.17969,0.22266c0,0 -0.32812,0.86719 -0.76172,1.60547c-0.91406,1.55469 -1.28516,1.64063 -1.43359,1.54297c-0.34766,-0.22656 -0.26172,-0.90625 -0.26172,-1.38672c0,-1.51172 0.23047,-2.13672 -0.44531,-2.30078c-0.22266,-0.05469 -0.38672,-0.08984 -0.95703,-0.09375z">
+                    </path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+  
+    </footer>
+    <script src="./plugins/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

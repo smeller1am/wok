@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/icon.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title></title>
+</head>
+
+<body>
+    <div class="overlayBubble">
+        <img src="./assets/img/эффекты фон.png" alt="">
+    </div>
+    <div class="overlayStar">
+        <img src="./assets/img/эффекты фон звезды.png" alt="">
+    </div>
+    <header class="header">
+      <div class="header__top">
+        <a href="/index.html" class="header__top-logo">
+          <img src="./assets/img/MR.HAPPY.png" alt="">
+        </a>
+        <div class="header__top-socials">
+          <a href="tel:+79199653519" class="header__top-phone">+7 919 965 35 19</a>
+          <div class="header__icons">
+            <a target="_blank" href="https://instagram.com/mrhappy.event?igshid=NzZlODBkYWE4Ng==" class="header__icons-item">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="31" height="31" viewBox="0,0,256,256">
+                <g transform="translate(-28.16,-28.16) scale(1.22,1.22)">
+                  <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                    style="mix-blend-mode: normal">
+                    <g transform="scale(8,8)">
+                      <path
+                        d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z">
+                      </path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </a>
+            <a target="_blank" href="https://vk.com/mrhappy.event" class="header__icons-item">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0,0,256,256">
+                <g transform="translate(-19.2,-19.2) scale(1.15,1.15)">
+                  <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                    style="mix-blend-mode: normal">
+                    <g transform="scale(8,8)">
+                      <path
+                        d="M9.08203,5c-2.24219,0 -4.08203,1.83984 -4.08203,4.08203v13.83594c0,2.24219 1.83984,4.08203 4.08203,4.08203h13.83594c2.24219,0 4.08203,-1.83984 4.08203,-4.08203v-13.83594c0,-2.24219 -1.83984,-4.08203 -4.08203,-4.08203zM9.08203,7h13.83594c1.16016,0 2.08203,0.92188 2.08203,2.08203v13.83594c0,1.16016 -0.92187,2.08203 -2.08203,2.08203h-13.83594c-1.16016,0 -2.08203,-0.92187 -2.08203,-2.08203v-13.83594c0,-1.16016 0.92188,-2.08203 2.08203,-2.08203zM15.71875,12.23047c-0.73437,-0.00781 -1.35937,0 -1.71094,0.17188c-0.23437,0.11328 -0.41406,0.37109 -0.30469,0.38281c0.13672,0.01953 0.44531,0.08594 0.60938,0.30859c0.21094,0.28516 0.20313,0.92969 0.20313,0.92969c0,0 0.11719,1.77344 -0.28516,1.99609c-0.27734,0.15234 -0.65625,-0.15625 -1.47656,-1.56641c-0.41797,-0.72656 -0.73437,-1.52734 -0.73437,-1.52734c0,0 -0.05859,-0.14844 -0.16797,-0.22656c-0.13281,-0.09766 -0.31641,-0.12891 -0.31641,-0.12891l-1.95703,0.01172c0,0 -0.29297,0.01172 -0.39844,0.13672c-0.09766,0.11719 -0.00781,0.34766 -0.00781,0.34766c0,0 1.53125,3.58203 3.26563,5.38672c1.58984,1.65625 3.39453,1.54688 3.39453,1.54688h0.82031c0,0 0.24609,-0.02734 0.37109,-0.16016c0.11719,-0.125 0.11328,-0.35937 0.11328,-0.35937c0,0 -0.01562,-1.09766 0.49219,-1.26172c0.50391,-0.15625 1.14453,1.0625 1.82813,1.53125c0.51953,0.35547 0.91406,0.27734 0.91406,0.27734l1.82813,-0.02734c0,0 0.95313,-0.05859 0.5,-0.8125c-0.03516,-0.05859 -0.26172,-0.55469 -1.35547,-1.57031c-1.14844,-1.0625 -0.99609,-0.89062 0.38672,-2.73047c0.83984,-1.12109 1.17578,-1.80469 1.07031,-2.10156c-0.10156,-0.27734 -0.71875,-0.20312 -0.71875,-0.20312l-2.05859,0.01172c0,0 -0.15234,-0.01953 -0.26562,0.04688c-0.10937,0.06641 -0.17969,0.22266 -0.17969,0.22266c0,0 -0.32812,0.86719 -0.76172,1.60547c-0.91406,1.55469 -1.28516,1.64063 -1.43359,1.54297c-0.34766,-0.22656 -0.26172,-0.90625 -0.26172,-1.38672c0,-1.51172 0.23047,-2.13672 -0.44531,-2.30078c-0.22266,-0.05469 -0.38672,-0.08984 -0.95703,-0.09375z">
+                      </path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <nav class="header__nav">
+            <a href="/" class="header__nav-item">
+              Главная
+            </a>
+            <div class="header__nav-item">
+              Наши услуги
+              <div class="header__dropdown">
+                <a href="./quests.html" class="header__dropdown-item">Квесты</a>
+                <a href="./masterClasses.html" class="header__dropdown-item">Мастер-классы</a>
+                <a href="./party.html" class="header__dropdown-item">Вечеринки</a>
+                <a href="./candy.html" class="header__dropdown-item">Кенди-Бар</a>
+                <a href="./animators.html" class="header__dropdown-item">Аниматоры</a>
+                <a href="./additional.html" class="header__dropdown-item">Дополнительные услуги</a>
+              </div>
+            </div>
+            <a href="./about.html" class="header__nav-item">
+              О нас
+            </a>
+            <a href="./club.html" class="header__nav-item">
+              Детский клуб
+            </a>
+            <a href="./gallery.html" class="header__nav-item">
+              Галерея
+            </a>
+          </nav>
+        </div>
+      </div>
+      <div class="burger">
+        <div class="burger__line"></div>
+      </div>
+      <a href="#" class="header__side">
+        <img src="./assets/img/Логотип(Растр)без фона 1.png" alt="" >
+      </a>
+    </header>
+    <main>
+      <div class="menu">
+        <div class="menu__list">
+          <a href="/" class="menu__list-item">Главная</a>
+          <div class="menu__list-item menu__list-item--accordeon"> Наши услуги <img
+              src="./assets/svg/keyboard-right-arrow-button-1_icon-icons.com_72690.svg">
+            <div class="menu__dropdown">
+              <a href="./quests.html" class="menu__dropdown-item">Квесты</a>
+              <a href="./masterClasses.html" class="menu__dropdown-item">Мастер-классы</a>
+              <a href="./party.html" class="menu__dropdown-item">Вечеринки</a>
+              <a href="./candy.html" class="menu__dropdown-item">Кенди-Бар</a>
+              <a href="./animators.html" class="menu__dropdown-item">Аниматоры</a>
+              <a href="./additional.html" class="menu__dropdown-item">Дополнительные услуги</a>
+            </div>
+          </div>
+          <a href="./about.html" class="menu__list-item"> О нас</a>
+          <a href="./club.html" class="menu__list-item"> Детский клуб</a>
+          <a href="./gallery.html" class="menu__list-item">Галерея</a>
+        </div>
+        <div class="menu__icons">
+          <a href="#" class="menu__icons-item">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="31" height="31" viewBox="0,0,256,256">
+              <g transform="translate(-28.16,-28.16) scale(1.22,1.22)">
+                <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(8,8)">
+                    <path
+                      d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z">
+                    </path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+          <a href="#" class="menu__top-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0,0,256,256">
+              <g transform="translate(-19.2,-19.2) scale(1.15,1.15)">
+                <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(8,8)">
+                    <path
+                      d="M9.08203,5c-2.24219,0 -4.08203,1.83984 -4.08203,4.08203v13.83594c0,2.24219 1.83984,4.08203 4.08203,4.08203h13.83594c2.24219,0 4.08203,-1.83984 4.08203,-4.08203v-13.83594c0,-2.24219 -1.83984,-4.08203 -4.08203,-4.08203zM9.08203,7h13.83594c1.16016,0 2.08203,0.92188 2.08203,2.08203v13.83594c0,1.16016 -0.92187,2.08203 -2.08203,2.08203h-13.83594c-1.16016,0 -2.08203,-0.92187 -2.08203,-2.08203v-13.83594c0,-1.16016 0.92188,-2.08203 2.08203,-2.08203zM15.71875,12.23047c-0.73437,-0.00781 -1.35937,0 -1.71094,0.17188c-0.23437,0.11328 -0.41406,0.37109 -0.30469,0.38281c0.13672,0.01953 0.44531,0.08594 0.60938,0.30859c0.21094,0.28516 0.20313,0.92969 0.20313,0.92969c0,0 0.11719,1.77344 -0.28516,1.99609c-0.27734,0.15234 -0.65625,-0.15625 -1.47656,-1.56641c-0.41797,-0.72656 -0.73437,-1.52734 -0.73437,-1.52734c0,0 -0.05859,-0.14844 -0.16797,-0.22656c-0.13281,-0.09766 -0.31641,-0.12891 -0.31641,-0.12891l-1.95703,0.01172c0,0 -0.29297,0.01172 -0.39844,0.13672c-0.09766,0.11719 -0.00781,0.34766 -0.00781,0.34766c0,0 1.53125,3.58203 3.26563,5.38672c1.58984,1.65625 3.39453,1.54688 3.39453,1.54688h0.82031c0,0 0.24609,-0.02734 0.37109,-0.16016c0.11719,-0.125 0.11328,-0.35937 0.11328,-0.35937c0,0 -0.01562,-1.09766 0.49219,-1.26172c0.50391,-0.15625 1.14453,1.0625 1.82813,1.53125c0.51953,0.35547 0.91406,0.27734 0.91406,0.27734l1.82813,-0.02734c0,0 0.95313,-0.05859 0.5,-0.8125c-0.03516,-0.05859 -0.26172,-0.55469 -1.35547,-1.57031c-1.14844,-1.0625 -0.99609,-0.89062 0.38672,-2.73047c0.83984,-1.12109 1.17578,-1.80469 1.07031,-2.10156c-0.10156,-0.27734 -0.71875,-0.20312 -0.71875,-0.20312l-2.05859,0.01172c0,0 -0.15234,-0.01953 -0.26562,0.04688c-0.10937,0.06641 -0.17969,0.22266 -0.17969,0.22266c0,0 -0.32812,0.86719 -0.76172,1.60547c-0.91406,1.55469 -1.28516,1.64063 -1.43359,1.54297c-0.34766,-0.22656 -0.26172,-0.90625 -0.26172,-1.38672c0,-1.51172 0.23047,-2.13672 -0.44531,-2.30078c-0.22266,-0.05469 -0.38672,-0.08984 -0.95703,-0.09375z">
+                    </path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+        <div class="breadcrumbs">
+            <div class="container">
+                <a href="/index.html" class="breadcrumbs__link">Главная</a>
+                <a href="#" class="breadcrumbs__link">О нас</a>
+            </div>
+        </div>
+        <section class="club">
+            <div class="container">
+                <div class="club__box">
+                    <div class="club__content">
+                        <h2 class="club__content-title">Детский клуб</h2>
+                        <p class="club__content-text">Это детский центр развития детей, место, где проводятся занятия
+                            для детей в возрасте от 1 года до 7 лет. В группах по 4-5 человек с ними проводят занятия на
+                            развитие внимания, памяти, логики, мышления, развитие мелкой моторики, обучение чтению и
+                            счету, а также подготовка к учёбе в школе.</p>
+                        <div class="club__content-items">
+                            <p class="club__content-item">Время работы: 10:00 - 22:00 Пн - Вс</p>
+                            <p class="club__content-item">Адрес: г. Москва, ул. Митинская, 19</p>
+                            <p class="club__content-item">Номер телефона: <a href="tel:89269091128">89269091128</a> </p>
+                        </div>
+                    </div>
+                    <img src="./assets/img/image 1201.png" alt="" class="club__img">
+                </div>
+            </div>
+        </section>
+        <section class="call">
+            <div class="container">
+                <h2 class="title title--plMid title--radius">Свяжитесь с нами сейчас и получите пробное бесплатное
+                    занятие!</h2>
+                <form action="" class="call__form">
+                    <input type="text" class="call__form-input" placeholder="Ваше имя">
+                    <input type="tel" class="call__form-input" placeholder="Введите номер телефона">
+                    <a href="#" class="call__form-button button button--yellow">Оставить заметку</a>
+                </form>
+            </div>
+        </section>
+        <section class="teachers">
+            <div class="container">
+                <h2 class="bubbleTitle">
+                    Кто ведёт занятия
+                </h2>
+                <div class="teachers__list">
+                    <div class="teachers__item">
+                        <img src="./assets/img/ai8hpufgz9s 1.png" alt="" class="teachers__item-img">
+                        <div class="teachers__item-content">
+                            <div class="teachers__item-name">Каринэ</div>
+                            <ul class="teachers__item-list">
+                                <li class="teachers__item-listItem">Методист детского центра, стаж работы более 20 лет</li>
+                                <li class="teachers__item-listItem">Педагог дошкольного образования</li>
+                                <li class="teachers__item-listItem">Монтессори педагог</li>
+                                <li class="teachers__item-listItem">Педагог английского языка</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="teachers__item">
+                        <img src="./assets/img/mjbjpd-izre 1.png" alt="" class="teachers__item-img">
+                        <div class="teachers__item-content">
+                            <div class="teachers__item-name">Елена</div>
+                            <ul class="teachers__item-list">
+                                <li class="teachers__item-listItem">Методист детского центра, стаж работы более 20 лет
+                                    </li>
+                                <li class="teachers__item-listItem"> Педагог дошкольного образования</li>
+                                <li class="teachers__item-listItem">Монтессори педагог</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="teachers__item">
+                        <img src="./assets/img/s3dfi2-1fcm 1.png" alt="" class="teachers__item-img">
+                        <div class="teachers__item-content">
+                            <div class="teachers__item-name">Евгения</div>
+                        <ul class="teachers__item-list">
+                            <li class="teachers__item-listItem">Методист детского центра, стаж работы более 20 лет</li>
+                            <li class="teachers__item-listItem">Педагог дошкольного образования</li>
+                            <li class="teachers__item-listItem">Монтессори педагог, стаж 9 лет</li>
+                            <li class="teachers__item-listItem"> Педагог художественной студии</li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="teachers__item">
+                        <img src="./assets/img/tq1e3p6otcq 1.png" alt="" class="teachers__item-img">
+                        <div class="teachers__item-content">
+                            <div class="teachers__item-name">Яна</div>
+                        <ul class="teachers__item-list">
+                            <li class="teachers__item-listItem">Педагог дошкольного образования, стаж работы более 10 лет
+                               </li>
+                            <li class="teachers__item-listItem"> Логопед, стад работы более 7 лет</li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="teachers__item">
+                        <img src="./assets/img/picpfitvnso 1.png" alt="" class="teachers__item-img">
+                       <div class="teachers__item-content">
+                        <div class="teachers__item-name">Варвара</div>
+                        <ul class="teachers__item-list">
+                            <li class="teachers__item-listItem">Администратор детского центра</li>
+                            <li class="teachers__item-listItem">Педагог дошкольного образования, стаж работы более 5 лет</li>
+                        </ul>
+                       </div>
+                    </div>
+                    <div class="teachers__item">
+                        <img src="./assets/img/wvoba7a5rke 1.png" alt="" class="teachers__item-img">
+                        <div class="teachers__item-content">
+                            <div class="teachers__item-name">Елена</div>
+                        <ul class="teachers__item-list">
+                            <li class="teachers__item-listItem">Преподаватель английского и немецкого языка
+                            </li>
+                            <li class="teachers__item-listItem"> Монтессори педагог, стаж 3 лет</li>
+                            <li class="teachers__item-listItem">Репетитор</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="scedule">
+            <div class="container">
+                <h2 class="bubbleTitle bubbleTitle--mb47">Расписание наших занятий</h2>
+                <div class="scedule__wrapper">
+                    <div class="scedule__wrapper-left">
+                        <div class="scedule__item">
+                            <div class="scedule__item-name">Понедельник</div>
+                            <div class="scedule__table">
+                                <div class="scedule__table-left">
+                                    <div class="scedule__table-leftItem">Детский сад</div>
+                                    <div class="scedule__table-leftItem">Мини сад</div>
+                                    <div class="scedule__table-leftItem">Адаптация к саду</div>
+                                    <div class="scedule__table-leftItem">Английский язык</div>
+                                </div>
+                                <div class="scedule__table-right">
+                                    <div class="scedule__table-rightItem">8:00-19:00</div>
+                                    <div class="scedule__table-rightItem">8:00-13:00</div>
+                                    <div class="scedule__table-rightItem">9:00-12:00</div>
+                                    <div class="scedule__table-rightItem">(по записи)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scedule__item">
+                            <div class="scedule__item-name">Вторник</div>
+                            <div class="scedule__table">
+                                <div class="scedule__table-left">
+                                    <div class="scedule__table-leftItem">Детский сад</div>
+                                    <div class="scedule__table-leftItem">Мини сад</div>
+                                    <div class="scedule__table-leftItem">Адаптация к саду</div>
+                                    <div class="scedule__table-leftItem">Английский язык</div>
+                                </div>
+                                <div class="scedule__table-right">
+                                    <div class="scedule__table-rightItem">8:00-19:00</div>
+                                    <div class="scedule__table-rightItem">8:00-13:00</div>
+                                    <div class="scedule__table-rightItem">9:00-12:00</div>
+                                    <div class="scedule__table-rightItem">(по записи)</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="scedule__wrapper-center">
+                        <div class="scedule__item">
+                            <div class="scedule__item-name">Среда</div>
+                            <div class="scedule__table">
+                                <div class="scedule__table-left">
+                                    <div class="scedule__table-leftItem">Детский сад</div>
+                                    <div class="scedule__table-leftItem">Мини сад</div>
+                                    <div class="scedule__table-leftItem">Адаптация к саду</div>
+                                    <div class="scedule__table-leftItem">Подготовка к школе (4,5-5,5 лет)</div>
+                                    <div class="scedule__table-leftItem">Танцевальная студия (5-6,5 лет)</div>
+                                    <div class="scedule__table-leftItem">Танцевальная студия(3-4,5 лет)</div>
+                                    <div class="scedule__table-leftItem">Подготовка к школе (5,5-7 лет)</div>
+                                </div>
+                                <div class="scedule__table-right">
+                                    <div class="scedule__table-rightItem">8:00-19:00</div>
+                                    <div class="scedule__table-rightItem">8:00-13:00</div>
+                                    <div class="scedule__table-rightItem">9:00-12:00</div>
+                                    <div class="scedule__table-rightItem">17:00-18:00</div>
+                                    <div class="scedule__table-rightItem">18:00-18:55</div>
+                                    <div class="scedule__table-rightItem">17:10-17:55</div>
+                                    <div class="scedule__table-rightItem">18:00-19:00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scedule__item">
+                            <div class="scedule__item-name">Четверг</div>
+                            <div class="scedule__table">
+                                <div class="scedule__table-left">
+                                    <div class="scedule__table-leftItem">Детский сад</div>
+                                    <div class="scedule__table-leftItem">Мини сад</div>
+                                    <div class="scedule__table-leftItem">Адаптация к саду</div>
+                                    <div class="scedule__table-leftItem">Подготовка к школе (4,5-5,5 лет)</div>
+                                    <div class="scedule__table-leftItem">Танцевальная студия (5-6,5 лет)</div>
+                                    <div class="scedule__table-leftItem">Танцевальная студия(3-4,5 лет)</div>
+                                    <div class="scedule__table-leftItem">Подготовка к школе (5,5-7 лет)</div>
+                                </div>
+                                <div class="scedule__table-right">
+                                    <div class="scedule__table-rightItem">8:00-19:00</div>
+                                    <div class="scedule__table-rightItem">8:00-13:00</div>
+                                    <div class="scedule__table-rightItem">9:00-12:00</div>
+                                    <div class="scedule__table-rightItem">17:00-18:00</div>
+                                    <div class="scedule__table-rightItem">18:00-18:55</div>
+                                    <div class="scedule__table-rightItem">17:10-17:55</div>
+                                    <div class="scedule__table-rightItem">18:00-19:00</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="scedule__wrapper-right">
+                        <div class="scedule__item">
+                            <div class="scedule__item-name">Пятница</div>
+                            <div class="scedule__table">
+                                <div class="scedule__table-left">
+                                    <div class="scedule__table-leftItem">Детский сад</div>
+                                    <div class="scedule__table-leftItem">Мини сад</div>
+                                    <div class="scedule__table-leftItem">Адаптация к саду</div>
+                                </div>
+                                <div class="scedule__table-right">
+                                    <div class="scedule__table-rightItem">8:00-19:00</div>
+                                    <div class="scedule__table-rightItem">8:00-13:00</div>
+                                    <div class="scedule__table-rightItem">9:00-12:00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scedule__item scedule__item--holiday">
+                            <div class="scedule__item-name">Суббота/Воскрсенье</div>
+                            <p class="scedule__item-text">
+                                В эти дни мы проводим праздники, которые можно заказать по телефону
+                            </p>
+                            <a href="tel:89199653519" class="scedule__item-phone">8(919) 965-35-19</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="guests">
+            <div class="container">
+                <h2 class="bubbleTitle">У нас в гостях</h2>
+                <div class="guests__swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./assets/img/guests.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./assets/img/guests2.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./assets/img/guests3.png" alt=""></div>
+                    </div>
+                    <div class="swiper-buttons">
+                        <div class="swiper-button-prev"><img src="./assets/img/стрелка влево.png" alt=""></div>
+                        <div class="swiper-button-next"><img src="./assets/img/стрелка вправо.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="map">
+            <h2 class="bubbleTitle bubbleTitle--mb24">Как к нам добраться?</h2>
+            <div id="map"></div>
+        </section>
+    </main>
+    <footer class="footer">
+      <a href="/index.html" class="footer__logo">
+        <img src="./assets/img/Логотип(Растр)без фона 2.png" alt="" class="footer__logo-img">
+        <img src="./assets/img/MR.HAPPY.png" alt="" class="footer__logo-text">
+      </a>
+      <div class="container">
+        <div class="footer__top">
+          <nav class="footer__left">
+            <a href="./quests.html" class="footer__left-item">
+              Квесты
+            </a>
+            <a href="./masterClasses.html" class="footer__left-item">
+              Мастер-классы
+            </a>
+            <a href="./party.html" class="footer__left-item">
+              Вечеринки
+            </a>
+            <a href="./animators.html" class="footer__left-item">
+              Аниматоры
+            </a>
+            <a href="./candy.html" class="footer__left-item">
+              Кенди-Бар
+            </a>
+            <a href="./additional.html" class="footer__left-item">
+              Дополнительные услуги
+            </a>
+          </nav>
+          <div class="footer__right">
+            <a href="./about.html" class="footer__right-item">
+              О нас
+            </a>
+            <a href="./club.html" class="footer__right-item">
+              Детский клуб
+            </a>
+            <a href="./gallery.html" class="footer__right-item">
+              Галерея
+            </a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <a href="#" class="footer__policy">политика конфиденциальности</a>
+        </div>
+      </div>
+  
+      <div class="footer__socials">
+        <a href="mailto:mrhappy.event@gmail.com" class="footer__socials-mail">mrhappy.event@gmail.com</a>
+        <a href="tel:+79199653519" class="footer__socials-phone">+7 919 965 35 19</a>
+        <div class="footer__socials-icons">
+          <a target="_blank" href="https://instagram.com/mrhappy.event?igshid=NzZlODBkYWE4Ng==" class="footer__socials-iconsItem">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="31" height="31" viewBox="0,0,256,256">
+              <g transform="translate(-28.16,-28.16) scale(1.22,1.22)">
+                <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(8,8)">
+                    <path
+                      d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z">
+                    </path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+          <a target="_blank" href="https://vk.com/mrhappy.event" class="footer__socials-iconsItem">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0,0,256,256">
+              <g transform="translate(-19.2,-19.2) scale(1.15,1.15)">
+                <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(8,8)">
+                    <path
+                      d="M9.08203,5c-2.24219,0 -4.08203,1.83984 -4.08203,4.08203v13.83594c0,2.24219 1.83984,4.08203 4.08203,4.08203h13.83594c2.24219,0 4.08203,-1.83984 4.08203,-4.08203v-13.83594c0,-2.24219 -1.83984,-4.08203 -4.08203,-4.08203zM9.08203,7h13.83594c1.16016,0 2.08203,0.92188 2.08203,2.08203v13.83594c0,1.16016 -0.92187,2.08203 -2.08203,2.08203h-13.83594c-1.16016,0 -2.08203,-0.92187 -2.08203,-2.08203v-13.83594c0,-1.16016 0.92188,-2.08203 2.08203,-2.08203zM15.71875,12.23047c-0.73437,-0.00781 -1.35937,0 -1.71094,0.17188c-0.23437,0.11328 -0.41406,0.37109 -0.30469,0.38281c0.13672,0.01953 0.44531,0.08594 0.60938,0.30859c0.21094,0.28516 0.20313,0.92969 0.20313,0.92969c0,0 0.11719,1.77344 -0.28516,1.99609c-0.27734,0.15234 -0.65625,-0.15625 -1.47656,-1.56641c-0.41797,-0.72656 -0.73437,-1.52734 -0.73437,-1.52734c0,0 -0.05859,-0.14844 -0.16797,-0.22656c-0.13281,-0.09766 -0.31641,-0.12891 -0.31641,-0.12891l-1.95703,0.01172c0,0 -0.29297,0.01172 -0.39844,0.13672c-0.09766,0.11719 -0.00781,0.34766 -0.00781,0.34766c0,0 1.53125,3.58203 3.26563,5.38672c1.58984,1.65625 3.39453,1.54688 3.39453,1.54688h0.82031c0,0 0.24609,-0.02734 0.37109,-0.16016c0.11719,-0.125 0.11328,-0.35937 0.11328,-0.35937c0,0 -0.01562,-1.09766 0.49219,-1.26172c0.50391,-0.15625 1.14453,1.0625 1.82813,1.53125c0.51953,0.35547 0.91406,0.27734 0.91406,0.27734l1.82813,-0.02734c0,0 0.95313,-0.05859 0.5,-0.8125c-0.03516,-0.05859 -0.26172,-0.55469 -1.35547,-1.57031c-1.14844,-1.0625 -0.99609,-0.89062 0.38672,-2.73047c0.83984,-1.12109 1.17578,-1.80469 1.07031,-2.10156c-0.10156,-0.27734 -0.71875,-0.20312 -0.71875,-0.20312l-2.05859,0.01172c0,0 -0.15234,-0.01953 -0.26562,0.04688c-0.10937,0.06641 -0.17969,0.22266 -0.17969,0.22266c0,0 -0.32812,0.86719 -0.76172,1.60547c-0.91406,1.55469 -1.28516,1.64063 -1.43359,1.54297c-0.34766,-0.22656 -0.26172,-0.90625 -0.26172,-1.38672c0,-1.51172 0.23047,-2.13672 -0.44531,-2.30078c-0.22266,-0.05469 -0.38672,-0.08984 -0.95703,-0.09375z">
+                    </path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+  
+    </footer>
+    <script src="./plugins/jquery-3.6.0.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
+    type="text/javascript">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

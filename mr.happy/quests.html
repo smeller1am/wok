@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/icon.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./plugins/nouislider.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/css/selectize.default.min.css"
+        integrity="sha512-pTaEn+6gF1IeWv3W1+7X7eM60TFu/agjgoHmYhAfLEU8Phuf6JKiiE8YmsNC0aCgQv4192s4Vai8YZ6VNM6vyQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title></title>
+</head>
+
+<body>
+    <div class="overlayBubble">
+        <img src="./assets/img/эффекты фон.png" alt="">
+    </div>
+    <div class="overlayStar">
+        <img src="./assets/img/эффекты фон звезды.png" alt="">
+    </div>
+    <header class="header">
+        <div class="header__top">
+          <a href="/index.html" class="header__top-logo">
+            <img src="./assets/img/MR.HAPPY.png" alt="">
+          </a>
+          <div class="header__top-socials">
+            <a href="tel:+79199653519" class="header__top-phone">+7 919 965 35 19</a>
+            <div class="header__icons">
+              <a target="_blank" href="https://instagram.com/mrhappy.event?igshid=NzZlODBkYWE4Ng==" class="header__icons-item">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="31" height="31" viewBox="0,0,256,256">
+                  <g transform="translate(-28.16,-28.16) scale(1.22,1.22)">
+                    <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                      stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                      font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                      style="mix-blend-mode: normal">
+                      <g transform="scale(8,8)">
+                        <path
+                          d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z">
+                        </path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+              <a target="_blank" href="https://vk.com/mrhappy.event" class="header__icons-item">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0,0,256,256">
+                  <g transform="translate(-19.2,-19.2) scale(1.15,1.15)">
+                    <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                      stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                      font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                      style="mix-blend-mode: normal">
+                      <g transform="scale(8,8)">
+                        <path
+                          d="M9.08203,5c-2.24219,0 -4.08203,1.83984 -4.08203,4.08203v13.83594c0,2.24219 1.83984,4.08203 4.08203,4.08203h13.83594c2.24219,0 4.08203,-1.83984 4.08203,-4.08203v-13.83594c0,-2.24219 -1.83984,-4.08203 -4.08203,-4.08203zM9.08203,7h13.83594c1.16016,0 2.08203,0.92188 2.08203,2.08203v13.83594c0,1.16016 -0.92187,2.08203 -2.08203,2.08203h-13.83594c-1.16016,0 -2.08203,-0.92187 -2.08203,-2.08203v-13.83594c0,-1.16016 0.92188,-2.08203 2.08203,-2.08203zM15.71875,12.23047c-0.73437,-0.00781 -1.35937,0 -1.71094,0.17188c-0.23437,0.11328 -0.41406,0.37109 -0.30469,0.38281c0.13672,0.01953 0.44531,0.08594 0.60938,0.30859c0.21094,0.28516 0.20313,0.92969 0.20313,0.92969c0,0 0.11719,1.77344 -0.28516,1.99609c-0.27734,0.15234 -0.65625,-0.15625 -1.47656,-1.56641c-0.41797,-0.72656 -0.73437,-1.52734 -0.73437,-1.52734c0,0 -0.05859,-0.14844 -0.16797,-0.22656c-0.13281,-0.09766 -0.31641,-0.12891 -0.31641,-0.12891l-1.95703,0.01172c0,0 -0.29297,0.01172 -0.39844,0.13672c-0.09766,0.11719 -0.00781,0.34766 -0.00781,0.34766c0,0 1.53125,3.58203 3.26563,5.38672c1.58984,1.65625 3.39453,1.54688 3.39453,1.54688h0.82031c0,0 0.24609,-0.02734 0.37109,-0.16016c0.11719,-0.125 0.11328,-0.35937 0.11328,-0.35937c0,0 -0.01562,-1.09766 0.49219,-1.26172c0.50391,-0.15625 1.14453,1.0625 1.82813,1.53125c0.51953,0.35547 0.91406,0.27734 0.91406,0.27734l1.82813,-0.02734c0,0 0.95313,-0.05859 0.5,-0.8125c-0.03516,-0.05859 -0.26172,-0.55469 -1.35547,-1.57031c-1.14844,-1.0625 -0.99609,-0.89062 0.38672,-2.73047c0.83984,-1.12109 1.17578,-1.80469 1.07031,-2.10156c-0.10156,-0.27734 -0.71875,-0.20312 -0.71875,-0.20312l-2.05859,0.01172c0,0 -0.15234,-0.01953 -0.26562,0.04688c-0.10937,0.06641 -0.17969,0.22266 -0.17969,0.22266c0,0 -0.32812,0.86719 -0.76172,1.60547c-0.91406,1.55469 -1.28516,1.64063 -1.43359,1.54297c-0.34766,-0.22656 -0.26172,-0.90625 -0.26172,-1.38672c0,-1.51172 0.23047,-2.13672 -0.44531,-2.30078c-0.22266,-0.05469 -0.38672,-0.08984 -0.95703,-0.09375z">
+                        </path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="container">
+            <nav class="header__nav">
+              <a href="/" class="header__nav-item">
+                Главная
+              </a>
+              <div class="header__nav-item">
+                Наши услуги
+                <div class="header__dropdown">
+                  <a href="./quests.html" class="header__dropdown-item">Квесты</a>
+                  <a href="./masterClasses.html" class="header__dropdown-item">Мастер-классы</a>
+                  <a href="./party.html" class="header__dropdown-item">Вечеринки</a>
+                  <a href="./candy.html" class="header__dropdown-item">Кенди-Бар</a>
+                  <a href="./animators.html" class="header__dropdown-item">Аниматоры</a>
+                  <a href="./additional.html" class="header__dropdown-item">Дополнительные услуги</a>
+                </div>
+              </div>
+              <a href="./about.html" class="header__nav-item">
+                О нас
+              </a>
+              <a href="./club.html" class="header__nav-item">
+                Детский клуб
+              </a>
+              <a href="./gallery.html" class="header__nav-item">
+                Галерея
+              </a>
+            </nav>
+          </div>
+        </div>
+        <div class="burger">
+          <div class="burger__line"></div>
+        </div>
+        <a href="#" class="header__side">
+          <img src="./assets/img/Логотип(Растр)без фона 1.png" alt="" >
+        </a>
+      </header>
+    <main>
+     <div class="menu">
+      <div class="menu__list">
+        <a href="/" class="menu__list-item">Главная</a>
+        <div class="menu__list-item menu__list-item--accordeon"> Наши услуги <img
+            src="./assets/svg/keyboard-right-arrow-button-1_icon-icons.com_72690.svg">
+          <div class="menu__dropdown">
+            <a href="./quests.html" class="menu__dropdown-item">Квесты</a>
+            <a href="./masterClasses.html" class="menu__dropdown-item">Мастер-классы</a>
+            <a href="./party.html" class="menu__dropdown-item">Вечеринки</a>
+            <a href="./candy.html" class="menu__dropdown-item">Кенди-Бар</a>
+            <a href="./animators.html" class="menu__dropdown-item">Аниматоры</a>
+            <a href="./additional.html" class="menu__dropdown-item">Дополнительные услуги</a>
+          </div>
+        </div>
+        <a href="./about.html" class="menu__list-item"> О нас</a>
+        <a href="./club.html" class="menu__list-item"> Детский клуб</a>
+        <a href="./gallery.html" class="menu__list-item">Галерея</a>
+      </div>
+      <div class="menu__icons">
+        <a href="#" class="menu__icons-item">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="31" height="31" viewBox="0,0,256,256">
+            <g transform="translate(-28.16,-28.16) scale(1.22,1.22)">
+              <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal">
+                <g transform="scale(8,8)">
+                  <path
+                    d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z">
+                  </path>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </a>
+        <a href="#" class="menu__top-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0,0,256,256">
+            <g transform="translate(-19.2,-19.2) scale(1.15,1.15)">
+              <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal">
+                <g transform="scale(8,8)">
+                  <path
+                    d="M9.08203,5c-2.24219,0 -4.08203,1.83984 -4.08203,4.08203v13.83594c0,2.24219 1.83984,4.08203 4.08203,4.08203h13.83594c2.24219,0 4.08203,-1.83984 4.08203,-4.08203v-13.83594c0,-2.24219 -1.83984,-4.08203 -4.08203,-4.08203zM9.08203,7h13.83594c1.16016,0 2.08203,0.92188 2.08203,2.08203v13.83594c0,1.16016 -0.92187,2.08203 -2.08203,2.08203h-13.83594c-1.16016,0 -2.08203,-0.92187 -2.08203,-2.08203v-13.83594c0,-1.16016 0.92188,-2.08203 2.08203,-2.08203zM15.71875,12.23047c-0.73437,-0.00781 -1.35937,0 -1.71094,0.17188c-0.23437,0.11328 -0.41406,0.37109 -0.30469,0.38281c0.13672,0.01953 0.44531,0.08594 0.60938,0.30859c0.21094,0.28516 0.20313,0.92969 0.20313,0.92969c0,0 0.11719,1.77344 -0.28516,1.99609c-0.27734,0.15234 -0.65625,-0.15625 -1.47656,-1.56641c-0.41797,-0.72656 -0.73437,-1.52734 -0.73437,-1.52734c0,0 -0.05859,-0.14844 -0.16797,-0.22656c-0.13281,-0.09766 -0.31641,-0.12891 -0.31641,-0.12891l-1.95703,0.01172c0,0 -0.29297,0.01172 -0.39844,0.13672c-0.09766,0.11719 -0.00781,0.34766 -0.00781,0.34766c0,0 1.53125,3.58203 3.26563,5.38672c1.58984,1.65625 3.39453,1.54688 3.39453,1.54688h0.82031c0,0 0.24609,-0.02734 0.37109,-0.16016c0.11719,-0.125 0.11328,-0.35937 0.11328,-0.35937c0,0 -0.01562,-1.09766 0.49219,-1.26172c0.50391,-0.15625 1.14453,1.0625 1.82813,1.53125c0.51953,0.35547 0.91406,0.27734 0.91406,0.27734l1.82813,-0.02734c0,0 0.95313,-0.05859 0.5,-0.8125c-0.03516,-0.05859 -0.26172,-0.55469 -1.35547,-1.57031c-1.14844,-1.0625 -0.99609,-0.89062 0.38672,-2.73047c0.83984,-1.12109 1.17578,-1.80469 1.07031,-2.10156c-0.10156,-0.27734 -0.71875,-0.20312 -0.71875,-0.20312l-2.05859,0.01172c0,0 -0.15234,-0.01953 -0.26562,0.04688c-0.10937,0.06641 -0.17969,0.22266 -0.17969,0.22266c0,0 -0.32812,0.86719 -0.76172,1.60547c-0.91406,1.55469 -1.28516,1.64063 -1.43359,1.54297c-0.34766,-0.22656 -0.26172,-0.90625 -0.26172,-1.38672c0,-1.51172 0.23047,-2.13672 -0.44531,-2.30078c-0.22266,-0.05469 -0.38672,-0.08984 -0.95703,-0.09375z">
+                  </path>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </a>
+      </div>
+    </div>
+        <div class="breadcrumbs breadcrumbs--mb97">
+            <div class="container">
+                <a href="/index.html" class="breadcrumbs__link">Главная</a>
+                <a href="#" class="breadcrumbs__link">Наши услуги</a>
+                <a href="#" class="breadcrumbs__link">Квесты</a>
+            </div>
+        </div>
+        <section class="topCard">
+            <div class="container">
+                <div class="topCard__box">
+                    <div class="topCard__content">
+                        <h2 class="topCard__content-title">Квесты</h2>
+                        <ul class="topCard__content-list">
+                            <li class="topCard__content-listItem">Полный комплект уникального реквизита</li>
+                            <li class="topCard__content-listItem">Более 15 различных испытаний вместе с любимыми героями
+                            </li>
+                            <li class="topCard__content-listItem">Тематические декорации</li>
+                            <li class="topCard__content-listItem">Команду аниматоров и актёров в тематических костюмах
+                            </li>
+                            <li class="topCard__content-listItem">Торжественный финал с вручением подарков!</li>
+                        </ul>
+                    </div>
+                    <img src="./assets/img/128-img_6422 1.png" alt="" class="topCard__box-img">
+                </div>
+            </div>
+        </section>
+        <section class="category">
+            <div class="container">
+                <div class="category__list">
+                    <a data-fancybox href="#potter"
+                        class="category__item category__item--pb category__item--yellowLeftTop">
+                        <div class="category__item-name">Гарри Поттер</div>
+                        <img src="./assets/img/поттер 7.png" alt="" class="category__item-img">
+                        <div class="category__item-age">для детей 9-14 лет*</div>
+                    </a>
+                    <a data-fancybox href="#pokemon"
+                        class="category__item category__item--pb category__item--yellowTop">
+                        <div class="category__item-name">Покемоны</div>
+                        <img src="./assets/img/покемон1 3.png" alt="" class="category__item-img">
+                        <div class="category__item-age">для детей 8-13 лет*</div>
+                    </a>
+                    <a data-fancybox href="#treasure"
+                        class="category__item category__item--pb category__item--yellowRightTop">
+                        <div class="category__item-name">Остров сокровищ</div>
+                        <img src="./assets/img/сокровища 4.png" alt="" class="category__item-img">
+                        <div class="category__item-age">для детей 6-11 лет*</div>
+                    </a>
+                    <a data-fancybox href="#detective"
+                        class="category__item category__item--pb category__item--grayLeft">
+                        <div class="category__item-name">Детективный</div>
+                        <img src="./assets/img//детектив4 2.png" alt="" class="category__item-img">
+                        <div class="category__item-age">для детей 11-16 лет*</div>
+                    </a>
+                    <a data-fancybox href="#alice" class="category__item category__item--pb category__item--white">
+                        <div class="category__item-name">Алиса в стране чудес</div>
+                        <img src="./assets/img/алиса4 1.png" alt="" class="category__item-img">
+                        <div class="category__item-age">для детей 4-9 лет*</div>
+                    </a>
+                    <a data-fancybox href="#fort" class="category__item category__item--pb category__item--yellowRight">
+                        <div class="category__item-name">Форт Боярд</div>
+                        <img src="./assets/img/форт боярд 1.png" alt="" class="category__item-img">
+                        <div class="category__item-age">для детей 7-12 лет*</div>
+                    </a>
+                    <a data-fancybox href="#winter"
+                        class="category__item category__item--pb category__item--yellowLeftBottom">
+                        <div class="category__item-name">Новогодний</div>
+                        <img src="./assets/img/новогодний 2.png" alt="" class="category__item-img">
+                        <div class="category__item-age">для детей 6-11 лет*</div>
+                    </a>
+                    <a data-fancybox href="#labyrinth" class="category__item category__item--pb category__item--grayBottom">
+                        <div class="category__item-name">Побег из лабиринта</div>
+                        <img src="./assets/img/лабиринт 2.png" alt="" class="category__item-img">
+                        <div class="category__item-age">для детей 10-15 лет*</div>
+                    </a>
+                    <a data-fancybox href="#team"
+                        class="category__item category__item--pb category__item--blueRightBottom">
+                        <div class="category__item-name">Тим Билдинг</div>
+                        <img src="./assets/img/тим билдинг 2.png" alt="" class="category__item-img">
+                        <div class="category__item-age">для детей 6-11 лет*</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <a href="/index.html" class="footer__logo">
+          <img src="./assets/img/Логотип(Растр)без фона 2.png" alt="" class="footer__logo-img">
+          <img src="./assets/img/MR.HAPPY.png" alt="" class="footer__logo-text">
+        </a>
+        <div class="container">
+          <div class="footer__top">
+            <nav class="footer__left">
+              <a href="./quests.html" class="footer__left-item">
+                Квесты
+              </a>
+              <a href="./masterClasses.html" class="footer__left-item">
+                Мастер-классы
+              </a>
+              <a href="./party.html" class="footer__left-item">
+                Вечеринки
+              </a>
+              <a href="./animators.html" class="footer__left-item">
+                Аниматоры
+              </a>
+              <a href="./candy.html" class="footer__left-item">
+                Кенди-Бар
+              </a>
+              <a href="./additional.html" class="footer__left-item">
+                Дополнительные услуги
+              </a>
+            </nav>
+            <div class="footer__right">
+              <a href="./about.html" class="footer__right-item">
+                О нас
+              </a>
+              <a href="./club.html" class="footer__right-item">
+                Детский клуб
+              </a>
+              <a href="./gallery.html" class="footer__right-item">
+                Галерея
+              </a>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <a href="#" class="footer__policy">политика конфиденциальности</a>
+          </div>
+        </div>
+    
+        <div class="footer__socials">
+          <a href="mailto:mrhappy.event@gmail.com" class="footer__socials-mail">mrhappy.event@gmail.com</a>
+          <a href="tel:+79199653519" class="footer__socials-phone">+7 919 965 35 19</a>
+          <div class="footer__socials-icons">
+            <a target="_blank" href="https://instagram.com/mrhappy.event?igshid=NzZlODBkYWE4Ng==" class="footer__socials-iconsItem">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="31" height="31" viewBox="0,0,256,256">
+                <g transform="translate(-28.16,-28.16) scale(1.22,1.22)">
+                  <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                    style="mix-blend-mode: normal">
+                    <g transform="scale(8,8)">
+                      <path
+                        d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z">
+                      </path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </a>
+            <a target="_blank" href="https://vk.com/mrhappy.event" class="footer__socials-iconsItem">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0,0,256,256">
+                <g transform="translate(-19.2,-19.2) scale(1.15,1.15)">
+                  <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                    style="mix-blend-mode: normal">
+                    <g transform="scale(8,8)">
+                      <path
+                        d="M9.08203,5c-2.24219,0 -4.08203,1.83984 -4.08203,4.08203v13.83594c0,2.24219 1.83984,4.08203 4.08203,4.08203h13.83594c2.24219,0 4.08203,-1.83984 4.08203,-4.08203v-13.83594c0,-2.24219 -1.83984,-4.08203 -4.08203,-4.08203zM9.08203,7h13.83594c1.16016,0 2.08203,0.92188 2.08203,2.08203v13.83594c0,1.16016 -0.92187,2.08203 -2.08203,2.08203h-13.83594c-1.16016,0 -2.08203,-0.92187 -2.08203,-2.08203v-13.83594c0,-1.16016 0.92188,-2.08203 2.08203,-2.08203zM15.71875,12.23047c-0.73437,-0.00781 -1.35937,0 -1.71094,0.17188c-0.23437,0.11328 -0.41406,0.37109 -0.30469,0.38281c0.13672,0.01953 0.44531,0.08594 0.60938,0.30859c0.21094,0.28516 0.20313,0.92969 0.20313,0.92969c0,0 0.11719,1.77344 -0.28516,1.99609c-0.27734,0.15234 -0.65625,-0.15625 -1.47656,-1.56641c-0.41797,-0.72656 -0.73437,-1.52734 -0.73437,-1.52734c0,0 -0.05859,-0.14844 -0.16797,-0.22656c-0.13281,-0.09766 -0.31641,-0.12891 -0.31641,-0.12891l-1.95703,0.01172c0,0 -0.29297,0.01172 -0.39844,0.13672c-0.09766,0.11719 -0.00781,0.34766 -0.00781,0.34766c0,0 1.53125,3.58203 3.26563,5.38672c1.58984,1.65625 3.39453,1.54688 3.39453,1.54688h0.82031c0,0 0.24609,-0.02734 0.37109,-0.16016c0.11719,-0.125 0.11328,-0.35937 0.11328,-0.35937c0,0 -0.01562,-1.09766 0.49219,-1.26172c0.50391,-0.15625 1.14453,1.0625 1.82813,1.53125c0.51953,0.35547 0.91406,0.27734 0.91406,0.27734l1.82813,-0.02734c0,0 0.95313,-0.05859 0.5,-0.8125c-0.03516,-0.05859 -0.26172,-0.55469 -1.35547,-1.57031c-1.14844,-1.0625 -0.99609,-0.89062 0.38672,-2.73047c0.83984,-1.12109 1.17578,-1.80469 1.07031,-2.10156c-0.10156,-0.27734 -0.71875,-0.20312 -0.71875,-0.20312l-2.05859,0.01172c0,0 -0.15234,-0.01953 -0.26562,0.04688c-0.10937,0.06641 -0.17969,0.22266 -0.17969,0.22266c0,0 -0.32812,0.86719 -0.76172,1.60547c-0.91406,1.55469 -1.28516,1.64063 -1.43359,1.54297c-0.34766,-0.22656 -0.26172,-0.90625 -0.26172,-1.38672c0,-1.51172 0.23047,-2.13672 -0.44531,-2.30078c-0.22266,-0.05469 -0.38672,-0.08984 -0.95703,-0.09375z">
+                      </path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+    
+      </footer>
+    <div id="potter" class="modal modal--quests  modal--potter">
+        <div class="modal__content">
+            <p class="modal__textBold modal__textBold--mb24">Гарри Поттер</p>
+            <p class="modal__text modal__text--mb20 modal__text--w75">Давным - давно жил великий волшебник Гарри Поттер,
+                дважды одержавший победу над тёмным магом Волан-де-Мортом. С тех пор прошло немало времени, и главная
+                школа чародейства и волшебства "Хогвартс" объявила набор новых учеников, готовых отправиться в
+                путешествие в мир колдунов, магических зелий и таинственных существ... </p>
+            <div class="modal__items">
+                <div class="modal__items-left">
+                    <div class="modal__items-item modal__items-item--mb96 ">Получение билетов в Хогвартс, и прибытие в школу</div>
+                    <div class="modal__items-item modal__items-item--mb71">Турник 3-ех волшебников</div>
+                    <div class="modal__items-item">Уроки Зельеварения</div>
+                </div>
+                <div class="modal__items-right">
+                    <div class="modal__items-item modal__items-item--ml44 ">Урок по левитации и изучение волшебных заклинаний</div>
+                    <div class="modal__items-item  modal__items-item--ml-54">Урок полета на метле и игра в квидич</div>
+                    <div class="modal__items-item modal__items-item--ml-63">Торжественное вручение дипломов выпускников Хогвартса</div>
+                </div>
+            </div>
+            <p class="modal__textBold">Цены на квест</p>
+            <div class="modal__table">
+                <div class="modal__table-head">
+                    <div class="modal__table-headItem">Количество участников</div>
+                    <div class="modal__table-headItem">в пределах МКАД</div>
+                    <div class="modal__table-headItem">за МКАДом (до 25км)</div>
+                    <div class="modal__table-headItem">за МКАДом (25км+)</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">до 10 человек (1 аниматор)</div>
+                    <div class="modal__table-rowItem">10 900</div>
+                    <div class="modal__table-rowItem"> 12 900</div>
+                    <div class="modal__table-rowItem">15 900</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">11-20 человек (2 аниматора)</div>
+                    <div class="modal__table-rowItem">14 900</div>
+                    <div class="modal__table-rowItem"> 16 900</div>
+                    <div class="modal__table-rowItem">19 900</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">21-30 человек (3 аниматора)</div>
+                    <div class="modal__table-rowItem">18 900</div>
+                    <div class="modal__table-rowItem"> 20 900</div>
+                    <div class="modal__table-rowItem">23 900</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">31-40 человек (4 аниматора)</div>
+                    <div class="modal__table-rowItem">22 900</div>
+                    <div class="modal__table-rowItem"> 24 900</div>
+                    <div class="modal__table-rowItem">27 900</div>
+                </div>
+            </div>
+            <div class="modal__buttons">
+                <a href="./ordering.html" class="modal__button button button--white">оформить заявку</a>
+                <a href="./gallery.html" class="modal__button button button--white">посмотреть фотоальбом</a>
+            </div>
+        </div>
+        <svg width="1016" height="435" viewBox="0 0 1016 435" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1013.82 297.279V299.332" stroke="#8F4519" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
+            <path d="M278.932 83.7936C294.732 111.551 329.015 130.369 358.305 140.586C421.176 162.518 496.958 143.012 558.561 124.849C589.808 115.636 620.144 103.408 651.049 93.145C691.421 79.7378 732.042 67.3184 771.363 50.9496C826.233 28.1079 883.367 -14.1211 945.96 8.64022C984.642 22.7062 967.899 76.9766 952.119 102.04C944.757 113.733 935.272 125.139 923.494 132.603C917.951 136.117 909.155 137.135 905.019 141.27" stroke="#CE7430" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
+            <path d="M853.701 172.062C875.303 173.262 896.634 179.672 916.196 188.712C936.778 198.223 979.766 215.876 979.147 244.364C978.576 270.599 950.841 280.114 928.969 276.181C915.395 273.741 906.233 266.068 894.756 260.33" stroke="#CE7430" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
+            <path d="M467.784 260.33C454.199 263.348 440.496 272.643 435.169 285.875C423.487 314.891 451.593 320.837 473.601 321.684C501 322.738 521.156 324.344 521.156 354.756" stroke="#CE7430" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
+            <path d="M498.576 408.128C463.27 431.245 424.337 446.187 387.043 415.997C371.225 403.191 358.293 384.961 355.112 364.564C352.818 349.856 359.11 330.832 349.638 317.807C335.458 298.31 307.495 297.279 285.888 297.279C273.267 297.279 255.541 296.037 246.088 305.49" stroke="#CE7430" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
+            <path d="M20.2855 293.174C9.43465 289.557 3.39452 272.53 2.26697 262.383C0.0453566 242.388 13.5547 234.564 28.4965 225.433" stroke="#CE7430" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
+        </svg>
+        <img src="./assets/modalBackground/Group 10.png" alt="">
+    </div>
+    <div id="pokemon" class="modal modal--quests  modal--pokemon">
+        <div class="modal__content">
+            <p class="modal__textBold modal__textBold--mb24">Покемоны</p>
+            <p class="modal__text modal__text--w75">На окраине Алабастии случилось горе! Пока Эш и его друзья спали,
+                команда "R" украла и заколдовала всех их покемонов. Им на помощь нужны отважные герои, которые помогут
+                освободить этих безобидных зверьков. Проходите испытания на ловкость и смекалку, ищите подсказки и
+                получайте специальные жетоны, пора вернуть наших покемонов домой. Но будьте аккуратны и внимательны,
+                друзья, команда "R" расставила свои ловушки!</p>
+            <p class="modal__textBold">Что входит в программу?</p>
+            <div class="modal__items">
+                <div class="modal__items-left">
+                    <div class="modal__items-item modal__items-item--mt30 ">Встреча, раздача персональных ролей участникам и вручение пустых
+                        покеболов</div>
+                    <div class="modal__items-item modal__items-item--mt53">Раздача персональных ролей участникам и вручение пустых покеболов
+                    </div>
+                    <div class="modal__items-item modal__items-item--mt53">Победа над командой "R" с использованием дымовой бомбы</div>
+                    <div class="modal__items-item modal__items-item--mt94">Памятные дипломы всем участникам праздника</div>
+                </div>
+                <div class="modal__items-right">
+                    <div class="modal__items-item modal__items-item--mt97 ">Участие в главном сражении со злобной командой "R"</div>
+                    <div class="modal__items-item modal__items-item--mt47">Ловля покемонов с использованием покедекса и радара</div>
+                    <div class="modal__items-item">Загадки и испытания на ловкость, внимательность и сообразительность
+                    </div>
+                </div>
+            </div>
+            <p class="modal__textBold">Цены на квест</p>
+            <div class="modal__table">
+                <div class="modal__table-head">
+                    <div class="modal__table-headItem">Количество участников</div>
+                    <div class="modal__table-headItem">в пределах МКАД</div>
+                    <div class="modal__table-headItem">за МКАДом (до 25км)</div>
+                    <div class="modal__table-headItem">за МКАДом (25км+)</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">до 10 человек (1 аниматор)</div>
+                    <div class="modal__table-rowItem">10 900</div>
+                    <div class="modal__table-rowItem"> 12 900</div>
+                    <div class="modal__table-rowItem">15 900</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">11-20 человек (2 аниматора)</div>
+                    <div class="modal__table-rowItem">14 900</div>
+                    <div class="modal__table-rowItem"> 16 900</div>
+                    <div class="modal__table-rowItem">19 900</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">21-30 человек (3 аниматора)</div>
+                    <div class="modal__table-rowItem">18 900</div>
+                    <div class="modal__table-rowItem"> 20 900</div>
+                    <div class="modal__table-rowItem">23 900</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">31-40 человек (4 аниматора)</div>
+                    <div class="modal__table-rowItem">22 900</div>
+                    <div class="modal__table-rowItem"> 24 900</div>
+                    <div class="modal__table-rowItem">27 900</div>
+                </div>
+            </div>
+            <a href="./ordering.html" class="modal__button button  button--white">оформить заявку</a>
+        </div>
+        <svg width="875" height="392" viewBox="0 0 875 392" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M355.963 37.9617C408.858 35.6281 459.022 18.4381 510.957 9.92898C538.423 5.42889 607.469 -11.8602 615.673 30.1849C618.382 44.0688 611.747 56.0098 607.896 68.5264C605.673 75.7522 600.787 83.3705 593.608 85.1651" stroke="#FF0404" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
+            <path d="M85.7642 147.018C86.7243 155.659 99.5027 157.3 106.201 159.135C129.385 165.49 151.267 174.627 174.112 181.742C206.306 191.77 244.62 191.122 278.014 189.158C307.874 187.401 335.565 174.982 365.729 174.689C378.545 174.565 396.78 173.185 406.422 182.828" stroke="#FF0404" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
+            <path d="M403.167 303.277C376.648 312.117 360.753 300.466 341.133 284.378C329.155 274.556 313.909 260.957 297.366 260.957" stroke="#FF0404" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
+            <path d="M2.75146 270.724C2.75146 285.958 20.7702 291.537 32.864 293.512C68.0726 299.26 104.369 303.398 139.117 311.416C151.073 314.175 160.883 319.722 171.762 325.161C175.4 326.98 186.088 331.041 186.682 336.194C187.259 341.193 188.087 347.577 193.193 348.853" stroke="#FF0404" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
+            <path d="M626.162 124.23C628.993 132.723 642.98 137.713 649.493 142.949C664.103 154.694 677.38 159.469 696.063 163.114C738.035 171.304 779.942 164.509 821.848 162.029C829.066 161.602 878.837 156.835 871.674 177.13C866.397 192.083 836.889 187.71 824.742 187.71" stroke="#FF0404" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
+            <path d="M821.487 212.126C837.264 236.509 841.455 271.001 835.865 299.299C832.18 317.956 825.017 338.394 810.997 351.747C797.574 364.531 780.288 384.053 761.443 388.461C719.902 398.176 705.852 353.821 687.382 326.517C683.362 320.575 673.776 309.788 666.855 309.788" stroke="#FF0404" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
+            </svg>
+        <img src="./assets/modalBackground/Group 11.png" alt="">            
+    </div>
+    <div id="treasure" class="modal modal--quests modal--treasure">
+        <div class="modal__content">
+            <p class="modal__textBold modal__textBold--mb24">
+                Остров сокровищ
+            <p class="modal__text modal__text--mb20">
+                Давным-давно появилась легенда, которая гласит, что на одном таинственном острове капитан пиратского
+                корабля Флинт спрятал свои сокровища от отчаянных кладоискателей. В живых не осталось ни одного
+                человека, кто мог бы сказать, где зарыты его богатства. Однако в последние дни своей жизни капитан
+                спрятал немало подсказок и загадочных предметов. По легенде, одним из них стал старинный тотем, который
+                был любимой игрушкой маленького Флинта. Многие годы охотники за сокровищами бьются над поисками древних
+                драгоценностей, теперь настало время вашей команде найти пиратский клад! Кто знает какие испытания
+                приберег старик Флинт для вас? В путь, мои друзья!</p>
+            <p class="modal__textBold modal__textBold--mb24">Что входит в программу?</p>
+            <div class="modal__items">
+                <div class="modal__items-left">
+                    <div class="modal__items-item">Встреча с ведущими и введение в тематику</div>
+                    <div class="modal__items-item modal__items-item--mb100">Путешествие по карте мира с героями книги и фильма</div>
+                    <div class="modal__items-item">Веселая эстафета с австралийскими Кенгуру через горный хребет
+                        Кордильеры</div>
+                    <div class="modal__items-item">Торжественное вручение дипломов кладоискателей</div>
+                </div>
+                <div class="modal__items-right">
+                    <div class="modal__items-item">Увлекательная игра в бразильский "Антифутбол"</div>
+                    <div class="modal__items-item modal__items-item--mt131">Освоение японского искусства оригами</div>
+                    <div class="modal__items-item">Поиск клада с настоящей пиратской картой</div>
+                </div>
+            </div>
+            <p class="modal__textBold">Цены на квест</p>
+            <div class="modal__table">
+                <div class="modal__table-head">
+                    <div class="modal__table-headItem">Количество участников</div>
+                    <div class="modal__table-headItem">в пределах МКАД</div>
+                    <div class="modal__table-headItem">за МКАДом (до 25км)</div>
+                    <div class="modal__table-headItem">за МКАДом (25км+)</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">до 10 человек (1 аниматор)</div>
+                    <div class="modal__table-rowItem">10 900</div>
+                    <div class="modal__table-rowItem"> 12 900</div>
+                    <div class="modal__table-rowItem">15 900</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">11-20 человек (2 аниматора)</div>
+                    <div class="modal__table-rowItem">14 900</div>
+                    <div class="modal__table-rowItem"> 16 900</div>
+                    <div class="modal__table-rowItem">19 900</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">21-30 человек (3 аниматора)</div>
+                    <div class="modal__table-rowItem">18 900</div>
+                    <div class="modal__table-rowItem"> 20 900</div>
+                    <div class="modal__table-rowItem">23 900</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">31-40 человек (4 аниматора)</div>
+                    <div class="modal__table-rowItem">22 900</div>
+                    <div class="modal__table-rowItem"> 24 900</div>
+                    <div class="modal__table-rowItem">27 900</div>
+                </div>
+            </div>
+            <div class="modal__buttons">
+                <a href="./ordering.html" class="modal__button button button--white">оформить заявку</a>
+                <a href="./gallery.html" class="modal__button button button--white">посмотреть фотоальбом</a>
+            </div>
+        </div>
+        <img src="./assets/modalBackground/Group 12.png" alt="">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1118" height="764" viewBox="0 0 1118 764" fill="none">
+            <path d="M1114.66 503.124C1114.66 545.821 1119.95 590.704 1104.66 631.035C1100.35 642.393 1091.45 651.272 1085.89 661.996C1078.03 677.155 1069.41 691.54 1059 705.155C1039.08 731.192 997.5 759.115 963.766 761.76C879.612 768.361 803.776 728.93 761.423 656.68C733.181 608.502 743.128 547.1 743.128 492.335C743.128 450.411 661.166 433.578 628.352 432.758C598.919 432.022 563.612 431.506 535.155 425.408C522.698 422.739 513.764 417.02 500.441 419.31C484.907 421.98 470.139 433.289 456.032 439.951C380.048 475.832 300.897 434.727 228.045 413.681C194.992 404.132 153.318 400.756 119.211 401.953C99.4803 402.645 78.881 406.917 59.1649 403.986C45.9326 402.019 22.6777 387.115 18.1959 374.275C3.02936 330.825 21.9781 281.096 22.5743 236.983C22.8042 219.971 19.4954 206.514 11.3156 191.322C-2.24942 166.13 1.06267 149.136 6.93726 120.8C15.8549 77.7853 20.1067 40.5373 61.9795 19.0027C79.7037 9.88737 103.913 11.2971 122.338 17.439C138.679 22.886 153.731 31.8223 169.562 38.7053C197.616 50.9025 223.546 51.7259 253.689 45.5856C277.382 40.7592 302.17 37.0561 324.994 29.0104C347.101 21.2174 364.301 17.42 387.855 19.6282C421.308 22.7644 434.583 53.9189 454.468 76.5469C477.62 102.892 485.481 131.744 525.148 135.655C546.792 137.789 571.989 138.48 588.947 122.52C604.241 108.125 613.675 88.6769 624.912 71.2303C640.346 47.2668 654.576 22.0508 683.707 13.3734C726.795 0.538589 776.396 -5.44823 816.309 19.0027C835.859 30.9791 855.183 38.5609 870.256 56.3751C889.381 78.9764 898.91 96.9527 903.563 125.803C911.089 172.462 901.958 228.333 889.49 273.573C877.469 317.193 847.08 385.177 792.384 381.469C771.21 380.033 745.942 360.488 745.942 339.874" stroke="white" stroke-width="3" stroke-linecap="round" stroke-dasharray="10 10"/>
+            </svg>
+    </div>
+    <div id="detective" class="modal modal--quests modal--detective">
+        <div class="modal__content">
+            <p class="modal__textBold modal__textBold--mb24">
+                Детективный
+            <p class="modal__text modal__text--mb20">
+                На расследование самого загадочного преступления века съехались величайшие сыщики: Шерлок Холмс и доктор Ватсон, Мисс Марпл, Доктор Пуаро и, конечно, герой Чиполлино- мистер Моркоу! Но даже им не удалось приблизиться к разгадке таинственного дела. За помощью они обратились к выпускникам детективной школы, готовым собирать подсказки и улики, искать подозреваемых и разгадывать самые сложные головоломки, пароли и коды. Ведь найти украденный из музея алмаз под силу только настоящей слаженной команде!</p>
+            <p class="modal__textBold modal__textBold--mb24">Что входит в программу?</p>
+            <div class="modal__items">
+                <div class="modal__items-left">
+                    <div class="modal__items-item modal__items-item--w76">
+                        Встреча с лучшими сыщиками и вручение пропусков следователей</div>
+                    <div class="modal__items-item modal__items-item--mb112">Создание фоторобота преступника и уроки шифрования </div>
+                    <div class="modal__items-item">Нахождение алмаза и разоблачение преступника</div>
+                </div>
+                <div class="modal__items-right">
+                    <div class="modal__items-item modal__items-item--mt50">Дактилоскопия- нахождение отпечатков пальцев подозреваемых</div>
+                    <div class="modal__items-item modal__items-item--ml56">Работа с невидимыми чернилами и микроскопом</div>
+                    <div class="modal__items-item modal__items-item--mt117">Вручение дипломов выпускников школы сыщиков</div>
+                </div>
+            </div>
+            <p class="modal__textBold">Цены на квест</p>
+            <div class="modal__table">
+                <div class="modal__table-head">
+                    <div class="modal__table-headItem">Количество участников</div>
+                    <div class="modal__table-headItem">в пределах МКАД</div>
+                    <div class="modal__table-headItem">за МКАДом (до 25км)</div>
+                    <div class="modal__table-headItem">за МКАДом (25км+)</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">до 10 человек (1 аниматор)</div>
+                    <div class="modal__table-rowItem">10 900</div>
+                    <div class="modal__table-rowItem"> 12 900</div>
+                    <div class="modal__table-rowItem">15 900</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">11-20 человек (2 аниматора)</div>
+                    <div class="modal__table-rowItem">14 900</div>
+                    <div class="modal__table-rowItem"> 16 900</div>
+                    <div class="modal__table-rowItem">19 900</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">21-30 человек (3 аниматора)</div>
+                    <div class="modal__table-rowItem">18 900</div>
+                    <div class="modal__table-rowItem"> 20 900</div>
+                    <div class="modal__table-rowItem">23 900</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">31-40 человек (4 аниматора)</div>
+                    <div class="modal__table-rowItem">22 900</div>
+                    <div class="modal__table-rowItem"> 24 900</div>
+                    <div class="modal__table-rowItem">27 900</div>
+                </div>
+            </div>
+            <div class="modal__buttons">
+                <a href="./ordering.html" class="modal__button button button--white">оформить заявку</a>
+                <a href="./gallery.html" class="modal__button button button--white">посмотреть фотоальбом</a>
+            </div>
+        </div>
+        <img src="./assets/modalBackground/Group 13.png" alt="">
+        <svg width="1028" height="361" viewBox="0 0 1028 361" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M142.887 2.24414C156.281 3.27445 172.533 6.18436 184.319 12.6979C205.115 24.1902 230.099 28.6367 253.034 34.3704C278.737 40.7962 304.235 41.2546 330.545 41.2546C356.89 41.2546 382.408 42.1353 408.311 36.6652C432.688 31.5173 458.822 19.3378 483.655 18.4348C502.731 17.7411 521.937 18.3073 541.023 18.3073C548.63 18.3073 556.236 18.3073 563.843 18.3073C571.688 18.3073 578.278 22.6939 585.77 25.1915" stroke="black" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
+            <path d="M744.107 50.4336C749.259 58.0582 759.101 74.2921 748.059 81.285C736.544 88.5778 720.019 93.2004 706.627 95.3084C672.97 100.606 633.058 98.5682 599.029 95.8183C569.245 93.4115 538.78 92.475 509.024 95.8183C501.987 96.6091 480.551 99.9017 477.918 107.802" stroke="black" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
+            <path d="M5.20245 116.981C-0.0344846 117.636 4.04047 128.828 5.32993 131.514C10.6635 142.626 30.0587 147.03 40.3884 150.892C55.1649 156.417 70.7952 156.13 85.5182 161.856C104.627 169.287 121.307 169.76 141.612 169.76C154.875 169.76 199.59 177.094 204.334 158.796C207.089 148.17 177.739 139.762 171.571 143.753C164.156 148.55 162.56 156.907 165.834 164.66C170.755 176.316 189.553 178.286 200.127 181.106C243.014 192.542 290.645 189.361 334.114 184.038C366.444 180.079 398.407 179.733 430.493 173.202C463.361 166.512 496.731 161.758 530.314 160.708C549.65 160.104 570.426 158.885 589.595 161.601C597.667 162.744 602.977 167.465 611.012 167.465" stroke="black" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
+            <path d="M1010.3 188.118C1017.06 194.506 1029.57 199.955 1024.7 211.193C1014.17 235.49 972.766 243.23 950.251 245.231C926.317 247.359 902.218 247.275 878.222 247.781C852.069 248.333 826.955 254.642 800.966 256.45C754.79 259.662 707.558 260.376 661.497 255.685C626.703 252.141 592.375 243.324 557.469 241.407C531.556 239.983 505.394 240.897 479.448 240.897C457.341 240.897 436.643 240.112 418.255 252.37" stroke="black" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
+            <path d="M7.49707 256.96C16.3309 271.683 31.5473 283.587 48.1649 287.811C84.3573 297.013 123.88 305.491 161.244 307.189C198.973 308.904 237.448 309.518 275.216 309.739C296.561 309.864 316.997 310.92 338.194 313.308C352.451 314.915 366.891 313.207 381.029 315.858C416.134 322.44 448.69 333.753 480.212 349.514C502.784 360.8 528.855 357.928 553.261 357.928C573.568 357.928 592.676 358.72 611.777 350.534C621.332 346.439 625.771 339.57 636.254 339.57" stroke="black" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
+            </svg>
+            
+    </div>
+    <div id="alice" class="modal modal--quests modal--alice">
+        <div class="modal__content">
+            <p class="modal__textBold modal__textBold--mb24">
+                Алиса в стране чудес
+            <p class="modal__text modal__text--w75 modal__text--mb20">
+                Когда-то давным давно, несколько столетий назад в Стране чудес появилась Алиса, она смогла победить
+                Бармоглота и восстановить власть Белой Королевы. Но время шло, корешок зла в голове Ирацибеты
+                разрастался и она снова сумела захватить престол. И вот Белой королеве требуются рыцари, которые готовы
+                восстановить справедливость. Вы готовы испытать себя?</p>
+            <p class="modal__textBold modal__textBold--mb24">Что входит в программу?</p>
+            <div class="modal__items">
+                <div class="modal__items-left">
+                    <div class="modal__items-item modal__items-item">Знакомство с Белым кроликом и путешествие по его норе</div>
+                    <div class="modal__items-item modal__items-item">Раздача персональных ролей участникам и вручение пустых покеболов
+                    </div>
+                    <div class="modal__items-item modal__items-item">Захватывающий путь в замок Белой Королевы с Мудрейшим Абсолемом</div>
+                    <div class="modal__items-item modal__items-item">Приготовление сладкой ваты каждому участнику и вручение дипломов
+                    </div>
+                </div>
+                <div class="modal__items-right">
+                    <div class="modal__items-item modal__items-item--mt90 ">Необычное чаепитие у Шляпника и посещение сада Красной Королевы</div>
+                    <div class="modal__items-item modal__items-item">Изготовление шляпы для Чеширского кота</div>
+                    <div class="modal__items-item modal__items-item--mt64">Приготовление зелья против Красной Королевы и урок танцев</div>
+                </div>
+            </div>
+            <p class="modal__textBold">Цены на квест</p>
+            <div class="modal__table">
+                <div class="modal__table-head">
+                    <div class="modal__table-headItem">Количество участников</div>
+                    <div class="modal__table-headItem">в пределах МКАД</div>
+                    <div class="modal__table-headItem">за МКАДом (до 25км)</div>
+                    <div class="modal__table-headItem">за МКАДом (25км+)</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">до 10 человек (1 аниматор)</div>
+                    <div class="modal__table-rowItem">10 900</div>
+                    <div class="modal__table-rowItem"> 12 900</div>
+                    <div class="modal__table-rowItem">15 900</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">11-20 человек (2 аниматора)</div>
+                    <div class="modal__table-rowItem">14 900</div>
+                    <div class="modal__table-rowItem"> 16 900</div>
+                    <div class="modal__table-rowItem">19 900</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">21-30 человек (3 аниматора)</div>
+                    <div class="modal__table-rowItem">18 900</div>
+                    <div class="modal__table-rowItem"> 20 900</div>
+                    <div class="modal__table-rowItem">23 900</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">31-40 человек (4 аниматора)</div>
+                    <div class="modal__table-rowItem">22 900</div>
+                    <div class="modal__table-rowItem"> 24 900</div>
+                    <div class="modal__table-rowItem">27 900</div>
+                </div>
+            </div>
+            <a href="./ordering.html" class="modal__button button  button--white">оформить заявку</a>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="702" height="511" viewBox="0 0 702 511" fill="none">
+            <path d="M699.694 2.61426C684.849 23.9921 670.313 48.3192 648.118 62.746C624.568 78.0536 572.266 96.8006 554.987 62.0127C544.742 41.3863 568.676 21.1916 587.62 21.1916C614.154 21.1916 629.9 45.0108 625.63 69.4681C615.772 125.927 534.513 128.927 491.678 123.122C438.776 115.953 396.427 78.5116 342.204 75.4568C321.935 74.3149 303.894 76.328 285.127 84.0121C267.645 91.1702 248.464 95.673 232.084 105.156C204.852 120.922 154.109 140.152 154.109 177.632C154.109 206.506 188.957 237.306 209.84 252.186C238.888 272.882 275.718 274.918 310.305 274.918C351.592 274.918 394.324 256.814 416.146 219.92C428.819 198.493 409.303 178.203 388.036 192.665C369.103 205.539 382.565 235.772 394.636 248.519C418.306 273.515 455.053 270.832 485.811 279.196C523.069 289.328 553.209 311.739 571.364 346.172C585.107 372.236 596.561 410.181 588.231 439.67C580.03 468.7 525.823 485.179 507.322 457.025C489.744 430.276 529.351 402.476 552.909 406.182C585.555 411.317 584.515 450.356 567.698 471.691C543.898 501.885 496.331 504.489 461.123 506.89C435.986 508.604 410.751 509.514 385.958 503.957C343.883 494.526 304.44 473.073 266.672 452.991C226.181 431.462 174.44 391.954 125.509 397.137C109.597 398.823 80.1043 413.745 91.5325 435.025C104.834 459.794 141.391 454.56 159.242 439.67C183.227 419.662 174.597 384.665 153.742 366.338C131.76 347.02 101.344 338.58 73.8107 331.261C50.3769 325.032 25.8072 312.821 10.379 293.496C-0.5827 279.765 1.86764 264.877 4.51251 249.008" stroke="white" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
+            </svg>
+            <img src="./assets/modalBackground/картинки.png" alt="">
+    </div>
+    <div id="fort" class="modal modal--quests modal--fort">
+        <div class="modal__content">
+            <p class="modal__textBold modal__textBold--mb24">
+                Форт Боярд
+            <p class="modal__text modal__text--w75 modal__text--mb20">
+                Команда отважных героев просыпается в стенах загадочного средневекового замка, обитателями которого были
+                великие рыцари. Замка, окружённого со всех сторон только водой. Непроходимые лабиринты, темные комнаты,
+                полные тайн и жители замка, у которых наготове самые опасные ловушки и испытания! Добрый старец Фура и
+                бегуны- паспарту, единственные помощники ребят, расскажут таинственную историю сокровищницы форта, для
+                входа в которую предстоит собрать все 5 ключей и разгадать кодовое слово. Но все не просто так, у
+                команды ровно 2 часа, чтобы выбраться из замка и не остаться его пленниками навсегда. Вы попали в Форт
+                Боярд, друзья! Игра началась!</p>
+            <p class="modal__textBold modal__textBold--mb24">Что входит в программу?</p>
+            <div class="modal__items">
+                <div class="modal__items-left">
+                    <div class="modal__items-item">Встреча с мастером игры и старцем Фурой, введение в легенду замка
+                    </div>
+                    <div class="modal__items-item modal__items-item--mb134">Испытание на смелость, ловкость, внимание и логику</div>
+                    <div class="modal__items-item">Финал со спасением друзей из плена замка и получением сокровищ</div>
+                </div>
+                <div class="modal__items-right">
+                    <div class="modal__items-item">Индивидуальные роли на игру: каждый сможет себя проявить</div>
+                    <div class="modal__items-item modal__items-item--mb151">Таинственная келья: испытания на удачу против Мэтров Игры</div>
+                    <div class="modal__items-item">Разгадывание кодового слова и ответ на гигантском алфавите</div>
+                </div>
+            </div>
+            <p class="modal__textBold">Цены на квест</p>
+            <div class="modal__table">
+                <div class="modal__table-head">
+                    <div class="modal__table-headItem">Количество участников</div>
+                    <div class="modal__table-headItem">в пределах МКАД</div>
+                    <div class="modal__table-headItem">за МКАДом (до 25км)</div>
+                    <div class="modal__table-headItem">за МКАДом (25км+)</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">до 10 человек (1 аниматор)</div>
+                    <div class="modal__table-rowItem">10 900</div>
+                    <div class="modal__table-rowItem"> 12 900</div>
+                    <div class="modal__table-rowItem">15 900</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">11-20 человек (2 аниматора)</div>
+                    <div class="modal__table-rowItem">14 900</div>
+                    <div class="modal__table-rowItem"> 16 900</div>
+                    <div class="modal__table-rowItem">19 900</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">21-30 человек (3 аниматора)</div>
+                    <div class="modal__table-rowItem">18 900</div>
+                    <div class="modal__table-rowItem"> 20 900</div>
+                    <div class="modal__table-rowItem">23 900</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">31-40 человек (4 аниматора)</div>
+                    <div class="modal__table-rowItem">22 900</div>
+                    <div class="modal__table-rowItem"> 24 900</div>
+                    <div class="modal__table-rowItem">27 900</div>
+                </div>
+            </div>
+            <div class="modal__buttons">
+                <a href="./ordering.html" class="modal__button button button--white">оформить заявку</a>
+                <a href="./gallery.html" class="modal__button button button--white">посмотреть фотоальбом</a>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="1122" height="547" viewBox="0 0 1122 547" fill="none">
+            <path d="M338.087 125.18C338.087 146.844 364.53 116.277 342.582 117.089C337.307 117.285 341.114 127.619 345.279 123.158C347.755 120.505 340.085 121.597 339.211 122.034C334.616 124.331 334.041 126.631 334.041 131.249C334.041 147.173 353.791 145.408 365.169 145.408C381.652 145.408 408.687 143.821 410.568 121.247C411.973 104.394 386.251 116.67 381.576 123.27C373.323 134.921 366.542 156.832 371.35 171.254C382.789 205.573 434.917 211.501 464.395 201.595C480.064 196.329 491.493 191.793 503.951 182.266C516.999 172.288 522.978 157.9 536.764 148.105C556.33 134.203 575.633 121.638 596.772 110.122C626.128 94.1308 653.345 73.786 685.548 63.8241C720.957 52.8701 758.331 47.7173 794.551 40.1131C837.292 31.1398 880.028 22.6593 922.994 14.8289C961.065 7.89086 999.793 -1.1103 1038.74 3.2544C1060.85 5.73226 1074.6 18.2514 1089.2 34.0449C1118.43 65.6755 1125.74 101.573 1113.58 142.823C1099.9 189.27 1073.52 226.33 1027.61 244.747C998.234 256.533 966.71 250.779 935.917 250.59C867.842 250.172 798.445 241.346 732.745 264.524C703.139 274.969 663.5 292.459 646.891 321.161C638.898 334.973 632.034 358.978 647.341 370.606C660.649 380.715 678.078 376.08 691.616 369.482C707.387 361.795 722.417 357.318 740.049 362.065C753.18 365.6 761.365 379.963 757.692 393.08C754.516 404.422 743.209 411.843 733.644 417.353C709.757 431.114 682.101 436.559 658.241 450.391C651.631 454.223 620.158 472.429 636.44 481.856C648.017 488.558 648.959 479.088 637.452 473.091C599.869 453.505 562.677 442.411 519.684 442.076C462.373 441.628 419.266 495.14 372.473 521.636C332.898 544.047 277.109 549.52 232.905 540.515C209.604 535.769 188.198 523.918 167.053 513.546C155.306 507.783 143.692 501.485 130.981 498.038C107.387 491.639 83.103 495.761 59.2865 491.408C32.6969 486.547 -0.915482 465.007 2.87468 433.423C4.42763 420.481 20.8616 413.908 31.5301 410.723C41.0718 407.875 53.0442 408.01 60.8598 401.171C68.293 394.667 73.8018 386.399 80.3005 379.034C92.7604 364.912 88.79 355.86 69.7373 351.277C49.5733 346.428 37.5845 346.741 28.9455 325.431C22.5107 309.559 20.9453 296.611 37.3736 287.224C47.9328 281.19 60.6791 274.863 73.1085 274.863" stroke="white" stroke-width="4" stroke-linecap="round" stroke-dasharray="9 9"/>
+        </svg>
+        <img src="./assets/modalBackground/картинки1.png" alt="">
+    </div>
+    <div id="winter" class="modal modal--quests modal--winter">
+        <div class="modal__content">
+            <p class="modal__textBold modal__textBold--mb24">
+                Новогодний
+            <p class="modal__text modal__text--textLeft modal__text--w75 modal__text--mb20">
+                Ребята! Как же хорошо, что мы вас встретили! Доброму Дедушке Морозу и его внучке Снегурочке очень нужна
+                ваша помощь. До Нового года всего два часа, а у Дедушки пропал волшебный мешок со всеми праздничными
+                подарками. Конечно, не обошлось без злой родственницы Деда Мороза, Снежной Королевы. Колдунья никак не
+                хочет отпустить Старый год, потому что у нее осталось важное незаконченное дело, и чтобы Новый год не
+                состоялся, она спряталась в своем ледяном царстве вместе со всеми детскими подарками! Для того, чтобы
+                найти Королеву, нам предстоит попросить помощи у верных друзей Дедушки Мороза и Госпожи Зимы и получать
+                заветные подсказки за выполнений заданий и разгадывание головоломок.
+            </p>
+            <p class="modal__text modal__text--textLeft modal__text--mb20">Надевайте теплые новогодние колпачки, запрыгивайте в оленью упряжку, пора спасти
+                Новый год!</p>
+            <p class="modal__textBold modal__textBold--mb24">Что входит в программу?</p>
+            <div class="modal__items">
+                <div class="modal__items-left">
+                    <div class="modal__items-item modal__items-item" >Получение ребятами индивидуальных ролей и красных колпачков</div>
+                    <div class="modal__items-item modal__items-item--ml67" >В гостях у Снеговика: перестрелка снежками</div>
+                    <div class="modal__items-item modal__items-item" >Царство Снежной Королевы: собираем из всех осколков зеркало</div>
+                </div>
+                <div class="modal__items-right">
+                    <div class="modal__items-item modal__items-item--w64" >Первая встреча с Гердой, которая поможет найти Снежную Королеву</div>
+                    <div class="modal__items-item modal__items-item--mt85" >Держим путь на Северный полюс: гонка на мини-лыжах</div>
+                    <div class="modal__items-item modal__items-item " >В гостях у Пингвина: соревнование по керлингу</div>
+                </div>
+            </div>
+            <p class="modal__textBold">Цены на квест</p>
+            <div class="modal__table">
+                <div class="modal__table-head">
+                    <div class="modal__table-headItem">Количество участников</div>
+                    <div class="modal__table-headItem">в пределах МКАД</div>
+                    <div class="modal__table-headItem">за МКАДом (до 25км)</div>
+                    <div class="modal__table-headItem">за МКАДом (25км+)</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">до 10 человек (1 аниматор)</div>
+                    <div class="modal__table-rowItem">10 900</div>
+                    <div class="modal__table-rowItem"> 12 900</div>
+                    <div class="modal__table-rowItem">15 900</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">11-20 человек (2 аниматора)</div>
+                    <div class="modal__table-rowItem">14 900</div>
+                    <div class="modal__table-rowItem"> 16 900</div>
+                    <div class="modal__table-rowItem">19 900</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">21-30 человек (3 аниматора)</div>
+                    <div class="modal__table-rowItem">18 900</div>
+                    <div class="modal__table-rowItem"> 20 900</div>
+                    <div class="modal__table-rowItem">23 900</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">31-40 человек (4 аниматора)</div>
+                    <div class="modal__table-rowItem">22 900</div>
+                    <div class="modal__table-rowItem"> 24 900</div>
+                    <div class="modal__table-rowItem">27 900</div>
+                </div>
+            </div>
+            <div class="modal__buttons">
+                <a href="./ordering.html" class="modal__button button button--white">оформить заявку</a>
+                <a href="./gallery.html" class="modal__button button button--white">посмотреть фотоальбом</a>
+            </div>
+            <img src="./assets/modalBackground/картинки3.png" alt="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="960" height="357" viewBox="0 0 960 357" fill="none">
+                <path d="M41.3825 52.3378C49.3846 51.6103 53.2443 51.4092 61.0671 52.4523C68.9064 53.4975 75.8345 56.4578 83.8417 56.4578C91.4437 56.4578 94.645 51.0559 102.038 52.7956C110.744 54.8439 117.271 56.4578 126.301 56.4578C150.316 56.4578 172.895 52.3378 197.142 52.3378C210.348 52.3378 223.024 50.0344 236.168 50.2778C253.499 50.5987 268.43 54.1308 285.609 49.1333C301.085 44.6312 321.983 48.5975 337.796 48.1033C359.916 47.4121 375.95 33.4619 388.381 16.0587C397.203 3.70679 401.258 2.89746 416.305 2.89746C428.596 2.89746 437.999 12.9241 441.483 24.6421C445.417 37.8736 444.347 48.6729 427.979 47.8744C407.992 46.8995 424.176 27.3234 432.099 22.4676C445.231 14.4185 462.135 15.2575 476.961 15.2575C495.015 15.2575 513.165 14.7189 531.208 15.2575C552.09 15.8809 569.773 22.8529 591.292 20.4076C610.307 18.2468 627.739 15.2575 647.027 15.2575C662.799 15.2575 678.642 14.8256 694.407 15.2575C704.593 15.5366 714.011 19.3776 724.277 19.3776C732.451 19.3776 740.321 17.4977 748.425 17.3176C763.878 16.9742 779.948 21.0835 795.119 23.6121C813.189 26.6237 836.993 35.8212 855.088 28.4188C860.097 26.3697 863.306 20.6136 868.593 19.6065C875.544 18.2824 884.497 21.4158 890.795 23.9554C899.372 27.4138 907.752 29.1143 910.251 38.8333C913.723 52.3369 926.577 60.5061 929.249 74.1969C933.519 96.0807 931.401 116.663 933.598 138.63C934.587 148.52 941.292 153.891 946.53 161.633C954.224 173.007 952.876 187.661 954.885 200.659C957.667 218.666 964.291 262.775 935.658 266.122C905.708 269.622 877.498 247.922 866.533 221.373C858.988 203.108 857.464 181.973 847.649 164.609C839.501 150.192 813.931 137.738 798.438 135.082C778.231 131.618 761.727 139.584 742.703 143.207C736.784 144.335 733.468 147.363 727.024 146.984C717.7 146.436 708.772 143.231 699.443 142.978C694.326 142.84 688.96 142.63 684.336 145.153C674.062 150.757 664.473 148.272 652.749 147.556C638.084 146.661 626.184 151.219 611.778 151.219C590.266 151.219 572.064 145.153 552.037 153.164C534.244 160.282 513.714 144.832 496.188 152.134C476.707 160.251 454.152 145.545 433.701 155.339C424.858 159.573 406.279 168.972 416.763 181.203C428.951 195.423 451.04 192.419 467.348 192.419C477.946 192.419 494.259 190.53 494.586 205.237C494.979 222.94 481.233 224.906 468.263 234.764C449.07 249.35 429.251 263.352 427.864 289.697C427.535 295.952 428.086 300.044 422.485 304.117C418.312 307.153 406.949 309.258 404.403 313.96C400.795 320.62 428.858 328.732 431.87 329.524C445.098 333.005 455.761 339.917 467.462 346.691C482.263 355.26 494.123 348.648 509.921 346.233C519.912 344.706 529.882 345.831 539.906 344.631C572.46 340.734 604.589 329.2 637.528 328.952C654.636 328.823 666.787 343.151 684.107 342.342C698.084 341.689 712.764 338.43 726.452 343.029C742.593 348.452 751.858 356.86 769.941 353.901C782.256 351.886 796.354 344.025 808.852 345.318C818.226 346.287 826.879 347.576 836.319 345.89C843.108 344.678 848.58 340.641 850.51 333.644C853.118 324.192 843.28 319.977 836.09 316.935C825.436 312.428 817.665 313.89 810.912 323.344C801.581 336.408 790.494 348.442 774.061 352.184C741.589 359.579 709.312 347.638 688.227 323.344C664.808 296.361 627.243 287.225 594.611 302.286C578.926 309.525 553.251 324.68 535.786 316.706C521.352 310.117 506.466 304.167 492.297 297.022C460.143 280.807 418.091 247.101 382.658 272.759C357.384 291.061 345.614 335.644 314.106 343.372C280.021 351.733 228.325 354.809 203.437 325.29C185.204 303.665 170.264 277.593 139.348 272.073C104.059 265.771 53.0607 302.749 22.8424 272.53C5.28921 254.977 -6.82041 213.319 10.5967 192.419C19.6851 181.513 31.9241 174.95 46.4181 174.794C53.2184 174.721 75.1415 183.617 77.4328 173.306C80.8638 157.867 44.2641 151.927 35.6602 159.916C27.4558 167.535 34.4611 180.484 42.9847 183.263C63.1853 189.85 54.6817 148.849 60.3804 140.232C65.1568 133.009 72.4831 129.33 81.2094 130.847C82.6638 131.1 91.3774 134.738 88.7628 134.738" stroke="#036586" stroke-width="4" stroke-linecap="round" stroke-dasharray="9 9"/>
+                </svg>
+        </div>
+    <div id="labyrinth" class="modal modal--quests modal--labyrinth">
+        <div class="modal__content">
+            <p class="modal__textBold modal__textBold--mb24">
+                Побег из лабиринта
+            <p class="modal__text modal__text--textLeft modal__text--w75 modal__text--mb20">
+                 Отважные искатели отправляются на поиски загадочно утерянного скипетра египетского Фараона и попадают в ловушку. Команда оказывается заточенной в стенах старинного лабиринта , охраняемого злыми духами и время от времени меняющего свое расположение. У искателей всего 1 шанс найти карту лабиринта, всего 7 попыток найти правильный выход и множество древних загадок , с которыми придется столкнуться на своем пути. Древний Египет не ждет!
+            </p>
+            <p class="modal__textBold modal__textBold--mb24">Что входит в программу?</p>
+            <div class="modal__items modal__items--mb146">
+                <div class="modal__items-left">
+                    <div class="modal__items-item modal__items-item--w76">Тайная комната, команда из нее отправляется на изучение лабиринта</div>
+                    <div class="modal__items-item modal__items-item--w76">Полоса препятствий по реке Нил и загадка короны Фараона и весов справедливости</div>
+                    <div class="modal__items-item modal__items-item--w76">Участие в археологических раскопках и строительство пирамиды Хеопса</div>
+                </div>
+                <div class="modal__items-right">
+                    <div class="modal__items-item modal__items-item--ml84">Изучение детьми китайской письменности</div>
+                    <div class="modal__items-item modal__items-item--ml90">Дети разгадают головоломку с иероглифами и сами научатся их писать</div>
+                    <div class="modal__items-item modal__items-item--ml109">Создание своей древней мумии и нахождение Скипетра и торжественный финал</div>
+                </div>
+            </div>
+            <p class="modal__textBold">Цены на квест</p>
+            <div class="modal__table">
+                <div class="modal__table-head">
+                    <div class="modal__table-headItem">Количество участников</div>
+                    <div class="modal__table-headItem">в пределах МКАД</div>
+                    <div class="modal__table-headItem">за МКАДом (до 25км)</div>
+                    <div class="modal__table-headItem">за МКАДом (25км+)</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">до 10 человек (1 аниматор)</div>
+                    <div class="modal__table-rowItem">10 900</div>
+                    <div class="modal__table-rowItem"> 12 900</div>
+                    <div class="modal__table-rowItem">15 900</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">11-20 человек (2 аниматора)</div>
+                    <div class="modal__table-rowItem">14 900</div>
+                    <div class="modal__table-rowItem"> 16 900</div>
+                    <div class="modal__table-rowItem">19 900</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">21-30 человек (3 аниматора)</div>
+                    <div class="modal__table-rowItem">18 900</div>
+                    <div class="modal__table-rowItem"> 20 900</div>
+                    <div class="modal__table-rowItem">23 900</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">31-40 человек (4 аниматора)</div>
+                    <div class="modal__table-rowItem">22 900</div>
+                    <div class="modal__table-rowItem"> 24 900</div>
+                    <div class="modal__table-rowItem">27 900</div>
+                </div>
+            </div>
+            <a href="./ordering.html" class="modal__button button  button--white">оформить заявку</a>
+            <img src="./assets/modalBackground/Group 2.png" alt="">
+            <svg width="1107" height="462" viewBox="0 0 1107 462" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M208.476 94.0926C217.114 94.0926 226.734 94.6059 235.064 97.0243C241.247 98.8193 246.727 102.686 252.958 104.202C259.848 105.878 267.564 105.011 274.592 105.011C306.383 105.011 338.062 103.571 369.822 103.191C403.69 102.785 432.339 87.1136 464.548 79.535C477.527 76.4811 477.033 56.7531 480.42 46.7805C485.708 31.2101 497.406 19.8299 510.95 11.1953C534.682 -3.93392 561.009 2.79211 578.784 22.1135C584.352 28.1654 589.033 31.792 591.017 39.9061C592.496 45.9576 594.977 54.8223 597.891 60.3271C603.101 70.169 618.362 89.67 630.646 82.1635C642.745 74.7696 643.735 54.0754 652.482 43.1411" stroke="#563E25" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 8"/>
+                <path d="M657.941 101.371C647.352 101.371 643.295 106.36 640.553 116.333C634.066 139.921 628.948 163.638 620.637 186.695C613.905 205.37 601.915 228.518 582.828 237.646C564.569 246.379 527.651 247.022 510.647 235.119C488.949 219.93 481.148 186.699 467.277 165.06C458.766 151.782 445.831 156.107 432.097 159.197C412.807 163.537 399.488 174.011 378.719 174.159C361.147 174.284 344.129 170.52 326.756 170.52" stroke="#563E25" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 8"/>
+                <path d="M192.099 243.308C224.651 243.308 257.203 243.308 289.756 243.308C305.863 243.308 321.971 243.308 338.079 243.308C347.633 243.308 368.358 239.101 376.292 245.734C405.748 270.361 369.01 322.199 366.385 351.074C364.663 370.019 365.54 386.07 376.899 402.228C389.012 419.459 410.103 424.892 428.76 432.455C448.191 440.332 469.511 444.38 489.72 449.945C519.39 458.115 546.819 462.094 577.672 456.718C611.215 450.873 638.01 431.433 666.635 414.258C686.197 402.521 705.059 383.847 703.635 359.364C702.177 334.282 679.58 312.758 668.859 290.721C660.936 274.435 651.066 256.502 651.066 237.849C651.066 225.336 654.663 206.557 660.67 195.49C663.957 189.437 670.407 184.073 672.498 177.799" stroke="#563E25" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 8"/>
+                <path d="M13.7684 79.5352C6.56331 92.5044 1.2592 108.822 15.5881 119.568" stroke="#563E25" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 8"/>
+                <path d="M13.7685 170.52C6.11016 170.52 3.25519 184.107 2.9514 190.031C2.35775 201.607 3.81626 211.519 11.9488 219.651" stroke="#563E25" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 8"/>
+                <path d="M1027.34 35.8623C1048.96 35.8623 1066.49 37.8376 1085.06 50.2177C1097.8 58.7076 1100.13 64.5756 1100.13 79.535" stroke="#563E25" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 8"/>
+                <path d="M838.091 114.109C867.298 114.109 896.387 119.387 925.638 119.568C948.745 119.712 971.884 119.792 994.989 119.568C1020.47 119.322 1045.42 114.719 1070.2 123.612C1102.57 135.224 1122.83 186.97 1081.73 201.05C1053.2 210.821 1016.52 209.071 987.306 203.881C985.701 203.596 950.264 192.356 965.47 192.356" stroke="#563E25" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 8"/>
+                </svg>
+        </div>
+    <div id="team" class="modal modal--quests modal--team">
+        <div class="modal__content">
+            <p class="modal__textBold modal__textBold--mb24">
+                ТимБилдинг 
+            <p class="modal__text modal__text--textLeft modal__text--w75 modal__text--mb20">
+                Представляем Вашему вниманию наш новый квест - Тимбилдинг! Особенностью данной программы является ее многофункциональность, ведь квест оснащен не только активной развлекательной частью, но и играми на командообразование и множеством бонусов.
+            </p>
+            <p class="modal__text modal__text--textLeft modal__text--mb20">Надевайте теплые новогодние колпачки, запрыгивайте в оленью упряжку, пора спасти
+                Новый год!</p>
+            <p class="modal__textBold modal__textBold--mb24">Что входит в программу?</p>
+            <div class="modal__items">
+                <div class="modal__items-left">
+                    <div class="modal__items-item ">У всех групп общая задача - собрать полученные за игру бонусы и выполнит финальное задание</div>
+                    <div class="modal__items-item modal__items-item--mt230">Программа тимбилдинга предусматривает мероприятия на большие коллективы: команда делится на группы по 8-12 человек, каждой группе выдается уникальный маршрут, у всех групп общая задача- собрать полученные за игру бонусы и выполнить финальное задание</div>
+                </div>
+                <div class="modal__items-right">
+                    <div class="modal__items-item modal__items-item--ml999">Возможность выбрать свой формат проведения мероприятия относительно возраста участников и особенностей коллектива ( Light, Medium, Hard)</div>
+                    
+                </div>
+            </div>
+            <p class="modal__textBold">Цены на квест</p>
+            <div class="modal__table">
+                <div class="modal__table-head">
+                    <div class="modal__table-headItem">Количество участников</div>
+                    <div class="modal__table-headItem">в пределах МКАД</div>
+                    <div class="modal__table-headItem">за МКАДом (до 25км)</div>
+                    <div class="modal__table-headItem">за МКАДом (25км+)</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">до 10 человек (1 аниматор)</div>
+                    <div class="modal__table-rowItem">10 900</div>
+                    <div class="modal__table-rowItem"> 12 900</div>
+                    <div class="modal__table-rowItem">15 900</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">11-20 человек (2 аниматора)</div>
+                    <div class="modal__table-rowItem">14 900</div>
+                    <div class="modal__table-rowItem"> 16 900</div>
+                    <div class="modal__table-rowItem">19 900</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">21-30 человек (3 аниматора)</div>
+                    <div class="modal__table-rowItem">18 900</div>
+                    <div class="modal__table-rowItem"> 20 900</div>
+                    <div class="modal__table-rowItem">23 900</div>
+                </div>
+                <div class="modal__table-row">
+                    <div class="modal__table-rowItem">31-40 человек (4 аниматора)</div>
+                    <div class="modal__table-rowItem">22 900</div>
+                    <div class="modal__table-rowItem"> 24 900</div>
+                    <div class="modal__table-rowItem">27 900</div>
+                </div>
+            </div>
+            <a href="./ordering.html" class="modal__button button  button--white">оформить заявку</a>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="1182" height="409" viewBox="0 0 1182 409" fill="none">
+            <path d="M76.5383 2.87061C63.136 4.78523 60.317 20.0348 55.2486 30.5253C47.7574 46.0303 44.3608 59.4468 45.0427 76.8358C46.3984 111.404 86.8789 125.341 116.813 125.341C132.696 125.341 144.948 103.62 128.994 93.2969C98.6961 73.6922 63.7416 87.7168 44.494 114.367C32.9714 130.322 23.7315 151.499 16.1809 169.676C6.64952 192.623 1.10243 223.621 3.88998 248.361C6.17599 268.649 20.7798 295.078 31.9836 312.12C42.7441 328.488 58.1535 349.137 74.563 360.077C124.354 393.271 190.674 391.285 247.514 379.171C311.756 365.481 375.249 358.43 440.877 358.43C458.743 358.43 475.672 356.762 492.236 364.466C503.828 369.858 513.326 380.24 523.402 388.06C537.27 398.823 562.01 404.94 579.37 405.509C600.036 406.187 616.821 395.238 634.46 386.085C660.025 372.82 676.289 338.673 706.011 334.068C754.773 326.513 798.511 354.061 841.98 372.258C879.868 388.118 923.985 399.378 965.219 401.668C994.057 403.27 1024.75 399.276 1053.45 397.059C1079.96 395.012 1099.13 386.877 1120.61 372.148C1131.85 364.441 1148.11 359.333 1154.19 346.359C1159.11 335.86 1164.49 325.935 1168.46 314.973C1172.36 304.203 1171.92 292.326 1174.82 281.283C1178.04 269.043 1178.77 256.036 1178.77 243.422C1178.77 183.823 1188.79 110.157 1129.39 74.0923C1098.19 55.1499 1058.59 46.5905 1022.28 48.7422C973.458 51.6356 927.387 50.8269 885.108 79.2501C868.619 90.3349 854.656 99.6705 841.76 114.477C828.388 129.83 809.946 140.076 796.437 155.41C784.727 168.703 775.602 184.604 764.174 198.319C751.827 213.134 735.858 224.853 720.058 235.96C705.578 246.139 683.939 251.081 666.724 254.396C651.564 257.316 634.557 258.174 621.511 249.787C604.176 238.643 586.203 228.706 569.274 217.194C549.268 203.59 524.4 204.085 503.21 193.49C489.56 186.665 475.793 180.054 462.167 173.188C439.454 161.743 427.233 139.777 426.282 114.587C425.647 97.7604 420.955 67.2635 440 57.741C451.233 52.124 459.027 63.4437 457.339 74.4215C454.563 92.4658 436.502 112.81 422.441 123.037C412.734 130.097 403.442 140.103 392.153 144.656C376.961 150.781 326.828 149.045 343.208 149.045" stroke="#004209" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 10"/>
+            </svg>
+            <img src="./assets/modalBackground/картинки5.png" alt="">
+    </div>
+    <script src="./plugins/jquery-3.6.0.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+    </script>
+    <script src="./plugins/nouislider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/js/selectize.min.js"
+        integrity="sha512-IOebNkvA/HZjMM7MxL0NYeLYEalloZ8ckak+NDtOViP7oiYzG5vn6WVXyrJDiJPhl4yRdmNAG49iuLmhkUdVsQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/icon.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./plugins/nouislider.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/css/selectize.default.min.css"
+        integrity="sha512-pTaEn+6gF1IeWv3W1+7X7eM60TFu/agjgoHmYhAfLEU8Phuf6JKiiE8YmsNC0aCgQv4192s4Vai8YZ6VNM6vyQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title></title>
+</head>
+
+<body>
+    <div class="overlayBubble">
+        <img src="./assets/img/эффекты фон.png" alt="">
+    </div>
+    <div class="overlayStar">
+        <img src="./assets/img/эффекты фон звезды.png" alt="">
+    </div>
+    <header class="header">
+      <div class="header__top">
+        <a href="/index.html" class="header__top-logo">
+          <img src="./assets/img/MR.HAPPY.png" alt="">
+        </a>
+        <div class="header__top-socials">
+          <a href="tel:+79199653519" class="header__top-phone">+7 919 965 35 19</a>
+          <div class="header__icons">
+            <a target="_blank" href="https://instagram.com/mrhappy.event?igshid=NzZlODBkYWE4Ng==" class="header__icons-item">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="31" height="31" viewBox="0,0,256,256">
+                <g transform="translate(-28.16,-28.16) scale(1.22,1.22)">
+                  <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                    style="mix-blend-mode: normal">
+                    <g transform="scale(8,8)">
+                      <path
+                        d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z">
+                      </path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </a>
+            <a target="_blank" href="https://vk.com/mrhappy.event" class="header__icons-item">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0,0,256,256">
+                <g transform="translate(-19.2,-19.2) scale(1.15,1.15)">
+                  <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                    style="mix-blend-mode: normal">
+                    <g transform="scale(8,8)">
+                      <path
+                        d="M9.08203,5c-2.24219,0 -4.08203,1.83984 -4.08203,4.08203v13.83594c0,2.24219 1.83984,4.08203 4.08203,4.08203h13.83594c2.24219,0 4.08203,-1.83984 4.08203,-4.08203v-13.83594c0,-2.24219 -1.83984,-4.08203 -4.08203,-4.08203zM9.08203,7h13.83594c1.16016,0 2.08203,0.92188 2.08203,2.08203v13.83594c0,1.16016 -0.92187,2.08203 -2.08203,2.08203h-13.83594c-1.16016,0 -2.08203,-0.92187 -2.08203,-2.08203v-13.83594c0,-1.16016 0.92188,-2.08203 2.08203,-2.08203zM15.71875,12.23047c-0.73437,-0.00781 -1.35937,0 -1.71094,0.17188c-0.23437,0.11328 -0.41406,0.37109 -0.30469,0.38281c0.13672,0.01953 0.44531,0.08594 0.60938,0.30859c0.21094,0.28516 0.20313,0.92969 0.20313,0.92969c0,0 0.11719,1.77344 -0.28516,1.99609c-0.27734,0.15234 -0.65625,-0.15625 -1.47656,-1.56641c-0.41797,-0.72656 -0.73437,-1.52734 -0.73437,-1.52734c0,0 -0.05859,-0.14844 -0.16797,-0.22656c-0.13281,-0.09766 -0.31641,-0.12891 -0.31641,-0.12891l-1.95703,0.01172c0,0 -0.29297,0.01172 -0.39844,0.13672c-0.09766,0.11719 -0.00781,0.34766 -0.00781,0.34766c0,0 1.53125,3.58203 3.26563,5.38672c1.58984,1.65625 3.39453,1.54688 3.39453,1.54688h0.82031c0,0 0.24609,-0.02734 0.37109,-0.16016c0.11719,-0.125 0.11328,-0.35937 0.11328,-0.35937c0,0 -0.01562,-1.09766 0.49219,-1.26172c0.50391,-0.15625 1.14453,1.0625 1.82813,1.53125c0.51953,0.35547 0.91406,0.27734 0.91406,0.27734l1.82813,-0.02734c0,0 0.95313,-0.05859 0.5,-0.8125c-0.03516,-0.05859 -0.26172,-0.55469 -1.35547,-1.57031c-1.14844,-1.0625 -0.99609,-0.89062 0.38672,-2.73047c0.83984,-1.12109 1.17578,-1.80469 1.07031,-2.10156c-0.10156,-0.27734 -0.71875,-0.20312 -0.71875,-0.20312l-2.05859,0.01172c0,0 -0.15234,-0.01953 -0.26562,0.04688c-0.10937,0.06641 -0.17969,0.22266 -0.17969,0.22266c0,0 -0.32812,0.86719 -0.76172,1.60547c-0.91406,1.55469 -1.28516,1.64063 -1.43359,1.54297c-0.34766,-0.22656 -0.26172,-0.90625 -0.26172,-1.38672c0,-1.51172 0.23047,-2.13672 -0.44531,-2.30078c-0.22266,-0.05469 -0.38672,-0.08984 -0.95703,-0.09375z">
+                      </path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <nav class="header__nav">
+            <a href="/" class="header__nav-item">
+              Главная
+            </a>
+            <div class="header__nav-item">
+              Наши услуги
+              <div class="header__dropdown">
+                <a href="./quests.html" class="header__dropdown-item">Квесты</a>
+                <a href="./masterClasses.html" class="header__dropdown-item">Мастер-классы</a>
+                <a href="./party.html" class="header__dropdown-item">Вечеринки</a>
+                <a href="./candy.html" class="header__dropdown-item">Кенди-Бар</a>
+                <a href="./animators.html" class="header__dropdown-item">Аниматоры</a>
+                <a href="./additional.html" class="header__dropdown-item">Дополнительные услуги</a>
+              </div>
+            </div>
+            <a href="./about.html" class="header__nav-item">
+              О нас
+            </a>
+            <a href="./club.html" class="header__nav-item">
+              Детский клуб
+            </a>
+            <a href="./gallery.html" class="header__nav-item">
+              Галерея
+            </a>
+          </nav>
+        </div>
+      </div>
+      <div class="burger">
+        <div class="burger__line"></div>
+      </div>
+      <a href="#" class="header__side">
+        <img src="./assets/img/Логотип(Растр)без фона 1.png" alt="" >
+      </a>
+    </header>
+    <main>
+      <div class="menu">
+        <div class="menu__list">
+          <a href="/" class="menu__list-item">Главная</a>
+          <div class="menu__list-item menu__list-item--accordeon"> Наши услуги <img
+              src="./assets/svg/keyboard-right-arrow-button-1_icon-icons.com_72690.svg">
+            <div class="menu__dropdown">
+              <a href="./quests.html" class="menu__dropdown-item">Квесты</a>
+              <a href="./masterClasses.html" class="menu__dropdown-item">Мастер-классы</a>
+              <a href="./party.html" class="menu__dropdown-item">Вечеринки</a>
+              <a href="./candy.html" class="menu__dropdown-item">Кенди-Бар</a>
+              <a href="./animators.html" class="menu__dropdown-item">Аниматоры</a>
+              <a href="./additional.html" class="menu__dropdown-item">Дополнительные услуги</a>
+            </div>
+          </div>
+          <a href="./about.html" class="menu__list-item"> О нас</a>
+          <a href="./club.html" class="menu__list-item"> Детский клуб</a>
+          <a href="./gallery.html" class="menu__list-item">Галерея</a>
+        </div>
+        <div class="menu__icons">
+          <a href="#" class="menu__icons-item">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="31" height="31" viewBox="0,0,256,256">
+              <g transform="translate(-28.16,-28.16) scale(1.22,1.22)">
+                <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(8,8)">
+                    <path
+                      d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z">
+                    </path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+          <a href="#" class="menu__top-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0,0,256,256">
+              <g transform="translate(-19.2,-19.2) scale(1.15,1.15)">
+                <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(8,8)">
+                    <path
+                      d="M9.08203,5c-2.24219,0 -4.08203,1.83984 -4.08203,4.08203v13.83594c0,2.24219 1.83984,4.08203 4.08203,4.08203h13.83594c2.24219,0 4.08203,-1.83984 4.08203,-4.08203v-13.83594c0,-2.24219 -1.83984,-4.08203 -4.08203,-4.08203zM9.08203,7h13.83594c1.16016,0 2.08203,0.92188 2.08203,2.08203v13.83594c0,1.16016 -0.92187,2.08203 -2.08203,2.08203h-13.83594c-1.16016,0 -2.08203,-0.92187 -2.08203,-2.08203v-13.83594c0,-1.16016 0.92188,-2.08203 2.08203,-2.08203zM15.71875,12.23047c-0.73437,-0.00781 -1.35937,0 -1.71094,0.17188c-0.23437,0.11328 -0.41406,0.37109 -0.30469,0.38281c0.13672,0.01953 0.44531,0.08594 0.60938,0.30859c0.21094,0.28516 0.20313,0.92969 0.20313,0.92969c0,0 0.11719,1.77344 -0.28516,1.99609c-0.27734,0.15234 -0.65625,-0.15625 -1.47656,-1.56641c-0.41797,-0.72656 -0.73437,-1.52734 -0.73437,-1.52734c0,0 -0.05859,-0.14844 -0.16797,-0.22656c-0.13281,-0.09766 -0.31641,-0.12891 -0.31641,-0.12891l-1.95703,0.01172c0,0 -0.29297,0.01172 -0.39844,0.13672c-0.09766,0.11719 -0.00781,0.34766 -0.00781,0.34766c0,0 1.53125,3.58203 3.26563,5.38672c1.58984,1.65625 3.39453,1.54688 3.39453,1.54688h0.82031c0,0 0.24609,-0.02734 0.37109,-0.16016c0.11719,-0.125 0.11328,-0.35937 0.11328,-0.35937c0,0 -0.01562,-1.09766 0.49219,-1.26172c0.50391,-0.15625 1.14453,1.0625 1.82813,1.53125c0.51953,0.35547 0.91406,0.27734 0.91406,0.27734l1.82813,-0.02734c0,0 0.95313,-0.05859 0.5,-0.8125c-0.03516,-0.05859 -0.26172,-0.55469 -1.35547,-1.57031c-1.14844,-1.0625 -0.99609,-0.89062 0.38672,-2.73047c0.83984,-1.12109 1.17578,-1.80469 1.07031,-2.10156c-0.10156,-0.27734 -0.71875,-0.20312 -0.71875,-0.20312l-2.05859,0.01172c0,0 -0.15234,-0.01953 -0.26562,0.04688c-0.10937,0.06641 -0.17969,0.22266 -0.17969,0.22266c0,0 -0.32812,0.86719 -0.76172,1.60547c-0.91406,1.55469 -1.28516,1.64063 -1.43359,1.54297c-0.34766,-0.22656 -0.26172,-0.90625 -0.26172,-1.38672c0,-1.51172 0.23047,-2.13672 -0.44531,-2.30078c-0.22266,-0.05469 -0.38672,-0.08984 -0.95703,-0.09375z">
+                    </path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+        <div class="breadcrumbs breadcrumbs--mb97">
+            <div class="container">
+                <a href="/index.html" class="breadcrumbs__link">Главная</a>
+                <a href="#" class="breadcrumbs__link">Наши услуги</a>
+                <a href="#" class="breadcrumbs__link">Дополнительные услуги</a>
+            </div>
+        </div>
+        <section class="centerCard">
+            <div class="container">
+                <div class="centerCard__box">
+                    <h2 class="centerCard__box-title">Дополнительные услуги</h2>
+                    <img src="./assets/img/KkQI9caw5vk 1.png" alt="" class="centerCard__box-img">
+                </div>
+            </div>
+        </section>
+        <section class="category">
+            <div class="container">
+                <div class="category__list category__list--brNone">
+                    <a data-fancybox href="#animator" class="category__item category__item--yellowLeftTop">
+                        <div class="category__item-name">Дополнительный аниматор</div>
+                        <img src="./assets/img/аниматор 1.png" alt="" class="category__item-img">
+                    </a>
+                    <a data-fancybox href="#focus" class="category__item category__item--whiteTop">
+                        <div class="category__item-name">Фокусник</div>
+                        <img src="./assets/img/фокусник 1.png" alt="" class="category__item-img">
+                    </a>
+                    <a data-fancybox href="#gifts" class="category__item category__item--yellowRightTop">
+                        <div class="category__item-name">Подарки</div>
+                        <img src="./assets/img/подарки 1.png" alt="" class="category__item-img">
+                    </a>
+                    <a data-fancybox href="#laser" class="category__item category__item--greenLeft">
+                        <div class="category__item-name">Лазертаг</div>
+                        <img src="./assets/img/лазертаг 1.png" alt="" class="category__item-img">
+                    </a>
+                    <a data-fancybox href="#baloon" class="category__item category__item--white">
+                        <div class="category__item-name">Оформление шарами</div>
+                        <img src="./assets/img/шары 1.png" alt="" class="category__item-img">
+                    </a>
+                    <a data-fancybox href="#photo" class="category__item category__item--grayRight">
+                        <div class="category__item-name">Фотосъёмка</div>
+                        <img src="./assets/img/фото 1.png" alt="" class="category__item-img">
+                    </a>
+                    <a data-fancybox href="#video" class="category__item category__item--whiteLeft">
+                        <div class="category__item-name">Видеосъёмка</div>
+                        <img src="./assets/img/видео 1.png" alt="" class="category__item-img">
+                    </a>
+                    <a data-fancybox href="#disco" class="category__item category__item--blueBottom">
+                        <div class="category__item-name">Бумажная дискотека</div>
+                        <img src="./assets/img/дискотека 1.png" alt="" class="category__item-img">
+                    </a>
+                    <a data-fancybox href="#mafia" class="category__item category__item--blackRight">
+                        <div class="category__item-name">Мафия карточная игра</div>
+                        <img src="./assets/img/pngwing 29.png" alt="" class="category__item-img">
+                    </a>
+                    <a data-fancybox href="#cheme" class="category__item category__item--yellowLeftBottom">
+                        <div class="category__item-name">Химическое шоу</div>
+                        <img src="./assets/img/химия 1.png" alt="" class="category__item-img">
+                    </a>
+                    <a data-fancybox href="#accii" class="category__item category__item--grayBottom">
+                        <div class="category__item-name">Экономическая игра “Акционер”</div>
+                        <img src="./assets/img/pngwing 31.png" alt="" class="category__item-img">
+                    </a>
+                    <a data-fancybox href="#sugar" class="category__item category__item--blueRightBottom">
+                        <div class="category__item-name">Сладкая вата</div>
+                        <img src="./assets/img/pngwing 32.png" alt="" class="category__item-img">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+      <a href="/index.html" class="footer__logo">
+        <img src="./assets/img/Логотип(Растр)без фона 2.png" alt="" class="footer__logo-img">
+        <img src="./assets/img/MR.HAPPY.png" alt="" class="footer__logo-text">
+      </a>
+      <div class="container">
+        <div class="footer__top">
+          <nav class="footer__left">
+            <a href="./quests.html" class="footer__left-item">
+              Квесты
+            </a>
+            <a href="./masterClasses.html" class="footer__left-item">
+              Мастер-классы
+            </a>
+            <a href="./party.html" class="footer__left-item">
+              Вечеринки
+            </a>
+            <a href="./animators.html" class="footer__left-item">
+              Аниматоры
+            </a>
+            <a href="./candy.html" class="footer__left-item">
+              Кенди-Бар
+            </a>
+            <a href="./additional.html" class="footer__left-item">
+              Дополнительные услуги
+            </a>
+          </nav>
+          <div class="footer__right">
+            <a href="./about.html" class="footer__right-item">
+              О нас
+            </a>
+            <a href="./club.html" class="footer__right-item">
+              Детский клуб
+            </a>
+            <a href="./gallery.html" class="footer__right-item">
+              Галерея
+            </a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <a href="#" class="footer__policy">политика конфиденциальности</a>
+        </div>
+      </div>
+  
+      <div class="footer__socials">
+        <a href="mailto:mrhappy.event@gmail.com" class="footer__socials-mail">mrhappy.event@gmail.com</a>
+        <a href="tel:+79199653519" class="footer__socials-phone">+7 919 965 35 19</a>
+        <div class="footer__socials-icons">
+          <a target="_blank" href="https://instagram.com/mrhappy.event?igshid=NzZlODBkYWE4Ng==" class="footer__socials-iconsItem">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="31" height="31" viewBox="0,0,256,256">
+              <g transform="translate(-28.16,-28.16) scale(1.22,1.22)">
+                <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(8,8)">
+                    <path
+                      d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z">
+                    </path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+          <a target="_blank" href="https://instagram.com/mrhappy.event?igshid=NzZlODBkYWE4Ng==" class="footer__socials-iconsItem">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0,0,256,256">
+              <g transform="translate(-19.2,-19.2) scale(1.15,1.15)">
+                <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(8,8)">
+                    <path
+                      d="M9.08203,5c-2.24219,0 -4.08203,1.83984 -4.08203,4.08203v13.83594c0,2.24219 1.83984,4.08203 4.08203,4.08203h13.83594c2.24219,0 4.08203,-1.83984 4.08203,-4.08203v-13.83594c0,-2.24219 -1.83984,-4.08203 -4.08203,-4.08203zM9.08203,7h13.83594c1.16016,0 2.08203,0.92188 2.08203,2.08203v13.83594c0,1.16016 -0.92187,2.08203 -2.08203,2.08203h-13.83594c-1.16016,0 -2.08203,-0.92187 -2.08203,-2.08203v-13.83594c0,-1.16016 0.92188,-2.08203 2.08203,-2.08203zM15.71875,12.23047c-0.73437,-0.00781 -1.35937,0 -1.71094,0.17188c-0.23437,0.11328 -0.41406,0.37109 -0.30469,0.38281c0.13672,0.01953 0.44531,0.08594 0.60938,0.30859c0.21094,0.28516 0.20313,0.92969 0.20313,0.92969c0,0 0.11719,1.77344 -0.28516,1.99609c-0.27734,0.15234 -0.65625,-0.15625 -1.47656,-1.56641c-0.41797,-0.72656 -0.73437,-1.52734 -0.73437,-1.52734c0,0 -0.05859,-0.14844 -0.16797,-0.22656c-0.13281,-0.09766 -0.31641,-0.12891 -0.31641,-0.12891l-1.95703,0.01172c0,0 -0.29297,0.01172 -0.39844,0.13672c-0.09766,0.11719 -0.00781,0.34766 -0.00781,0.34766c0,0 1.53125,3.58203 3.26563,5.38672c1.58984,1.65625 3.39453,1.54688 3.39453,1.54688h0.82031c0,0 0.24609,-0.02734 0.37109,-0.16016c0.11719,-0.125 0.11328,-0.35937 0.11328,-0.35937c0,0 -0.01562,-1.09766 0.49219,-1.26172c0.50391,-0.15625 1.14453,1.0625 1.82813,1.53125c0.51953,0.35547 0.91406,0.27734 0.91406,0.27734l1.82813,-0.02734c0,0 0.95313,-0.05859 0.5,-0.8125c-0.03516,-0.05859 -0.26172,-0.55469 -1.35547,-1.57031c-1.14844,-1.0625 -0.99609,-0.89062 0.38672,-2.73047c0.83984,-1.12109 1.17578,-1.80469 1.07031,-2.10156c-0.10156,-0.27734 -0.71875,-0.20312 -0.71875,-0.20312l-2.05859,0.01172c0,0 -0.15234,-0.01953 -0.26562,0.04688c-0.10937,0.06641 -0.17969,0.22266 -0.17969,0.22266c0,0 -0.32812,0.86719 -0.76172,1.60547c-0.91406,1.55469 -1.28516,1.64063 -1.43359,1.54297c-0.34766,-0.22656 -0.26172,-0.90625 -0.26172,-1.38672c0,-1.51172 0.23047,-2.13672 -0.44531,-2.30078c-0.22266,-0.05469 -0.38672,-0.08984 -0.95703,-0.09375z">
+                    </path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+  
+    </footer>
+    <div id="video" class="modal modal--quests modal--video">
+        <div class="modal__content">
+            <p class="modal__textBold modal__textBold--fs">
+                Видеосъёмка 5000 рублей/ 2 часа
+            <p class="modal__text modal__text--w75 modal__text--mb20">
+                Хотите, чтобы настроение Вашего праздника осталось не только в памяти? Мы предлагаем профессиональную
+                видеосъемку от настоящих ловцов ярких детских эмоций! Веселый смех, искренние улыбки, самые смешные и
+                красочные моменты- ничто не скроется от объектива нашего видеооператора! Мы гарантируем использование
+                только профессиональной аппаратуры для съемки, а также профессиональный монтаж.</p>
+            <ul class="modal__list">
+                <li class="modal__list-item">Видеосъемка ведется на протяжении всего мероприятия</li>
+                <li class="modal__list-item">Монтаж видео-ролика из самых ярких моментов праздника продолжительностью от
+                    3 минут + по желанию весь отснятый материал на диске</li>
+                <li class="modal__list-item"> Готовый ролик отправляется на указанный Вами адрес электронной почты в
+                    течение 7 дней после праздника</li>
+            </ul>
+        </div>
+    </div>
+    <div id="animator" class="modal modal--quests modal--animator">
+        <div class="modal__content">
+            <p class="modal__textBold modal__textBold--fs">
+                Дополнительный аниматор
+            <p class="modal__text modal__text--w75 modal__text--mb20">
+                В стоимость любой Шоу-программы из нашего ассортимента включен 1 актер-аниматор на каждые 10 детей.
+                Услуга вводится для того, чтобы ни один ребенок не остался без внимания и, соответственно, для более
+                качественной работы с детьми.
+
+
+            </p>
+            <p class="modal__text modal__text--w75 modal__text--mb20">Ваш ребенок мечтает и о пирате, и о Гарри Поттере
+                и не может выбрать между любимыми героями?</p>
+            <p class="modal__text modal__text--w75 modal__text--mb20">А может Вы хотите создать максимально яркое
+                погружение детей в волшебную сказку?</p>
+            <p class="modal__text modal__text--w75 modal__text--mb20">Тогда мы предлагаем подключить услугу
+                «дополнительный аниматор». Вы получите +1 аниматора к их общему количеству вне зависимости от места
+                проведения.</p>
+        </div>
+    </div>
+    <div id="disco" class="modal modal--quests modal--disco">
+        <div class="modal__content">
+            <p class="modal__textBold modal__textBold--fs">
+                Бумажная дискотека 9000 рублей / 40 минут
+            <p class="modal__text modal__text--w75 modal__text--mb20">
+                У вас была всегда обычная дискотека и некоторым детям было скучно и они не хотели танцевать? Так как же
+                раскрепостить всех? Для этого у нас есть бумага. Да-да, самая обычная бумага. Именно благодаря ей наша
+                "Бумажная дискотека" поможет запомнить ваш праздник на всю жизнь
+
+            </p>
+            <p class="modal__text modal__text--w75 modal__text--mb20"> Хотите узнать подробнее? Нет проблем, звоните по
+                телефону 8 (919) 965-35-19</p>
+        </div>
+    </div>
+    <div id="focus" class="modal modal--quests modal--focus">
+        <div class="modal__content">
+            <p class="modal__textBold modal__textBold--fs">
+                Фокусник 9000 руб/ 30 минут
+            <p class="modal__text modal__text--w75 modal__text--mb20">
+                Фокусы с платками, картами, монетами, веревками, шариками, книжкой, сачком, горящим кошельком,
+                волшебными палочками, ложками.
+            </p>
+            <p class="modal__text modal__text--w75 modal__text--mb20"> Все это объединяет в одно представление наш
+                великолепный фокусник.</p>
+            <p class="modal__text modal__text--w75 modal__text--mb20">Хотите больше? Нет проблем, подробности по
+                телефону 8 (919) 965-35-19</p>
+        </div>
+    </div>
+    <div id="mafia" class="modal modal--quests modal--mafia2">
+        <div class="modal__content">
+            <p class="modal__textBold modal__textBold--fs">
+                Мафия (карточная игра) 4000 рублей / 1 час
+            <p class="modal__text modal__text--w75 modal__text--mb20">
+                Игра в Мафию с картами - увлекательное занятие как для взрослых, так и для детей. Эта несложная
+                командная игра позволяет игрокам развивать воображение, учит красиво говорить и оттачивает дар
+                убеждения, а также тренирует память. Мафия - спокойная и веселая игра, которая подойдет для большой
+                компании. Здесь действует правило - чем больше игроков, тем интереснее получается игра. Оптимальное
+                количество игроков для Мафии от 8 человек.
+            </p>
+            <p class="modal__text modal__text--w75 modal__text--mb20"> Хотите узнать подробнее? Нет проблем, звоните по
+                телефону 8 (919) 965-35-19</p>
+                    <a href="./ordering.html" class="modal__button button button--white">оформить заявку</a>
+        </div>
+    </div>
+    <div id="gifts" class="modal modal--quests modal--gifts">
+        <div class="modal__content">
+            <p class="modal__textBold modal__textBold--fs">
+                Подарки всем участникам 190 рублей/человек
+            <p class="modal__text modal__text--w75 modal__text--mb20">
+                Что же первое приходит в голову детям при слове «праздник»? Конечно! Подарки! Ни одно праздничное
+                торжество не обходится без коробочек в яркой обертке, хранящих в себе столько секретов. Мы предлагаем
+                услугу вручения памятных подарков-сувениров в тематике выбранной шоу-программы всем участникам Вашего
+                мероприятия. Это может стать отличным вариантом награждения за прохождение игрового квеста, а также
+                приятным напоминанием о сказочном празднике, с которым детям не захочется расставаться!
+            </p>
+        </div>
+    </div>
+    <div id="laser" class="modal modal--quests modal--laser">
+        <div class="modal__content">
+            <p class="modal__textBold modal__textBold--fs">
+                Лазертаг 900 рублей / час / человек
+            <p class="modal__text modal__text--w75 modal__text--mb20">
+                Лазертаг- это высокотехнологичная игра, происходящая в реальном времени, ее суть состоит в поражении
+                противников безопасными лазерными выстрелами. В отличие от известной всем игры в пейнтбол, лазертаг
+                проходит совершенно безболезненно, а маленький вес оружия и оборудования позволяет участвовать детям
+                любых возрастов. На Ваш выбор мы предлагаем различные сценарии проведения игры: от Захвата флага до
+                Зомби апокалипсиса.Лазертаг станет отличным дополнением к любому квесту, а наши профессиональные тренера
+                гарантируют безопасность как оружия, так и всех прилагающихся к нему технологичных устройств.
+            </p>
+            <p class="modal__text modal__text--w75 modal__text--mb20">
+                Более подробная информация у оператора по телефону: 8(919) 965-35-19s
+            </p>
+        </div>
+    </div>
+    <div id="cheme" class="modal modal--quests modal--cheme">
+        <div class="modal__content">
+            <p class="modal__textBold modal__textBold--fs">
+              Химическое шоу 7000 рублей / 45 минут
+            <p class="modal__text modal__text--w75 ">
+              Интересная научная шоу-программа, во время которой ребята отправятся в удивительное приключение по миру экспериментов!
+            </p>
+            <p class="modal__text modal__text--w75 ">
+              Изучат свойства сухого льда, устроят настоящий салют, оживят огромную змею из древних времён!
+            </p>
+            <p class="modal__text modal__text--w75 ">
+              Под пристальным наблюдением и контролем нашего профессора раскроют научные тайны, отправятся на охоту и станут участниками самой настоящей вечеринки!
+            </p>
+            <p class="modal__text modal__text--w75 modal__text--mb20">
+              А в конце шоу каждый участник получит полимерного червячка на память!!!
+            </p>
+            <p class="modal__text modal__text--w75 modal__text--mb20">
+              В программе научного шоу Вас ждут:
+            </p>
+            <div class="modal__list modal__list--df">
+              <ul class="modal__list-left">
+                <li>Водородная бомба   </li>
+                <li>Ледяное дыхание</li>
+                <li>Запуск пробки в космос</li>
+                <li> Мыльная каша</li>
+                <li>Паста для бегемота</li>
+                <li>Фараонова змея</li>
+              </ul>
+              <ul class="modal__list-right">
+                <li>Охота на "мышку"</li>
+                <li>Море дыма для дискотеки</li>
+                <li>Горящие руки</li>
+                <li>Полимерный червяк</li>
+                <li>Искусственный снег</li>
+                <li> Шарик непротыкайка</li>
+              </ul>
+            </div>
+        </div>
+    </div>
+    <div id="accii" class="modal modal--quests modal--accii">
+        <div class="modal__content">
+            <p class="modal__textBold modal__textBold--fs">
+                Экономическая игра “Акционер” 4000 рублей / 1,5 часа
+            <p class="modal__text modal__text--w75 modal__text--mb20">
+                Акционер — настольная имитационная игра, созданная на основе разработанной американскими специалистами
+                игры «Брокер».
+
+
+            </p>
+            <p class="modal__text modal__text--w75 modal__text--mb20">
+                Удачно моделируя некоторые биржевые ситуации, игра представляет собой своеобразное пособие по изучению
+                соответствующих финансовых операций, помогает лучше понять такие категории, как «биржа», «акции»,
+                «стоимость акций», «банкротство». Достоинства игры, однако, не ограничиваются её имитационными
+                особенностями и, конечно, не стремление овладеть тайнами спекулятивных махинаций вызывает к ней интерес.
+                Подобно тому, как шахматиста, «съедающего» чужие фигуры, нельзя обвинить в жестокости и агрессивности,
+                не следует игрока в «Акционер» упрекать в корыстолюбии, если он серией удачных ходов добивается игрового
+                преимущества над соперником.
+            </p>
+            <p class="modal__text modal__text--w75 modal__text--mb20">
+                Участие в этой игре требует проявления целого ряда качеств — математических способностей, умения быстро
+                сориентироваться в меняющейся игровой ситуации при оценке различных вариантов хода, стимулирует развитие
+                наблюдательности, памяти, внимания. Очень важно научиться планировать свои действия и в то же время
+                гибко реагировать на ответ соперника, что связано с необходимостью решать в процессе игры как
+                стратегические, так и тактические задачи.
+            </p>
+        </div>
+    </div>
+    <div id="baloon" class="modal modal--quests modal--baloon">
+        <div class="modal__content">
+            <p class="modal__textBold modal__textBold--fs">
+                Оформление шарами от 2500 рублей
+            <p class="modal__text modal__text--w75 modal__text--mb20">
+                Мы делаем праздничное оформление выпускных, тематических вечеринок и любых других торжественных
+                мероприятий. Предлагаем большой выбор красивых композиций из шаров, а также доставку и оформление на
+                месте проведения в день Вашего торжества. Для заказа в заявке укажите сумму, ориентируясь на которую
+                наши дизайнеры сделают подборку различных тематических оформлений и отправят на указанный Вами адрес
+                электронной почты.
+                Более подробная информация у оператора по телефону: 8(919) 965-35-19.
+            </p>
+            <p class="modal__text modal__text--w75 modal__text--mb20">
+                Более подробная информация у оператора по телефону: 8(919) 965-35-19.
+            </p>
+        </div>
+    </div>
+    <div id="photo" class="modal modal--quests modal--photo">
+        <div class="modal__content">
+            <p class="modal__textBold modal__textBold--fs">
+                Фотосъёмка 4000 рублей/ 2 часа
+            <p class="modal__text modal__text--w75 modal__text--mb20">
+                Приятные воспоминания- это неотъемлемая часть любого праздника, а благодаря нашим профессиональным
+                фотографам самые искренние детские эмоции и волшебные моменты Вашего торжества будут запечатлены на
+                ярких фотографиях. Мы гарантируем использование только профессиональной аппаратуры для съемки и
+                обработки фотографий. А также 100% попадание в кадр искренних улыбок всех участников мероприятия!
+            </p>
+            <ul class="modal__list">
+                <li class="modal__list-item">Фотосъемка ведется на протяжении всего мероприятия</li>
+                <li class="modal__list-item">Съемка и обработка от 50 фотографий.</li>
+                <li class="modal__list-item"> Готовый ролик отправляется на указанный Вами адрес Готовые фото
+                    присылаются на указанный Вами адрес электронной почты в течение 7 дней после праздника</li>
+            </ul>
+        </div>
+    </div>
+    <div id="sugar" class="modal modal--quests modal--sugar">
+        <div class="modal__content">
+            <p class="modal__textBold modal__textBold--fs">
+                Сахарная вата 100 рублей / человек
+            <p class="modal__text modal__text--w75 modal__text--mb20">
+                Думаю каждый родитель помнит своё любимое лакомство детства.
+
+
+            </p>
+            <p class="modal__text modal__text--w75 modal__text--mb20">Для кого-то это мороженое или варенье,но все точно пробовали и по достоинству оценивали сладкую вату.</p>
+            <p class="modal__text modal__text--w75 modal__text--mb20">Наконец появилась возможность заказать сахарное удовольствие на ваш праздник. Мы решили подойти основательно к этому вопросу и предлагаем не просто сахарную вату, а вату с различными вкусами. Клубника, виноград , апельсин и ещё множество различных вкусов порадует вас и ваших детей. Минимальный заказ от 1000 рублей, в стоимость входит выезд аппарата для приготовление сахарной ваты и можно готовить лакомство хоть весь праздник, ограничения по количеству штук нет. </p>
+        </div>
+    </div>
+    <script src="./plugins/jquery-3.6.0.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+    </script>
+    <script src="./plugins/nouislider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/js/selectize.min.js"
+        integrity="sha512-IOebNkvA/HZjMM7MxL0NYeLYEalloZ8ckak+NDtOViP7oiYzG5vn6WVXyrJDiJPhl4yRdmNAG49iuLmhkUdVsQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

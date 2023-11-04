@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/icon.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <title></title>
+</head>
+
+<body>
+  <div class="overlayBubble">
+    <img src="./assets/img/эффекты фон.png" alt="">
+  </div>
+  <div class="overlayStar">
+    <img src="./assets/img/эффекты фон звезды.png" alt="">
+  </div>
+  <header class="header">
+    <div class="header__top">
+      <a href="/index.html" class="header__top-logo">
+        <img src="./assets/img/MR.HAPPY.png" alt="">
+      </a>
+      <div class="header__top-socials">
+        <a href="tel:+79199653519" class="header__top-phone">+7 919 965 35 19</a>
+        <div class="header__icons">
+          <a target="_blank" href="https://instagram.com/mrhappy.event?igshid=NzZlODBkYWE4Ng==" class="header__icons-item">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="31" height="31" viewBox="0,0,256,256">
+              <g transform="translate(-28.16,-28.16) scale(1.22,1.22)">
+                <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(8,8)">
+                    <path
+                      d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z">
+                    </path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+          <a target="_blank" href="https://vk.com/mrhappy.event" class="header__icons-item">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0,0,256,256">
+              <g transform="translate(-19.2,-19.2) scale(1.15,1.15)">
+                <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(8,8)">
+                    <path
+                      d="M9.08203,5c-2.24219,0 -4.08203,1.83984 -4.08203,4.08203v13.83594c0,2.24219 1.83984,4.08203 4.08203,4.08203h13.83594c2.24219,0 4.08203,-1.83984 4.08203,-4.08203v-13.83594c0,-2.24219 -1.83984,-4.08203 -4.08203,-4.08203zM9.08203,7h13.83594c1.16016,0 2.08203,0.92188 2.08203,2.08203v13.83594c0,1.16016 -0.92187,2.08203 -2.08203,2.08203h-13.83594c-1.16016,0 -2.08203,-0.92187 -2.08203,-2.08203v-13.83594c0,-1.16016 0.92188,-2.08203 2.08203,-2.08203zM15.71875,12.23047c-0.73437,-0.00781 -1.35937,0 -1.71094,0.17188c-0.23437,0.11328 -0.41406,0.37109 -0.30469,0.38281c0.13672,0.01953 0.44531,0.08594 0.60938,0.30859c0.21094,0.28516 0.20313,0.92969 0.20313,0.92969c0,0 0.11719,1.77344 -0.28516,1.99609c-0.27734,0.15234 -0.65625,-0.15625 -1.47656,-1.56641c-0.41797,-0.72656 -0.73437,-1.52734 -0.73437,-1.52734c0,0 -0.05859,-0.14844 -0.16797,-0.22656c-0.13281,-0.09766 -0.31641,-0.12891 -0.31641,-0.12891l-1.95703,0.01172c0,0 -0.29297,0.01172 -0.39844,0.13672c-0.09766,0.11719 -0.00781,0.34766 -0.00781,0.34766c0,0 1.53125,3.58203 3.26563,5.38672c1.58984,1.65625 3.39453,1.54688 3.39453,1.54688h0.82031c0,0 0.24609,-0.02734 0.37109,-0.16016c0.11719,-0.125 0.11328,-0.35937 0.11328,-0.35937c0,0 -0.01562,-1.09766 0.49219,-1.26172c0.50391,-0.15625 1.14453,1.0625 1.82813,1.53125c0.51953,0.35547 0.91406,0.27734 0.91406,0.27734l1.82813,-0.02734c0,0 0.95313,-0.05859 0.5,-0.8125c-0.03516,-0.05859 -0.26172,-0.55469 -1.35547,-1.57031c-1.14844,-1.0625 -0.99609,-0.89062 0.38672,-2.73047c0.83984,-1.12109 1.17578,-1.80469 1.07031,-2.10156c-0.10156,-0.27734 -0.71875,-0.20312 -0.71875,-0.20312l-2.05859,0.01172c0,0 -0.15234,-0.01953 -0.26562,0.04688c-0.10937,0.06641 -0.17969,0.22266 -0.17969,0.22266c0,0 -0.32812,0.86719 -0.76172,1.60547c-0.91406,1.55469 -1.28516,1.64063 -1.43359,1.54297c-0.34766,-0.22656 -0.26172,-0.90625 -0.26172,-1.38672c0,-1.51172 0.23047,-2.13672 -0.44531,-2.30078c-0.22266,-0.05469 -0.38672,-0.08984 -0.95703,-0.09375z">
+                    </path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <nav class="header__nav">
+          <a href="/" class="header__nav-item">
+            Главная
+          </a>
+          <div class="header__nav-item">
+            Наши услуги
+            <div class="header__dropdown">
+              <a href="./quests.html" class="header__dropdown-item">Квесты</a>
+              <a href="./masterClasses.html" class="header__dropdown-item">Мастер-классы</a>
+              <a href="./party.html" class="header__dropdown-item">Вечеринки</a>
+              <a href="./candy.html" class="header__dropdown-item">Кенди-Бар</a>
+              <a href="./animators.html" class="header__dropdown-item">Аниматоры</a>
+              <a href="./additional.html" class="header__dropdown-item">Дополнительные услуги</a>
+            </div>
+          </div>
+          <a href="./about.html" class="header__nav-item">
+            О нас
+          </a>
+          <a href="./club.html" class="header__nav-item">
+            Детский клуб
+          </a>
+          <a href="./gallery.html" class="header__nav-item">
+            Галерея
+          </a>
+        </nav>
+      </div>
+    </div>
+    <div class="burger">
+      <div class="burger__line"></div>
+    </div>
+    <a href="#" class="header__side">
+      <img src="./assets/img/Логотип(Растр)без фона 1.png" alt="" >
+    </a>
+  </header>
+  <main>
+    <div class="menu">
+      <div class="menu__list">
+        <a href="/" class="menu__list-item">Главная</a>
+        <div class="menu__list-item menu__list-item--accordeon"> Наши услуги <img
+            src="./assets/svg/keyboard-right-arrow-button-1_icon-icons.com_72690.svg">
+          <div class="menu__dropdown">
+            <a href="./quests.html" class="menu__dropdown-item">Квесты</a>
+            <a href="./masterClasses.html" class="menu__dropdown-item">Мастер-классы</a>
+            <a href="./party.html" class="menu__dropdown-item">Вечеринки</a>
+            <a href="./candy.html" class="menu__dropdown-item">Кенди-Бар</a>
+            <a href="./animators.html" class="menu__dropdown-item">Аниматоры</a>
+            <a href="./additional.html" class="menu__dropdown-item">Дополнительные услуги</a>
+          </div>
+        </div>
+        <a href="./about.html" class="menu__list-item"> О нас</a>
+        <a href="./club.html" class="menu__list-item"> Детский клуб</a>
+        <a href="./gallery.html" class="menu__list-item">Галерея</a>
+      </div>
+      <div class="menu__icons">
+        <a href="#" class="menu__icons-item">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="31" height="31" viewBox="0,0,256,256">
+            <g transform="translate(-28.16,-28.16) scale(1.22,1.22)">
+              <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal">
+                <g transform="scale(8,8)">
+                  <path
+                    d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z">
+                  </path>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </a>
+        <a href="#" class="menu__top-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0,0,256,256">
+            <g transform="translate(-19.2,-19.2) scale(1.15,1.15)">
+              <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal">
+                <g transform="scale(8,8)">
+                  <path
+                    d="M9.08203,5c-2.24219,0 -4.08203,1.83984 -4.08203,4.08203v13.83594c0,2.24219 1.83984,4.08203 4.08203,4.08203h13.83594c2.24219,0 4.08203,-1.83984 4.08203,-4.08203v-13.83594c0,-2.24219 -1.83984,-4.08203 -4.08203,-4.08203zM9.08203,7h13.83594c1.16016,0 2.08203,0.92188 2.08203,2.08203v13.83594c0,1.16016 -0.92187,2.08203 -2.08203,2.08203h-13.83594c-1.16016,0 -2.08203,-0.92187 -2.08203,-2.08203v-13.83594c0,-1.16016 0.92188,-2.08203 2.08203,-2.08203zM15.71875,12.23047c-0.73437,-0.00781 -1.35937,0 -1.71094,0.17188c-0.23437,0.11328 -0.41406,0.37109 -0.30469,0.38281c0.13672,0.01953 0.44531,0.08594 0.60938,0.30859c0.21094,0.28516 0.20313,0.92969 0.20313,0.92969c0,0 0.11719,1.77344 -0.28516,1.99609c-0.27734,0.15234 -0.65625,-0.15625 -1.47656,-1.56641c-0.41797,-0.72656 -0.73437,-1.52734 -0.73437,-1.52734c0,0 -0.05859,-0.14844 -0.16797,-0.22656c-0.13281,-0.09766 -0.31641,-0.12891 -0.31641,-0.12891l-1.95703,0.01172c0,0 -0.29297,0.01172 -0.39844,0.13672c-0.09766,0.11719 -0.00781,0.34766 -0.00781,0.34766c0,0 1.53125,3.58203 3.26563,5.38672c1.58984,1.65625 3.39453,1.54688 3.39453,1.54688h0.82031c0,0 0.24609,-0.02734 0.37109,-0.16016c0.11719,-0.125 0.11328,-0.35937 0.11328,-0.35937c0,0 -0.01562,-1.09766 0.49219,-1.26172c0.50391,-0.15625 1.14453,1.0625 1.82813,1.53125c0.51953,0.35547 0.91406,0.27734 0.91406,0.27734l1.82813,-0.02734c0,0 0.95313,-0.05859 0.5,-0.8125c-0.03516,-0.05859 -0.26172,-0.55469 -1.35547,-1.57031c-1.14844,-1.0625 -0.99609,-0.89062 0.38672,-2.73047c0.83984,-1.12109 1.17578,-1.80469 1.07031,-2.10156c-0.10156,-0.27734 -0.71875,-0.20312 -0.71875,-0.20312l-2.05859,0.01172c0,0 -0.15234,-0.01953 -0.26562,0.04688c-0.10937,0.06641 -0.17969,0.22266 -0.17969,0.22266c0,0 -0.32812,0.86719 -0.76172,1.60547c-0.91406,1.55469 -1.28516,1.64063 -1.43359,1.54297c-0.34766,-0.22656 -0.26172,-0.90625 -0.26172,-1.38672c0,-1.51172 0.23047,-2.13672 -0.44531,-2.30078c-0.22266,-0.05469 -0.38672,-0.08984 -0.95703,-0.09375z">
+                  </path>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="breadcrumbs">
+      <div class="container">
+        <a href="/index.html" class="breadcrumbs__link">Главная</a>
+        <a href="#" class="breadcrumbs__link">Наши услуги</a>
+        <a href="#" class="breadcrumbs__link">Аниматоры</a>
+      </div>
+    </div>
+    <section class="animators">
+      <div class="container">
+        <div class="animators__box">
+          <div class="animators__box-content">
+            <h2 class="animators__box-title">Аниматоры</h2>
+            <p class="animators__box-text">Учитывая интересы и увлечения Вашего ребёнка, мы подготовим программу
+              незабываемого праздника!</p>
+            <div class="animators__box-list">
+              <div class="animators__box-item">
+                <img src="./assets/svg/Prize.svg" alt="" class="animators__box-img">
+                <p class="animators__box-itemText">Подвижные игры и конкурсы</p>
+              </div>
+              <div class="animators__box-item">
+                <img src="./assets/svg/Foam Bubbles.svg" alt="" class="animators__box-img">
+                <p class="animators__box-itemText">Мыльные пузыри</p>
+              </div>
+              <div class="animators__box-item">
+                <img src="./assets/img/Musical Notes.png" alt="" class="animators__box-img">
+                <p class="animators__box-itemText">Музыкальное сопровождение</p>
+              </div>
+              <div class="animators__box-item">
+                <img src="./assets/img/Hot Air Balloon.png" alt="" class="animators__box-img">
+                <p class="animators__box-itemText">Моделирование из шариков сосисок</p>
+              </div>
+              <div class="animators__box-item">
+                <img src="./assets/img/Krita.png" alt="" class="animators__box-img">
+                <p class="animators__box-itemText">Аквагрим</p>
+              </div>
+              <div class="animators__box-item">
+                <img src="./assets/img/Magician.png" alt="" class="animators__box-img">
+                <p class="animators__box-itemText">Детские фокусы</p>
+              </div>
+            </div>
+          </div>
+          <img src="./assets/img/alisa2 1.png" alt="" class="animators__box-image">
+        </div>
+      </div>
+    </section>
+    <section class="animatorsType">
+      <div class="container">
+        <div class="animatorsType__tabs">
+          <a data-target="1" href="#" class="animatorsType__tabs-item animatorsType__tabs-item--active">Все</a>
+          <a data-target="2" href="#" class="animatorsType__tabs-item">1- 3 лет</a>
+          <a data-target="3" href="#" class="animatorsType__tabs-item">4 - 6 лет</a>
+          <a data-target="4" href="#" class="animatorsType__tabs-item">7 - 9 лет</a>
+          <a data-target="5" href="#" class="animatorsType__tabs-item">10 - 12 лет</a>
+          <a data-target="6" href="#" class="animatorsType__tabs-item">для мальчиков</a>
+          <a data-target="7" href="#" class="animatorsType__tabs-item">для девочек</a>
+        </div>
+        <div data-info="1"
+          class="animatorsType__content animatorsType__content--active animatorsType__content--opacity">
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Гарри Поттер</div>
+            <img src="./assets/img/dsc_5411_00 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Безумный шляпник</div>
+            <img src="./assets/img/безумный шляпник 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Белоснежка</div>
+            <img src="./assets/img/белоснежка 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Буратино</div>
+            <img src="./assets/img/буратино 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Карлсон</div>
+            <img src="./assets/img/карлсон 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Клоун</div>
+            <img src="./assets/img/клоун 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Искорка</div>
+            <img src="./assets/img/литл пони искорка 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Пинки Пай</div>
+            <img src="./assets/img/литл пони пинки пай 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Радуга</div>
+            <img src="./assets/img/литл пони радуга 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Лунтик</div>
+            <img src="./assets/img/лунтик 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Мальвина</div>
+            <img src="./assets/img/мальвина 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Незнайка</div>
+            <img src="./assets/img/незнайка 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Пеппи длинный чулок</div>
+            <img src="./assets/img/пеппи длиный чулок 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Рапунцель</div>
+            <img src="./assets/img/рапунцель 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Фея Винкс Блум</div>
+            <img src="./assets/img/фея вингс блум 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Фея Винкс Флора</div>
+            <img src="./assets/img/фея вингс муза 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Фея Винкс Флора</div>
+            <img src="./assets/img/фея вингс флора 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Фиксик Папус</div>
+            <img src="./assets/img/фиксик папус 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Фиксики Симка и Нолик</div>
+            <img src="./assets/img/фиксики нолик и симка 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Алиса</div>
+            <img src="./assets/img/алиса 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Эльза</div>
+            <img src="./assets/img/эльза 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+        </div>
+        <div data-info="2" class="animatorsType__content">
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Лунтик</div>
+            <img src="./assets/img/лунтик 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Мальвина</div>
+            <img src="./assets/img/мальвина 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Рапунцель</div>
+            <img src="./assets/img/рапунцель 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Пеппи длинный чулок</div>
+            <img src="./assets/img/пеппи длиный чулок 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Фиксик Папус</div>
+            <img src="./assets/img/фиксик папус 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Фиксики Симка и Нолик</div>
+            <img src="./assets/img/фиксики нолик и симка 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+        </div>
+        <div data-info="3" class="animatorsType__content">
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Искорка</div>
+            <img src="./assets/img/литл пони искорка 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Пинки Пай</div>
+            <img src="./assets/img/литл пони пинки пай 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Радуга</div>
+            <img src="./assets/img/литл пони радуга 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Фея Винкс Блум</div>
+            <img src="./assets/img/фея вингс блум 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Фея Винкс Флора</div>
+            <img src="./assets/img/фея вингс муза 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Фея Винкс Флора</div>
+            <img src="./assets/img/фея вингс флора 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+        </div>
+        <div data-info="4" class="animatorsType__content">
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Алиса</div>
+            <img src="./assets/img/алиса 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Эльза</div>
+            <img src="./assets/img/эльза 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Клоун</div>
+            <img src="./assets/img/клоун 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Белоснежка</div>
+            <img src="./assets/img/белоснежка 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Незнайка</div>
+            <img src="./assets/img/незнайка 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Буратино</div>
+            <img src="./assets/img/буратино 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Карлсон</div>
+            <img src="./assets/img/карлсон 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+        </div>
+        <div data-info="5" class="animatorsType__content">
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Гарри Поттер</div>
+            <img src="./assets/img/dsc_5411_00 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Безумный шляпник</div>
+            <img src="./assets/img/безумный шляпник 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+        </div>
+        <div data-info="6" class="animatorsType__content">
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Гарри Поттер</div>
+            <img src="./assets/img/dsc_5411_00 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Безумный шляпник</div>
+            <img src="./assets/img/безумный шляпник 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Буратино</div>
+            <img src="./assets/img/буратино 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Карлсон</div>
+            <img src="./assets/img/карлсон 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Клоун</div>
+            <img src="./assets/img/клоун 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Лунтик</div>
+            <img src="./assets/img/лунтик 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Незнайка</div>
+            <img src="./assets/img/незнайка 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Фиксик Папус</div>
+            <img src="./assets/img/фиксик папус 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Фиксики Симка и Нолик</div>
+            <img src="./assets/img/фиксики нолик и симка 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+        </div>
+        <div data-info="7" class="animatorsType__content">
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Белоснежка</div>
+            <img src="./assets/img/белоснежка 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Искорка</div>
+            <img src="./assets/img/литл пони искорка 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Пинки Пай</div>
+            <img src="./assets/img/литл пони пинки пай 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Радуга</div>
+            <img src="./assets/img/литл пони радуга 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Мальвина</div>
+            <img src="./assets/img/мальвина 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Пеппи длинный чулок</div>
+            <img src="./assets/img/пеппи длиный чулок 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Рапунцель</div>
+            <img src="./assets/img/рапунцель 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Фея Винкс Блум</div>
+            <img src="./assets/img/фея вингс блум 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Фея Винкс Флора</div>
+            <img src="./assets/img/фея вингс муза 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Фея Винкс Флора</div>
+            <img src="./assets/img/фея вингс флора 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Фиксики Симка и Нолик</div>
+            <img src="./assets/img/фиксики нолик и симка 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Алиса</div>
+            <img src="./assets/img/алиса 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+          <div class="animatorsType__item">
+            <div class="animatorsType__item-name">Эльза</div>
+            <img src="./assets/img/эльза 1.png" alt="" class="animatorsType__item-img">
+            <div class="animatorsType__item-price">2500 руб</div>
+            <a href="#" class="button button--white">оформить заявку</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <a href="/index.html" class="footer__logo">
+      <img src="./assets/img/Логотип(Растр)без фона 2.png" alt="" class="footer__logo-img">
+      <img src="./assets/img/MR.HAPPY.png" alt="" class="footer__logo-text">
+    </a>
+    <div class="container">
+      <div class="footer__top">
+        <nav class="footer__left">
+          <a href="./quests.html" class="footer__left-item">
+            Квесты
+          </a>
+          <a href="./masterClasses.html" class="footer__left-item">
+            Мастер-классы
+          </a>
+          <a href="./party.html" class="footer__left-item">
+            Вечеринки
+          </a>
+          <a href="./animators.html" class="footer__left-item">
+            Аниматоры
+          </a>
+          <a href="./candy.html" class="footer__left-item">
+            Кенди-Бар
+          </a>
+          <a href="./additional.html" class="footer__left-item">
+            Дополнительные услуги
+          </a>
+        </nav>
+        <div class="footer__right">
+          <a href="./about.html" class="footer__right-item">
+            О нас
+          </a>
+          <a href="./club.html" class="footer__right-item">
+            Детский клуб
+          </a>
+          <a href="./gallery.html" class="footer__right-item">
+            Галерея
+          </a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <a href="#" class="footer__policy">политика конфиденциальности</a>
+      </div>
+    </div>
+
+    <div class="footer__socials">
+      <a href="mailto:mrhappy.event@gmail.com" class="footer__socials-mail">mrhappy.event@gmail.com</a>
+      <a href="tel:+79199653519" class="footer__socials-phone">+7 919 965 35 19</a>
+      <div class="footer__socials-icons">
+        <a target="_blank" href="https://instagram.com/mrhappy.event?igshid=NzZlODBkYWE4Ng==" class="footer__socials-iconsItem">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="31" height="31" viewBox="0,0,256,256">
+            <g transform="translate(-28.16,-28.16) scale(1.22,1.22)">
+              <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal">
+                <g transform="scale(8,8)">
+                  <path
+                    d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z">
+                  </path>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </a>
+        <a target="_blank" href="https://vk.com/mrhappy.event" class="footer__socials-iconsItem">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0,0,256,256">
+            <g transform="translate(-19.2,-19.2) scale(1.15,1.15)">
+              <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal">
+                <g transform="scale(8,8)">
+                  <path
+                    d="M9.08203,5c-2.24219,0 -4.08203,1.83984 -4.08203,4.08203v13.83594c0,2.24219 1.83984,4.08203 4.08203,4.08203h13.83594c2.24219,0 4.08203,-1.83984 4.08203,-4.08203v-13.83594c0,-2.24219 -1.83984,-4.08203 -4.08203,-4.08203zM9.08203,7h13.83594c1.16016,0 2.08203,0.92188 2.08203,2.08203v13.83594c0,1.16016 -0.92187,2.08203 -2.08203,2.08203h-13.83594c-1.16016,0 -2.08203,-0.92187 -2.08203,-2.08203v-13.83594c0,-1.16016 0.92188,-2.08203 2.08203,-2.08203zM15.71875,12.23047c-0.73437,-0.00781 -1.35937,0 -1.71094,0.17188c-0.23437,0.11328 -0.41406,0.37109 -0.30469,0.38281c0.13672,0.01953 0.44531,0.08594 0.60938,0.30859c0.21094,0.28516 0.20313,0.92969 0.20313,0.92969c0,0 0.11719,1.77344 -0.28516,1.99609c-0.27734,0.15234 -0.65625,-0.15625 -1.47656,-1.56641c-0.41797,-0.72656 -0.73437,-1.52734 -0.73437,-1.52734c0,0 -0.05859,-0.14844 -0.16797,-0.22656c-0.13281,-0.09766 -0.31641,-0.12891 -0.31641,-0.12891l-1.95703,0.01172c0,0 -0.29297,0.01172 -0.39844,0.13672c-0.09766,0.11719 -0.00781,0.34766 -0.00781,0.34766c0,0 1.53125,3.58203 3.26563,5.38672c1.58984,1.65625 3.39453,1.54688 3.39453,1.54688h0.82031c0,0 0.24609,-0.02734 0.37109,-0.16016c0.11719,-0.125 0.11328,-0.35937 0.11328,-0.35937c0,0 -0.01562,-1.09766 0.49219,-1.26172c0.50391,-0.15625 1.14453,1.0625 1.82813,1.53125c0.51953,0.35547 0.91406,0.27734 0.91406,0.27734l1.82813,-0.02734c0,0 0.95313,-0.05859 0.5,-0.8125c-0.03516,-0.05859 -0.26172,-0.55469 -1.35547,-1.57031c-1.14844,-1.0625 -0.99609,-0.89062 0.38672,-2.73047c0.83984,-1.12109 1.17578,-1.80469 1.07031,-2.10156c-0.10156,-0.27734 -0.71875,-0.20312 -0.71875,-0.20312l-2.05859,0.01172c0,0 -0.15234,-0.01953 -0.26562,0.04688c-0.10937,0.06641 -0.17969,0.22266 -0.17969,0.22266c0,0 -0.32812,0.86719 -0.76172,1.60547c-0.91406,1.55469 -1.28516,1.64063 -1.43359,1.54297c-0.34766,-0.22656 -0.26172,-0.90625 -0.26172,-1.38672c0,-1.51172 0.23047,-2.13672 -0.44531,-2.30078c-0.22266,-0.05469 -0.38672,-0.08984 -0.95703,-0.09375z">
+                  </path>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+  </footer>
+  <script src="./plugins/jquery-3.6.0.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

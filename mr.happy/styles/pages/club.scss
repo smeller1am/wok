@@ -1,0 +1,433 @@
+.club {
+    &__box {
+        border-radius: 30px;
+        background: radial-gradient(795.22% 105.58% at 7.11% 13.3%, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+        display: flex;
+        justify-content: space-between;
+        @include fluid(gap, 25px, 48px);
+    }
+
+    &__content {
+        @include fluid(padding-top, 30px, 42px);
+        @include fluid(padding-bottom, 30px, 42px);
+        @include fluid(padding-left, 40px, 70px);
+
+        &-title {
+            font-weight: 700;
+            line-height: 136.111%;
+            letter-spacing: 5.4px;
+            @include fluid(font-size, 26px, 36px);
+            @include fluid(margin-bottom, 20px, 26px);
+        }
+
+        &-text {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            @include fluid(font-size, 14px, 16px);
+            @include fluid(margin-bottom, 15px, 20px)
+        }
+
+        &-items {
+            font-weight: 400;
+            line-height: 24px;
+            @include fluid(font-size, 14px, 16px);
+
+            a {
+                color: #000;
+            }
+        }
+    }
+
+    &__img {
+        width: 466px;
+        height: 336px;
+        flex-shrink: 0;
+        object-fit: cover;
+        border-radius: 30px;
+        @include fluid(width, 380px, 466px);
+        @include fluid(height, 280px, 346px);
+    }
+}
+
+.teachers {
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 980px;
+        margin: 0 auto;
+        @include fluid(column-gap, 30px, 120px);
+        @include fluid(row-gap, 30px, 50px);
+    }
+
+    &__item {
+        border-radius: 30px;
+        height: fit-content;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, #FFF 81.77%);
+
+        &-img {
+            padding: 10px;
+            width: 100%;
+            height: 254px;
+            object-fit: cover;
+            border-radius: 30px;
+            @include fluid(padding, 7px, 10px);
+            @include fluid(margin-bottom, 8px, 10px);
+            @include fluid(height, 270px, 294px);
+        }
+
+        &-content {
+            @include fluid(padding-left, 15px, 20px);
+            @include fluid(padding-right, 15px, 20px);
+            @include fluid(padding-bottom, 20px, 24px);
+        }
+
+        &-name {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%;
+            text-align: center;
+            letter-spacing: 1px;
+            @include fluid(font-size, 16px, 20px);
+            @include fluid(margin-bottom, 15px, 22px);
+
+        }
+
+        &-list {
+            list-style: disc;
+            list-style-position: outside;
+            @include fluid(padding-left, 10px, 20px);
+            @include fluid(padding-right, 10px, 20px);
+
+            &Item {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 150%;
+
+                @include fluid(font-size, 14px, 16px);
+            }
+        }
+
+    }
+}
+
+.scedule {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        &-left,
+        &-right {
+            display: flex;
+            flex-direction: column;
+            @include fluid(gap, 20px, 24px);
+            @include fluid(width, 220px, 256px);
+        }
+
+        &-center {
+            display: flex;
+            flex-direction: column;
+            @include fluid(gap, 20px, 24px);
+            @include fluid(width, 350px, 405px);
+
+            .scedule {
+                &__table {
+                    @include fluid(padding-left, 30px, 40px);
+                    @include fluid(padding-right, 30px, 40px);
+                }
+            }
+        }
+    }
+
+    &__item {
+        border-radius: 30px;
+        background: linear-gradient(165deg, rgba(255, 255, 255, 0.61) 5.74%, rgba(255, 255, 255, 0.15) 119.53%);
+        @include fluid(padding-top, 20px, 24px);
+        @include fluid(padding-left, 14px, 17px);
+        @include fluid(padding-right, 14px, 17px);
+        @include fluid(padding-bottom, 30px, 40px);
+
+        &--holiday {
+            .scedule {
+                &__item {
+                    &-name {
+                        border-bottom: 1px solid #FFFFFF;
+                        @include fluid(margin-bottom, 20px, 22px);
+                    }
+                }
+            }
+        }
+
+        &-name {
+            text-align: center;
+            font-weight: 500;
+            line-height: 130%;
+            letter-spacing: 1px;
+            margin-bottom: 3px;
+            @include fluid(font-size, 16px, 20px)
+        }
+
+        &-text {
+            font-size: 16px;
+            line-height: 150%;
+            @include fluid(font-size, 14px, 16px);
+            @include fluid(margin-bottom, 20px, 24px);
+        }
+
+        &-phone {
+            color: #000;
+            font-weight: 500;
+            line-height:130%;
+            text-align: center;
+            display: block;
+            width: 100%;
+            letter-spacing: 1px;
+            @include fluid(font-size, 16px, 20px);
+        }
+    }
+
+    &__table {
+        display: flex;
+
+        &-left {
+            width: 50%;
+            border-right: 1px solid #FFFFFF;
+
+            &Item {
+                padding-top: 3px;
+                padding-right: 3px;
+                border-top: 1px solid #FFFFFF;
+                @include fluid(min-height, 40px, 48px);
+                line-height: normal;
+                @include fluid(font-size, 14px, 16px);
+
+            }
+        }
+
+        &-right {
+            width: 50%;
+
+            &Item {
+                text-align: center;
+                padding-top: 3px;
+                border-top: 1px solid #FFFFFF;
+                line-height: normal;
+                @include fluid(font-size, 14px, 16px);
+                @include fluid(min-height, 40px, 48px);
+            }
+        }
+    }
+}
+
+.guests{
+    @include fluid(margin-bottom, 100px, 220px);
+    &__swiper{
+        position: relative;
+        max-width: 710px;
+        height: 360px;
+        margin: 0 auto;
+        .swiper{
+            &-slide{
+                border-radius: 30px;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            &-buttons{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                gap: 50px;
+            }
+            &-button{
+                &-prev, &-next{
+                    position: relative;
+                    top:auto;
+                    bottom: -70px;
+                    @include fluid(bottom, -40px, -70px);
+                    &::after{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.map{
+
+    @include fluid(margin-bottom, 30px, 48px);
+}
+
+#map{
+    width: 100%;
+    @include fluid(height, 400px, 552px);
+}
+
+@media (max-width: 992px){
+    .club{
+        &__content{
+            padding: 25px;
+        }
+    }
+    .club{
+        &__img{
+            width: 40%;
+            height: auto;
+        }
+    }
+
+    .teachers{
+        &__list{
+            gap: 15px;
+        }
+    }
+
+    .scedule{
+        &__item{
+            padding-bottom: 15px;
+        }
+        &__wrapper{
+            gap: 15px;
+            &-center{
+                width: 290px;
+                .scedule{
+                    &__table{
+                        padding: 0;
+                        &-left,&-right{
+                            &Item{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+        &__table{
+            &-left,&-right{
+                &Item{
+
+                    text-align: center;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .guests{
+        &__swiper{
+            height: 335px;
+        }
+    }
+    #map{
+        height: 360px;
+    }
+}
+
+@media (max-width: 768px){
+    .club{
+        &__content{
+            padding: 20px;
+            &-text{
+                margin-bottom: 10px;
+            }
+        }
+        &__box{
+            gap: 0;
+            flex-direction: column;
+        }
+        &__img{
+            width: 100%;
+            height: 250px;
+        }
+    }
+
+    .teachers{
+        &__list{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .guests{
+        &__swiper{
+            height: 280px;
+        }
+    }
+
+    .scedule{
+        &__wrapper{
+            gap: 10px;
+            flex-direction: column;
+            &-left,&-right,&-center{
+                width: 100%;
+                gap: 10px;
+            }
+            .scedule{
+                &__table{
+                    &-left,&-right{
+                        &Item{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        &__table{
+            &-left,&-right{
+                &Item{
+                    font-size: 14px;
+                }
+            }
+        }
+        &__wrapper{
+            gap: 15px;
+            &-center{
+                width: 290px;
+                
+            }
+
+        }
+    }
+    
+}
+
+@media (max-width: 576px){
+    .teachers{
+        &__list{
+            grid-template-columns: 1fr;
+        }
+        &__item{
+            &-name{
+                margin-bottom: 10px;
+            }
+        }
+    }
+    #map{
+        height: 325px;
+    }
+    .club{
+        &__img{
+            height: 225px;
+        }
+    }
+    .guests{
+        margin-bottom: 85px;
+        &__swiper{
+            height: 230px;
+        }
+        .swiper{
+            &-button{
+                &-prev,&-next{
+                    img{
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

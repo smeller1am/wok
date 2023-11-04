@@ -1,0 +1,413 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+main{
+}
+
+
+
+// body,
+// html {
+//   // overflow-x: hidden;
+// }
+body {
+  min-width: 320px;
+  position: relative;
+  font-family: 'Roboto';
+  font-weight: 400;
+  color: #000;
+  background: var(--pink-blue, linear-gradient(110deg, #A5CFFF 39.39%, #FFA4F7 52.4%));
+  backdrop-filter: blur(1000px);
+}
+
+h1 {
+  font-weight: 400;
+}
+
+textarea {
+  resize: none;
+  outline: none;
+}
+
+section {
+  @include fluid(margin-bottom, 20px, 24px);
+}
+
+.button {
+  border: none;
+  display: block;
+  width: fit-content;
+  border-radius: 9px;
+  color: #000;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 1px;
+  @include fluid(font-size, 18px, 20px);
+  @include fluid(padding-top, 8px, 11px);
+  @include fluid(padding-bottom, 8px, 11px);
+  @include fluid(padding-left, 20px, 26px);
+  @include fluid(padding-right, 20px, 26px);
+  &--center{
+    margin: 0 auto;
+    @include fluid(margin-bottom, 20px, 30px);
+  }
+  &--blue {
+    background-color: #A2CEFF;
+    transition: 0.38s ease-in-out;
+
+    &:hover {
+      background-color: #FFB3F8;
+    }
+  }
+  &--white{
+    background-color: #FFFFFF;
+    transition: 0.38s ease-in-out;
+
+    &:hover {
+      background-color: #FFB3F8;
+    }
+  }
+
+  &--yellow{
+    background-color: #FFEE6C;
+    transition: 0.38s ease-in-out;
+
+    &:hover {
+      background-color: #A2CEFF;
+    }
+  }
+
+  &--pink {
+    background-color: #FFB3F8;
+    transition: 0.38s ease-in-out;
+
+    &:hover {
+      background-color: #A2CEFF;
+    }
+  }
+}
+
+.breadcrumbs {
+  position: relative;
+  top: -30px;
+  border-radius: 0px 0px 30px 30px;
+  background: rgba(255, 255, 255, 0.50);
+  @include fluid(padding-top, 40px, 58px);
+  @include fluid(padding-bottom, 10px, 28px);
+  @include fluid(margin-bottom, 20px, 48px);
+  &--mb96{
+    @include fluid(margin-bottom, 40px, 96px);
+  }
+  &__link {
+    color: #000;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 1px;
+    position: relative;
+    @include fluid(font-size, 14px, 20px);
+    transition: 0.38s ease-in-out;
+    &:hover{
+        color: #afaeae;
+    }
+    &:not(:last-child){
+      @include fluid(padding-right, 10px, 12px);
+      @include fluid(margin-right, 16px, 18px);
+      &::after{
+        position: absolute;
+        content: '/';
+        color: #000;
+        font-weight: 500;
+        line-height: 130%;
+        @include fluid(font-size, 18px, 20px);
+        @include fluid(right, -10px, -12px);
+      }
+    }
+  }
+}
+
+.fixed {
+  overflow-y: hidden;
+  height: 100vh;
+}
+
+.title {
+  border-radius: 30px 30px 0px 0px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 108.333%;
+  letter-spacing: 1.2px;
+  @include fluid(font-size, 20px, 24px);
+  @include fluid(padding-top, 20px, 24px);
+  @include fluid(padding-bottom, 20px, 24px);
+
+
+  &--pink {}
+
+  &--plBig {
+    @include fluid(padding-left, 50px, 123px);
+  }
+
+  &--plMid {
+    @include fluid(padding-left, 30px, 55px);
+    @include fluid(padding-right, 30px, 55px);
+  }
+  &--radius{
+    @include fluid(padding-bottom, 38px, 50px);
+    margin-bottom: -30px;
+  }
+}
+
+.bubbleTitle {
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  width: fit-content;
+  margin: 0 auto;
+  font-weight: 500;
+  line-height: 108.333%;
+  letter-spacing: 1.2px;
+  @include fluid(font-size, 18px, 24px);
+  @include fluid(padding-top, 8px, 10px);
+  @include fluid(padding-bottom, 8px, 10px);
+  @include fluid(padding-left, 30px, 58px);
+  @include fluid(padding-right, 30px, 58px);
+  @include fluid(margin-bottom, 40px, 81px);
+
+  &--mb47 {
+    @include fluid(margin-bottom, 30px, 47px);
+  }
+
+  &--mb24 {
+    @include fluid(margin-bottom, 20px, 24px);
+  }
+}
+
+.compensate-for-scrollbar{
+  margin: 0 !important;
+}
+
+.overlayBubble {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: -webkit-fill-available;
+  top: 0;
+  right: 0;
+  max-width: 900px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  background: transparent;
+}
+
+.overlayStar {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  max-width: 902px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+@media(max-width: 992px) {
+  .button {
+    font-size: 16px;
+  }
+  .title{
+    &--radius{
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .button {
+    font-size: 14px;
+    text-align: center;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .title--plBig {
+    padding-left: 20px;
+  }
+
+  .title {
+    font-size: 18px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    &--radius{
+      padding-bottom: 38px;
+    }
+  }
+}
+
+@media(max-width: 576px) {
+  .breadcrumbs{
+    &__link{
+      &:first-child{
+        margin-left: 13px;
+      }
+    }
+  }
+  .title {
+    font-size: 16px;
+  }
+
+  .bubbleTitle {
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,211 @@
+.animators {
+    &__box {
+        border-radius: 30px;
+        background: radial-gradient(100% 100% at 50% 100%, #FFA4F7 0%, rgba(255, 255, 255, 0.60) 100%);
+        display: flex;
+        justify-content: space-between;
+        @include fluid(gap, 10px, 15px);
+
+        &-content {
+            @include fluid(padding-top, 15px, 20px);
+            @include fluid(padding-left, 15px, 34px);
+            @include fluid(padding-bottom, 15px, 34px);
+        }
+
+        &-title {
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 136.111%;
+            letter-spacing: 5.4px;
+            @include fluid(font-size, 22px, 36px);
+            @include fluid(margin-bottom, 20px, 28px);
+        }
+
+        &-text {
+            font-size: 16px;
+            line-height: 150%;
+            @include fluid(font-size, 14px, 16px);
+            @include fluid(margin-bottom, 20px, 35px);
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+
+        &-item {
+            display: flex;
+            align-items: center;
+            @include fluid(gap, 20px, 40px);
+        }
+
+        &-img {
+            object-fit: contain;
+            @include fluid(width, 40px, 50px);
+            @include fluid(height, 40px, 50px);
+        }
+
+        &-itemText {
+            font-weight: 500;
+            line-height: 130%;
+            letter-spacing: 1px;
+            @include fluid(font-size, 16px, 20px);
+        }
+
+        &-image {
+            height: auto;
+            border-radius: 30px;
+            object-fit: cover;
+            @include fluid(width, 500px, 672px);
+        }
+    }
+}
+
+.animatorsType {
+    &__tabs {
+        border-radius: 30px;
+        border: 1px solid #FFF;
+        display: flex;
+        justify-content: space-between;
+        @include fluid(margin-bottom, 30px, 48px);
+
+        &-item {
+            color: #000;
+            border: 1px solid #FFF;
+            border-radius: 30px;
+            font-weight: 500;
+            line-height: 130%;
+            cursor: pointer;
+            letter-spacing: 1px;
+            background: transparent;
+            transition: 0.38s ease-in-out;
+            @include fluid(font-size, 18px, 20px);
+            @include fluid(padding-top, 15px, 23px);
+            @include fluid(padding-bottom, 15px, 23px);
+            @include fluid(padding-left, 15px, 20px);
+            @include fluid(padding-right, 15px, 20px);
+            &--active{
+                background: rgba(255, 255, 255, 0.50);
+            }
+        }
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        @include fluid(gap, 30px, 50px);
+        opacity: 0;
+        display: none;
+    
+        &--active {
+          display: grid;
+        }
+    
+        &--opacity {
+          opacity: 1;
+          transition: all 0.38s ease-in-out;
+        }
+    }
+
+    &__item {
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.60);
+        box-shadow: 0px 4px 30px 0px rgba(162, 206, 255, 0.25);
+        @include fluid(padding-top, 8px, 10px);
+        @include fluid(padding-bottom, 20px, 24px);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        @include fluid(gap, 10px, 12px);
+
+        &-name {
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 92.857%;
+            letter-spacing: 1.4px;
+            text-align: center;
+            @include fluid(font-size, 22px, 28px);
+        }
+        &-img{
+            object-fit: cover;
+            border-radius: 30px;
+            flex-grow: 2;
+            @include fluid(width, 200px, 232px);
+            @include fluid(height, 300px, 336px);
+        }
+
+        &-price {
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 92.857%;
+            letter-spacing: 1.4px;
+            @include fluid(font-size,22px, 28px);
+        }
+    }
+}
+
+@media (max-width:992px){
+    .animatorsType{
+        .container{
+            overflow-x: hidden;
+        }
+        &__content{
+            grid-template-columns: 1fr 1fr;
+        }
+        &__tabs{
+            overflow-x: scroll;
+            gap: 20px;
+            &-item{
+                flex-shrink: 0;
+            }
+        }
+        &__item{
+            &-img{
+                width: 235px;
+            }
+        }
+    }
+    .animators{
+        &__box{
+            &-image{
+                width: 315px;
+            }
+            &-title{
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .animatorsType{
+        &__tabs{
+            margin-bottom: 20px;
+        }
+        &__item{
+            &-img{
+                width: 200px;
+                height: 265px;
+            }
+        }
+    }
+    .animators{
+        &__box{
+            flex-direction: column;
+            &-image{
+                width: 100%;
+                height: 231px;
+            }
+        }
+    }
+}
+
+@media (max-width:576px){
+    .animatorsType{
+        &__content{
+            grid-template-columns: 1fr;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.error {
+    overflow: hidden;
+    .container {
+        position: relative;
+    }
+
+    &__overlay {
+        position: absolute;
+        z-index: -1;
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__img {
+        @include fluid(padding-top, 200px, 300px);
+        display: block;
+        margin: 0 auto;
+        @include fluid(margin-bottom, 25px, 30px);
+    }
+
+    &__text {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 108.333%;
+        letter-spacing: 1.2px;
+        @include fluid(font-size, 18px, 26px);
+        @include fluid(padding-bottom, 200px, 300px);
+    }
+}
+
+@media(max-width: 992px){
+    .error{
+        &__img{
+            padding-top: 150px;
+            width: 271px;
+    height: 270px;
+        }
+        &__text{
+            padding-bottom: 150px;
+        }
+    }
+}
+@media(max-width: 576px){
+    .error{
+        &__img{
+            width: 203px;
+            height: 221px;
+        }
+        &__text{
+            width: 80%;
+        }
+    }
+}

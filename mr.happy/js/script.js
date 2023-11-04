@@ -322,11 +322,11 @@ document.addEventListener('DOMContentLoaded', function () {
   let radios = document.querySelectorAll('input[name="place"]')
   if (document.querySelector('#age')) {
     function changeQuantityValue(value) {
-      let x = document.getElementById('quantityText')
+      let x = document.querySelector('#quantity .noUi-tooltip')
       x.textContent = value
     }
     function changeageValue(value) {
-      let y = document.getElementById('ageText')
+      let y = document.querySelector('#age .noUi-tooltip')
       y.textContent = value
     }
 
@@ -335,6 +335,7 @@ document.addEventListener('DOMContentLoaded', function () {
     noUiSlider.create(handlesAgeSlider, {
       start: [3, 6],
       connect: true,
+      tooltips: [false, true],
       behaviour: 'unconstrained-tap',
       range: {
         'min': [3],
@@ -351,6 +352,7 @@ document.addEventListener('DOMContentLoaded', function () {
     noUiSlider.create(handlesSlider, {
       start: [0, 20],
       connect: true,
+      tooltips: [false, true],
       behaviour: 'unconstrained-tap',
       range: {
         'min': [0],
@@ -429,7 +431,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let cupcakeInputs = document.querySelectorAll('.ordering__item-input--cake')
   if (document.querySelector('#weight')) {
     function changeCakeValue(value) {
-      let x = document.getElementById('cakeText')
+      let x = document.querySelector('#weight .noUi-tooltip')
       x.textContent = value
     }
     var handlesWeightSlider = document.getElementById('weight');
@@ -437,6 +439,7 @@ document.addEventListener('DOMContentLoaded', function () {
     noUiSlider.create(handlesWeightSlider, {
       start: [0, 2],
       connect: true,
+      tooltips: [false, true],
       behaviour: 'unconstrained-tap',
       range: {
         'min': [0],

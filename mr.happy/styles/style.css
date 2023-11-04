@@ -8078,6 +8078,9 @@ section {
   width: 130px;
   height: 130px;
 }
+.noUi-horizontal .noUi-tooltip{
+  bottom: auto !important;
+}
 @media (min-width: 992px) {
   .footer__logo-img {
     width: calc(0.1002155172 * 100vw + 30.5862068966px);

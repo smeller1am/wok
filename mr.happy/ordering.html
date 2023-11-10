@@ -181,8 +181,8 @@
                             </div>
                             <div class="ordering__item">
                                 <div class="ordering__item-name">Выбор</div>
-                                <select class="ordering__item-select ordering__item-select--hidden ordering__item-select--additional">
-                                    <option value="1">Гарри Поттер</option>
+                                <select id="option" class="ordering__item-select ordering__item-select--hidden ordering__item-select--additional">
+                                    <option selected value="1">Гарри Поттер</option>
                                     <option value="2">Покемоны</option>
                                     <option value="3">Остров сокровищ</option>
                                     <option value="4">Детективный</option>
@@ -193,7 +193,7 @@
                                     <option value="9">Тим Билдинг</option>
                                 </select>
                                 <select class="ordering__item-select ordering__item-select--hidden ordering__item-select--additional">
-                                  <option value="1">Карамельный БУМ</option>
+                                  <option selected value="1">Карамельный БУМ</option>
                                   <option value="2">Творческий БУМ</option>
                                   <option value="3">Мыльный БУМ</option>
                                   <option value="4">Граффити БУМ</option>
@@ -212,12 +212,12 @@
                                   <option value="17">Украшение шариков</option>
                                 </select>
                                 <select class="ordering__item-select ordering__item-select--hidden ordering__item-select--additional">
-                                    <option value="1">Девичник</option>
+                                    <option selected value="1">Девичник</option>
                                     <option value="2">Голливуд</option>
                                     <option value="3">Мафия</option>
                                 </select>
                                 <select class="ordering__item-select ordering__item-select--hidden ordering__item-select--additional">
-                                  <option value="1">Гарри Поттер</option>
+                                  <option selected value="1">Гарри Поттер</option>
                                   <option value="2">Безумный шляпник</option>
                                   <option value="3">Белоснежка</option>
                                   <option value="4">Буратино</option>
@@ -239,28 +239,28 @@
                                   <option value="20">Эльза</option>
                                 </select>
                                 <select class="ordering__item-select ordering__item-select--hidden ordering__item-select--additional">
-                                    <option value="1">VIP</option>
+                                    <option selected value="1">VIP</option>
                                     <option value="2">VIP+</option>
                                 </select>
                             </div>
                             <div class="ordering__wrapper">
                                 <div class="ordering__item">
                                     <div class="ordering__item-name">Имя</div>
-                                    <input type="text" class="ordering__item-input" placeholder="Как к вам обращаться">
+                                    <input required id="name" type="text" class="ordering__item-input" placeholder="Как к вам обращаться">
                                 </div>
                                 <div class="ordering__item">
                                     <div class="ordering__item-name">Ваш E-mail</div>
-                                    <input type="mail" class="ordering__item-input" placeholder="ivanov@yandex.ru">
+                                    <input required id="mail" type="mail" class="ordering__item-input" placeholder="ivanov@yandex.ru">
                                 </div>
                             </div>
                             <div class="ordering__wrapper ordering__wrapper--mb70">
                                 <div class="ordering__item">
                                     <div class="ordering__item-name">Телефон</div>
-                                    <input id="tel" type="tel" class="ordering__item-input ordering__item-input--phone" placeholder="+7">
+                                    <input required id="tel" type="tel" class="ordering__item-input ordering__item-input--phone" placeholder="+7">
                                 </div>
                                 <div class="ordering__item">
                                     <div class="ordering__item-name">Дата мероприятия</div>
-                                    <input type="date" class="ordering__item-input">
+                                    <input required id="date" type="date" class="ordering__item-input">
                                 </div>
                             </div>
                             <div class="ordering__item-name">Адрес</div>
@@ -268,19 +268,19 @@
                               <div class="ordering__wrapper ordering__wrapper--4">
                                 <div class="ordering__item">
                                     <div class="ordering__item-name">Улица</div>
-                                    <input type="text" class="ordering__item-input" placeholder="Введите текст">
+                                    <input id="street" type="text" class="ordering__item-input" placeholder="Введите текст">
                                 </div>
                                 <div class="ordering__item">
                                     <div class="ordering__item-name">Дом</div>
-                                    <input type="text" class="ordering__item-input" placeholder="Введите текст">
+                                    <input id="house" type="text" class="ordering__item-input" placeholder="Введите текст">
                                 </div>
                                 <div class="ordering__item">
                                     <div class="ordering__item-name">Квартира</div>
-                                    <input type="number" class="ordering__item-input" placeholder="Введите число">
+                                    <input id="apartment" type="number" class="ordering__item-input" placeholder="Введите число">
                                 </div>
                                 <div class="ordering__item">
                                     <div class="ordering__item-name">Корпус</div>
-                                    <input type="text" class="ordering__item-input" placeholder="Введите текст">
+                                    <input id="body" type="text" class="ordering__item-input" placeholder="Введите текст">
                                 </div>
                             </div>
                             <div class="ordering__wrapper">
@@ -288,16 +288,16 @@
                                     <div class="ordering__item-name">Ваше местоположение</div>
                                     <label class="ordering__item-radio">
                                         Москва
-                                        <input type="radio" class="modern-radio" value="1" name="place" checked>
+                                        <input type="radio" class="placeRadio modern-radio" value="1" name="place" checked>
                                         <span></span>
                                     </label>
                                     <label class="ordering__item-radio">
-                                        < 25 км от МКАД <input type="radio" class="modern-radio" value="1" name="place">
+                                        < 25 км от МКАД <input type="radio" class="placeRadio modern-radio" value="2" name="place">
                                             <span></span>
                                     </label>
                                     <label class="ordering__item-radio">
                                         > 25 км от МКАД
-                                        <input type="radio" class="modern-radio" value="1" name="place">
+                                        <input type="radio" class="placeRadio modern-radio" value="3" name="place">
                                         <span></span>
                                     </label>
                                 </div>
@@ -305,12 +305,12 @@
                                     <div class="ordering__item-name">Место проведения</div>
                                     <label class="ordering__item-radio">
                                         На улице
-                                        <input type="radio" class="modern-radio" value="1" name="b" checked>
+                                        <input type="radio" class="locationRadio modern-radio" value="1" name="b" checked>
                                         <span></span>
                                     </label>
                                     <label class="ordering__item-radio">
                                         В помещении
-                                        <input type="radio" class="modern-radio" value="1" name="b">
+                                        <input type="radio" class="locationRadio modern-radio" value="1" name="b">
                                         <span></span>
                                     </label>
                                 </div>
@@ -335,68 +335,68 @@
                             </div>
                             <div class="ordering__item ordering__item--75">
                                 <div class="ordering__item-name">Комментарий к заказу</div>
-                                <textarea name="" id="" class="ordering__item-textarea"
+                                <textarea name="" id="comment" class="ordering__item-textarea"
                                     placeholder="Добавьте комментарий"></textarea>
                             </div>
                             <div class="ordering__item ordering__item--100">
                                 <div class="ordering__item-name">Дополнительные услуги</div>
                                 <div class="ordering__item-checkbox">
-                                    <input data-price="4000" type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
+                                    <input data-price="4000" type="checkbox" class="custom-checkbox" id="happy" name="happy" value="1">
                                     <label for="happy">Дополнительный аниматор (+1 аниматор к количеству ведущих мероприятия) (4000руб)</label>
                                 </div>
                                 <div class="ordering__item-checkbox">
-                                    <input data-price="9000" type="checkbox" class="custom-checkbox" id="happy1" name="happy1" value="yes">
+                                    <input data-price="9000" type="checkbox" class="custom-checkbox" id="happy1" name="happy1" value="2">
                                     <label for="happy1">Бумажная дискотека (9000руб/40минут)</label>
                                 </div>
                                 <div class="ordering__item-checkbox">
-                                    <input data-price="4000" type="checkbox" class="custom-checkbox" id="happy2" name="happy2" value="yes">
+                                    <input data-price="4000" type="checkbox" class="custom-checkbox" id="happy2" name="happy2" value="3">
                                     <label for="happy2">Игра "Мафия" (4000руб/час)</label>
                                 </div>
                                 <div class="ordering__item-checkbox">
-                                    <input data-price="4000" type="checkbox" class="custom-checkbox" id="happy3" name="happy3" value="yes">
+                                    <input data-price="4000" type="checkbox" class="custom-checkbox" id="happy3" name="happy3" value="4">
                                     <label for="happy3">Игра "Акционер" (4000руб/1,5часа)</label>
                                 </div>
                                 <div class="ordering__item-checkbox">
-                                    <input data-price="7000" type="checkbox" class="custom-checkbox" id="happy4" name="happy4" value="yes">
+                                    <input data-price="7000" type="checkbox" class="custom-checkbox" id="happy4" name="happy4" value="5">
                                     <label for="happy4">Химическое шоу (7000руб/45минут)</label>
                                 </div>
                                 <div class="ordering__item-checkbox">
-                                    <input data-price="9000" type="checkbox" class="custom-checkbox" id="happy5" name="happy5" value="yes">
+                                    <input data-price="9000" type="checkbox" class="custom-checkbox" id="happy5" name="happy5" value="6">
                                     <label for="happy5">Фокусник (9000руб/30минут)</label>
                                 </div>
                                 <div class="ordering__item-checkbox">
-                                    <input data-price="0" type="checkbox" class="custom-checkbox" id="happy6" name="happy6" value="yes">
+                                    <input data-price="0" type="checkbox" class="custom-checkbox" id="happy6" name="happy6" value="7">
                                     <label for="happy6">Мастер-класс в тематике квеста (30 минут)</label>
                                 </div>
                                 <div class="ordering__item-checkbox">
-                                    <input data-price="4000" type="checkbox" class="custom-checkbox" id="happy7" name="happy7" value="yes">
+                                    <input data-price="4000" type="checkbox" class="custom-checkbox" id="happy7" name="happy7" value="8">
                                     <label for="happy7">Фотосъёмка (4000руб/2часа)</label>
                                 </div>
                                 <div class="ordering__item-checkbox">
-                                    <input data-price="5000" type="checkbox" class="custom-checkbox" id="happy8" name="happy8" value="yes">
+                                    <input data-price="5000" type="checkbox" class="custom-checkbox" id="happy8" name="happy8" value="9">
                                     <label for="happy8">Видеосъёмка (5000руб/2часа)</label>
                                 </div>
                                 <div class="ordering__item-checkbox">
-                                    <input data-type="perChild" data-price="190" type="checkbox" class="custom-checkbox" id="happy9" name="happy9" value="yes">
+                                    <input data-type="perChild" data-price="190" type="checkbox" class="custom-checkbox" id="happy9" name="happy9" value="10">
                                     <label for="happy9">Подарки всем участникам (190руб/шт)</label>
                                 </div>
                                 <div class="ordering__item-checkbox">
-                                    <input data-price="100" type="checkbox" class="custom-checkbox" id="happy11" name="happy11" value="yes">
+                                    <input data-type="perChild" data-price="100" type="checkbox" class="custom-checkbox" id="happy11" name="happy11" value="11">
                                     <label for="happy11">Сахарная вата (100руб/шт)</label>
                                 </div>
                                 <div class="ordering__item-checkbox">
-                                    <input data-type="perChild" data-price="900" type="checkbox" class="custom-checkbox" id="happy12" name="happy12" value="yes">
+                                    <input data-type="perChild" data-price="900" type="checkbox" class="custom-checkbox" id="happy12" name="happy12" value="12">
                                     <label for="happy12">Лазертаг (900руб/чел)</label>
                                 </div>
                                 <div class="ordering__item-checkbox">
-                                    <input data-price="0" type="checkbox" class="custom-checkbox" id="happy13" name="happy13" value="yes">
+                                    <input data-price="0" type="checkbox" class="custom-checkbox" id="happy13" name="happy13" value="13">
                                     <label for="happy13">ОФОРМЛЕНИЕ ШАРАМИ</label>
                                 </div>
                                 <div class="ordering__item-text ordering__item-text--pl">
                                     Введите ваш бюджет на воздушные шары
                                 </div>
                                 <div class="ordering__item ordering__item--pl">
-                                    <input data-price="" type="text" class="ordering__item-input" placeholder="Введите число">
+                                    <input id="baloonBudget" data-price="" type="text" class="ordering__item-input" placeholder="Введите число">
                                 </div>
                             </div>
                             </div>
@@ -433,7 +433,7 @@
                             </div>
                             <div class="ordering__item ordering__item--75">
                                 <div class="ordering__item-name">Пожелания к украшению</div>
-                                <textarea name="" id="" class="ordering__item-textarea"
+                                <textarea name="" id="cakeComment" class="ordering__item-textarea"
                                     placeholder="Добавьте комментарий"></textarea>
                             </div>
                             <div class="ordering__item ordering__item--100 ordering__item--mb50">
@@ -447,11 +447,11 @@
                                     <p class="ordering__grid-text ordering__grid-text--mb40">КАПКЕЙКИ</p>
                                     <div class="ordering__item ordering__item--mb50">
                                         <p class="ordering__item-name">Количество</p>
-                                        <input data-price="250" type="number" class="ordering__item-input ordering__item-input--cake" placeholder="Введите число">
+                                        <input id="cupcakeInput" data-price="250" type="number" class="ordering__item-input ordering__item-input--cake" placeholder="Введите число">
                                     </div>
                                     <div class="ordering__item">
                                         <p class="ordering__item-name">Начинка капкейка</p>
-                                        <select class="ordering__item-select ordering__item-select--cake">
+                                        <select id="cupcake" class="ordering__item-select">
                                             <option value="1">Лимонный с курдом</option>
                                             <option value="2">Красный бархат</option>
                                             <option value="3">Морковный с пиканом</option>
@@ -472,7 +472,7 @@
                                     <p class="ordering__grid-text ordering__grid-text--mb40">КЕЙК-ПОПСЫ</p>
                                     <div class="ordering__item ordering__item--mb50">
                                         <p class="ordering__item-name">Количество</p>
-                                        <input data-price="200" type="number" class="ordering__item-input ordering__item-input--cake" placeholder="Введите число">
+                                        <input id="cakePopsInput" data-price="200" type="number" class="ordering__item-input ordering__item-input--cake" placeholder="Введите число">
                                     </div>
                                 </div>
                                 <div class="ordering__grid-item">
@@ -481,11 +481,11 @@
                                     <p class="ordering__grid-text ordering__grid-text--mb40">МАКАРОНИ</p>
                                     <div class="ordering__item ordering__item--mb50">
                                         <p class="ordering__item-name">Количество</p>
-                                        <input data-price="200" type="number" class="ordering__item-input ordering__item-input--cake " placeholder="Введите число">
+                                        <input id="macaonsInput" data-price="200" type="number" class="ordering__item-input ordering__item-input--cake " placeholder="Введите число">
                                     </div>
                                     <div class="ordering__item">
                                         <p class="ordering__item-name">Начинка макарони</p>
-                                        <select class="ordering__item-select ordering__item-select--cake">
+                                        <select id="macaron" class="ordering__item-select">
                                             <option value="1">Шоколадные</option>
                                             <option value="2">Фисташковые</option>
                                             <option value="3">Малиновые</option>
@@ -501,11 +501,11 @@
                                     <p class="ordering__grid-text ordering__grid-text--mb40"> ПРЯНИК С УКРАШЕНИЕМ</p>
                                     <div class="ordering__item ordering__item--mb50">
                                         <p class="ordering__item-name">Количество</p>
-                                        <input data-price="180" type="number" class="ordering__item-input ordering__item-input--cake" placeholder="Введите число">
+                                        <input id="gingerbread1" data-price="180" type="number" class="ordering__item-input ordering__item-input--cake" placeholder="Введите число">
                                     </div>
                                     <div class="ordering__item">
                                         <p class="ordering__item-name">Начинка капкейка</p>
-                                        <select class="ordering__item-select ordering__item-select--cake">
+                                        <select id="gingerbread" class="ordering__item-select">
                                             <option value="1">Лимонный с курдом</option>
                                             <option value="2">Красный бархат</option>
                                             <option value="3">Морковный с пиканом</option>
@@ -525,7 +525,7 @@
                                     <p class="ordering__grid-text ordering__grid-text--mb40">ПРЯНИК НА ПАЛОЧКЕ</p>
                                     <div class="ordering__item ordering__item--mb50">
                                         <p class="ordering__item-name">Количество</p>
-                                        <input data-price="50" type="number" class="ordering__item-input ordering__item-input--cake" placeholder="Введите число">
+                                        <input id="stickGingerbread" data-price="50" type="number" class="ordering__item-input ordering__item-input--cake" placeholder="Введите число">
                                     </div>
                                     
                                 </div>
@@ -535,11 +535,11 @@
                                     <p class="ordering__grid-text ordering__grid-text--mb40">БЕЗЕ</p>
                                     <div class="ordering__item ordering__item--mb50">
                                         <p class="ordering__item-name">Количество</p>
-                                        <input data-price="50" type="number" class="ordering__item-input ordering__item-input--cake" placeholder="Введите число">
+                                        <input id="meringue1" data-price="50" type="number" class="ordering__item-input ordering__item-input--cake" placeholder="Введите число">
                                     </div>
                                     <div class="ordering__item">
                                         <p class="ordering__item-name">Начинка макарони</p>
-                                        <select class="ordering__item-select ordering__item-select--cake">
+                                        <select id="meringue" class="ordering__item-select">
                                             <option value="1">Шоколадные</option>
                                             <option value="2">Фисташковые</option>
                                             <option value="3">Малиновые</option>

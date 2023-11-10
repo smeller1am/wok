@@ -47,16 +47,20 @@
     @include fluid(margin-bottom, 140px, 160px);
     &--active{
         background-color: #FFA4F7 !important;
+        color: #fff !important;
     }
     &__pagination{
         margin-bottom: 30px;
         display: flex;
-        justify-content: center;
-        gap: 15px;
+        gap: 12px;
+        
         div{
-            border-radius: 50%;
-            width: 23px;
-            height: 23px;
+            cursor: pointer;
+            border-radius: 30px;
+            padding: 16px;
+            color: #000;
+            @include fluid(font-size, 16px, 18px);
+            transition: 0.38s ease-in-out;
             background-color: #fff;
         }
     }
@@ -125,6 +129,12 @@
 
 @media(max-width: 992px) {
     .gallery {
+        &__pagination{
+            flex-wrap: wrap;
+            div{
+                padding: 11px;
+            }
+        }
         video{
             height: 400px;
         }
@@ -156,6 +166,11 @@
 
 @media(max-width: 576px) {
     .gallery {
+        &__pagination{
+            div{
+                padding: 9px;
+            }
+        }
         video{
             height: 240px;
         }
@@ -175,6 +190,16 @@
                         height: 30px;
                     }
                 }
+            }
+        }
+    }
+}
+@media(max-width: 400px) {
+    .gallery{
+        &__pagination{
+            div{
+                width: 100%;
+            text-align: center;
             }
         }
     }

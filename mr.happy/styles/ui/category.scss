@@ -538,8 +538,9 @@
                 animation: blinkPink 2s infinite;
             }
 
-            top: 251px;
-            left: 88px;
+            top: 227px;
+            left: 82px;
+
         }
 
     }
@@ -554,8 +555,8 @@
                 animation: blinkGold 2s infinite;
             }
 
-            top: 265px;
-            left: 70px;
+            top: 257px;
+            left: 60px;
         }
     }
 
@@ -565,7 +566,7 @@
         background-position-y: 158px;
 
         svg {
-            *{
+            * {
                 stroke: #000000;
             }
 
@@ -580,8 +581,9 @@
 
         img {
             position: absolute;
-            top: 38px;
+            top: 11px;
             left: 228px;
+
         }
 
         >svg {
@@ -596,14 +598,17 @@
 
     &--pokemon2 {
         background-color: rgba(255, 231, 121, 0.90);
-        img{
+
+        img {
             position: absolute;
             top: 0;
             left: 453px;
         }
-        >svg{
-            top: 28px;
-            left: 341px;
+
+        >svg {
+            top: 32px;
+            left: 335px;
+
             path {
                 animation: blinkCyan 2s infinite;
             }
@@ -612,15 +617,18 @@
 
     &--hat {
         background-color: #FEAA8E;
-        img{
+
+        img {
             position: absolute;
             top: 12px;
             left: 310px;
             z-index: 1;
         }
-        >svg{
+
+        >svg {
             top: 219px;
             left: 8px;
+
             path {
                 animation: blinkBard 2s infinite;
             }
@@ -629,7 +637,8 @@
 
     &--dream {
         background-color: #C297B6;
-        img{
+
+        img {
             position: absolute;
             top: 37px;
             left: 473px;
@@ -638,15 +647,18 @@
 
     &--cookie {
         background-color: #F7D29E;
-        img{
+
+        img {
             position: absolute;
             top: 154px;
             left: 500px;
             z-index: 1;
         }
-        >svg{
+
+        >svg {
             top: 220px;
-            left: 50px;
+            left: 55px;
+
             path {
                 animation: blinkLightBrown 2s infinite;
             }
@@ -655,15 +667,18 @@
 
     &--balls {
         background-color: #FDE796;
-        img{
+
+        img {
             position: absolute;
             top: 79px;
             left: -99px;
             z-index: 1;
         }
-        >svg{
-            top: 75px;
-            left: 0;
+
+        >svg {
+            top: 74px;
+            left: 7px;
+
             path {
                 animation: blinkGreen 2s infinite;
             }
@@ -672,14 +687,18 @@
 
     &--loop {
         background-color: #EDEFE3;
-        img{
+
+        img {
             position: absolute;
             top: 241px;
             left: 434px;
         }
-        >svg{
+
+        >svg {
             top: 234px;
-            left: 0;
+            left: 5px;
+    
+
             path {
                 animation: blinkBlack 2s infinite;
             }
@@ -689,20 +708,24 @@
     &--soak {
         background-color: #A8DA88;
         background-position: 404px 66px;
-        .modal__content{
+
+        .modal__content {
             position: relative;
             z-index: 1;
         }
-        img{
+
+        img {
             position: absolute;
             top: 100px;
-            left: 429px;
+            left: 387px;
             z-index: 1;
         }
-        >svg{
+
+        >svg {
             top: 58px;
             left: 0;
             z-index: 0;
+
             path {
                 animation: blinkWhite 2s infinite;
             }
@@ -712,14 +735,17 @@
     &--caramel {
         background-color: #F9A24B;
         background-position: 470px 15px;
-        img{
+
+        img {
             position: absolute;
             top: 123px;
             left: 461px;
         }
-        svg{
-            left: 30px;
-            top: 104px;
+
+        svg {
+            left: 9px;
+            top: 111px;
+
             path {
                 animation: blinkRed 2s infinite;
             }
@@ -729,14 +755,17 @@
     &--grafity {
         background-color: #83E8FF;
         background-position: 230px 121px;
-        img{
+
+        img {
             position: absolute;
             top: 124px;
             left: 339px;
         }
-        >svg{
+
+        >svg {
             top: 292px;
             left: 0;
+
             path {
                 animation: blinkRed 2s infinite;
             }
@@ -747,14 +776,17 @@
         background-color: #fff;
         background-image: url('../assets/modalBackground/Group\ 22.png');
         background-position: 436px 28px;
-        img{
+
+        img {
             position: absolute;
             left: 436px;
             top: 28px;
         }
-        >svg{
+
+        >svg {
             top: 272px;
             left: 0;
+
             path {
                 animation: blinkPinkPink 2s infinite;
             }
@@ -764,14 +796,17 @@
     &--dance {
         background-color: #FFE4FB;
         background-position: 321px 351px;
-        >svg{
+
+        >svg {
             top: 200px;
             left: 392px;
+
             path {
                 animation: blinkLightGreen 2s infinite;
             }
         }
-        img{
+
+        img {
             position: absolute;
             left: 351px;
             top: 321px;
@@ -781,15 +816,18 @@
 
     &--bag {
         background-color: #fff;
-        img{
+
+        img {
             position: absolute;
             top: 198px;
             left: 472px;
             z-index: 1;
         }
-        >svg{
+
+        >svg {
             top: 225px;
             left: 271px;
+
             path {
                 animation: blinkBlue 2s infinite;
             }
@@ -798,16 +836,19 @@
 
     &--flora {
         background-color: #ECF0F8;
-        img{
+
+        img {
             position: absolute;
             top: 36px;
             left: 848px;
             z-index: 1;
-        
+
         }
-        svg{
+
+        svg {
             top: 100px;
             left: 5px;
+
             path {
                 animation: blinkDarkGreen 2s infinite;
             }
@@ -816,14 +857,17 @@
 
     &--mask {
         background-color: #CDB993;
-        img{
+
+        img {
             position: absolute;
             top: 63px;
             left: 434px;
         }
-        >svg{
+
+        >svg {
             top: 224px;
             left: 246px;
+
             path {
                 animation: blinkBard 2s infinite;
             }
@@ -832,12 +876,14 @@
 
     &--chocolate {
         background-color: #EEE6C7;
-        img{
+
+        img {
             position: absolute;
             top: 361px;
             left: 452px;
         }
-        >svg{
+
+        >svg {
             top: 200px;
             left: 0;
         }
@@ -845,15 +891,17 @@
 
     &--creative {
         background-color: #C9EDF3;
-    
-        img{
+
+        img {
             position: absolute;
             top: -17px;
             left: 356px;
         }
-        >svg{
-            top: 242px;
-            left: 180px;
+
+        >svg {
+            top: 258px;
+            left: 179px;
+
             path {
                 animation: blinkPinkPink 2s infinite;
             }
@@ -862,18 +910,21 @@
 
     &--potter2 {
         background-image: url('../assets/modalBackground/окно\ мк\ гп30\ мин.png');
-        background-position-x:  0px;
-        background-position-y:  0px;
+        background-position-x: 0px;
+        background-position-y: 0px;
         background-size: cover;
-        img{
+
+        img {
             position: absolute;
             top: 221px;
             left: 436px;
             z-index: 1;
         }
-        svg{
+
+        svg {
             top: 300px;
             left: 359px;
+
             path {
                 animation: blinkLightGray 2s infinite;
             }
@@ -958,12 +1009,12 @@
         img {
             position: absolute;
             left: 122px;
-            top: 102px;
+            top: 126px;
         }
 
         >svg {
-            top: 177px;
-            left: -6px;
+            top: 170px;
+            left: 2px;
             z-index: 0;
 
             path {
@@ -977,13 +1028,14 @@
 
         img {
             position: absolute;
-            left: 114px;
-            top: 113px;
+            left: 147px;
+            top: 129px;
         }
 
         >svg {
-            top: 319px;
-            left: -26px;
+            top: 318px;
+            left: 4px;
+
             path {
                 animation: blinkGreen 2s infinite;
             }
@@ -1131,7 +1183,8 @@
         background-image: url('../assets/img/сахарная\ вата1\ 1.png');
         background-position: 807px -6px;
     }
-    &--cheme{
+
+    &--cheme {
         background: #AEF7AF;
         background-repeat: no-repeat;
         background-image: url('../assets/img/химия1\ 1.png');
@@ -1158,26 +1211,29 @@
         padding-left: 123px;
         padding-right: 123px;
     }
-    
+
     &__list {
         list-style: disc;
         padding-left: 17px;
-        &--df{
+
+        &--df {
             display: flex;
             width: 67%;
             gap: 20px;
             justify-content: space-between;
-            li{
 
-            }
+            li {}
         }
-        &-left,&-right{
+
+        &-left,
+        &-right {
             display: flex;
             list-style: disc;
             padding-left: 17px;
             flex-direction: column;
             gap: 3px;
         }
+
         &-item {
             font-size: 16px;
             font-style: normal;
@@ -1201,7 +1257,8 @@
             width: 70%;
             text-align: start;
         }
-        &--w85{
+
+        &--w85 {
             width: 85%;
             text-align: start;
         }
@@ -1226,11 +1283,14 @@
             /* 130% */
             letter-spacing: 1px;
             margin-bottom: 24px;
-
+            &--mt30{
+                margin-top: 30px;
+            }
             &--fs {
                 @include fluid(font-size, 20px, 24px);
             }
-            &--mb{
+
+            &--mb {
                 margin-bottom: 50px;
             }
         }
@@ -1267,16 +1327,19 @@
         &-left,
         &-right {
             width: 50%;
-            &--mt{
-                    margin-top: -27px;
+
+            &--mt {
+                margin-top: -27px;
             }
-            &--mt50{
+
+            &--mt50 {
                 margin-top: -50px;
-                
-        }
-        &--mt31{
-            margin-top: -43px;
-        }
+
+            }
+
+            &--mt31 {
+                margin-top: -43px;
+            }
         }
 
         &-item {
@@ -1289,6 +1352,13 @@
             &--ml-54 {
                 margin-top: 72px;
                 margin-left: -54px;
+            }
+            &--ml120{
+                margin-left: 121px;
+            }
+            &--ml77{
+                margin-left: 77px;
+                width: 52%;
             }
 
             &--ml-63 {
@@ -1347,19 +1417,23 @@
                 width: 62%;
                 margin-left: 67px;
             }
+
             &--ml80 {
                 width: 90%;
                 margin-left: 40px;
             }
+
             &--ml90 {
                 width: 80%;
                 margin-left: 60px;
             }
+
             &--ml75 {
                 margin-top: 10px;
                 width: 60%;
                 margin-left: 120px;
             }
+
             &--ml76 {
                 margin-top: 10px;
                 width: 60%;
@@ -1372,6 +1446,14 @@
 
             &--mt131 {
                 margin-top: 131px;
+            }
+
+            &--w45 {
+                width: 45%;
+                margin-bottom: 51px;
+            }
+            &--w54{
+                width: 54%;
             }
 
             &--w76 {
@@ -1392,6 +1474,7 @@
                 width: 77%;
                 margin-left: 90px;
             }
+
             &--ml100 {
                 width: 77%;
                 margin-left: 130px;
@@ -1422,7 +1505,7 @@
             }
 
             &--mb100 {
-                margin-bottom: 170px;
+                margin-bottom: 70px;
             }
 
             &--mb96 {
@@ -1489,13 +1572,15 @@
                 margin-top: 84px;
             }
 
-            &--w81{
+            &--w81 {
                 width: 81%;
             }
-            &--w80l{
+
+            &--w80l {
                 width: 80%;
                 margin-left: 55px;
             }
+
             &--mt94 {
                 margin-top: 94px;
             }
@@ -1561,19 +1646,24 @@
         justify-content: space-around;
     }
 }
-
+.noUi-tooltip{
+    bottom: auto !important;
+}
 @media(max-width: 1200px) {
 
     .modal {
         width: 90%;
         background-image: none;
         background-position: 0;
-        svg{
+
+        svg {
             display: none;
         }
-        img{
+
+        img {
             display: none;
         }
+
         &--pokemon {
             background-color: rgba(255, 231, 121, 0.90);
         }
@@ -1636,14 +1726,16 @@
             &--w75 {
                 width: 100%;
             }
-        }   
-        &__items{
-            &-item{
+        }
+
+        &__items {
+            &-item {
                 width: 100% !important;
                 margin: 0 !important;
                 margin-bottom: 20px !important;
             }
         }
+
         &__table {
             overflow-x: scroll;
         }
@@ -1735,14 +1827,17 @@
 
     .modal {
         width: 95%;
-        &__list{
-            &--df{
+
+        &__list {
+            &--df {
                 flex-direction: column;
-                ul{
+
+                ul {
                     padding-left: 0;
                 }
             }
         }
+
         &__content {
             padding-left: 20px;
             padding-right: 20px;
